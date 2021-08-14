@@ -5,18 +5,18 @@ https://xuanthulab.net/su-dung-flexbox-bo-cuc-trang-trong-css.html
 2) Chữa bài tập về nhà. 30 phút, giải đáp thắc mắc cho mọi người.
 
 3) GIới thiệu về các thuộc tính của thẻ a, hover....
-4) Giới thiệu qua về các loại selector :
-1. Basic CSS Selectors
-2. Descendant CSS Selectors
-3. Multiple CSS Selector
-4. Combination CSS Selectors
-5. Sibling CSS Selectors
-6. Pseudo CSS Selectors
-7. Pseudo CSS Selectors (link và input)
-8. Attribute CSS Selectors
+   Pseudo-Class cho đường link
+   Pseudo-Class được sử dụng nhiều nhất với các đường liên kết (thẻ <a>) để tạo ra hiệu ứng thay đổi trạng thái chữ mỗi khi người dùng di chuột qua nó.
 
-https://niithanoi.edu.vn/8-loai-css-selector.html
-5) Giao bài tập trong giờ .
+Có tất cả 4 trạng thái tương đương với 4 Pseudo-Class của đường link:
+
+a:link {color:blue;}: Hiển thị hiệu ứng khác biệt để người đọc biết đây là đường liên kết.
+a:visited {color:green;}: Đường link đã từng được click vào.
+a:hover {color:red;}: Di chuột qua đường link.
+a:active {color:navy;}: Đường link đang được nhấp chuột vào.
+=> demo
+
+4)Giao bài tập trong giờ .
 Làm cho chú bài này.
 ![](img_2.png)
-6) CHo bài tập về nhà gửi qua mail
+5)CHo bài tập về nhà gửi qua mail
