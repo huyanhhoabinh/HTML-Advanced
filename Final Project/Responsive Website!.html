@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<!-- saved from url=(0057)https://jolly-kalam-23776e.netlify.app/restaurantwebsite/ -->
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style(1).css">
+    <title>Responsive Website!</title>
+    <style type="text/css">@font-face {
+        font-family: 'rbicon';
+        font-weight: normal;
+        font-style: normal;
+    }
+    </style>
+</head>
+
+<body>
+<audio class="audio-for-speech" src=""></audio>
+<div class="translate-tooltip-mtz hidden">
+    <div class="header">
+        <div class="header-controls">
+            <span class="sound-translate"></span>
+            <span class="settings"></span>
+        </div>
+        <div class="translate-icons">
+            <img class="from" src="https://jolly-kalam-23776e.netlify.app/restaurantwebsite/">
+            <img class="arrow" src="chrome-extension://hiidjliailpkjeigakikbfedlfijngih/images/right-arrow.png">
+            <img class="to" src="https://jolly-kalam-23776e.netlify.app/restaurantwebsite/">
+        </div>
+    </div>
+    <div class="translated-text">
+        <div class="words"></div>
+        <div class="sentences"></div>
+    </div>
+    <div class="controls">
+        <div class="controls__control-wrapper">
+                            <span class="controls__description">
+                                Fast traslate
+                            </span>
+            <span class="controls__toggle dbl-click active" data-store="double_click">
+                                <div class="controls__inner-circle"></div>
+                            </span>
+        </div>
+        <div class="controls__control-wrapper">
+                            <span class="controls__description">
+                                Icon translate
+                            </span>
+            <span class="controls__toggle icon-trans active" data-store="icon_trans">
+                                <div class="controls__inner-circle"></div>
+                            </span>
+        </div>
+    </div>
+</div>
+<span class="translate-button-mtz hidden" style="top: 734px;left: 395.2265625px;"></span>
+
+<div class="wrapper">
+    <nav class="menu">
+        <button aria-expanded="false" aria-controls="menu-list">
+            <span class="open">☰</span>
+            <span class="close">×</span>
+            Menu
+        </button>
+        <ul id="menu-list">
+            <li>
+                <a href="">Tacos</a>
+            </li>
+            <li>
+                <a href="">Beers</a>
+            </li>
+            <li>
+                <a href="">Wines</a>
+            </li>
+            <li>
+                <a href="">Desserts</a>
+            </li>
+            <li>
+                <a href="">Reservations</a>
+            </li>
+        </ul>
+    </nav>
+    <div class="top">
+        <header class="hero">
+            <h1>Terry's Taco Joint</h1>
+            <p>Pretty Good Tacos!</p>
+        </header>
+        <div class="cta cta1">
+            <p class="price">$1.99</p>
+            <p>Tacos</p>
+        </div>
+        <div class="cta cta2">
+            <p class="price">$3.99</p>
+            <p>Kombucha</p>
+        </div>
+
+    </div>
+
+    <section class="features">
+        <div class="feature">
+            <span class="icon">🌮</span>
+            <h3>Tacos</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi, assumenda.</p>
+        </div>
+        <div class="feature">
+            <span class="icon">🍺</span>
+            <h3>Beer</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi, assumenda.</p>
+        </div>
+        <div class="feature">
+            <span class="icon">&#9976;</span>
+            <h3>Wine</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi, assumenda.</p>
+        </div>
+        <div class="feature">
+            <span class="icon">🎵</span>
+            <h3>Music</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi, assumenda.</p>
+        </div>
+    </section>
+
+    <section class="about">
+        <img src="css/queso-taco.png" alt="Yummy Taco" class="about__mockup">
+        <div class="about__details">
+            <h2>Featured Taco</h2>
+            <p>Slim Profile, easy to hold and loaded with cheese.</p>
+            <p>This is the one you have been waiting for</p>
+            <button>Learn More →</button>
+        </div>
+    </section>
+
+
+    <section class="gallery">
+        <h2>Instant Grams</h2>
+        <img src="css/201x201" alt="">
+        <img src="css/202x202" alt="">
+        <img src="css/203x203" alt="">
+        <img src="css/204x204" alt="">
+        <img src="css/205x205" alt="">
+        <img src="css/206x206" alt="">
+        <img src="css/207x207" alt="">
+        <img src="css/207x208" alt="">
+        <img src="css/207x209" alt="">
+        <img src="css/207x210" alt="">
+    </section>
+</div>
+
+<script>
+    const navButton = document.querySelector('button[aria-expanded]');
+
+    function toggleNav({target}) {
+        const expanded = target.getAttribute('aria-expanded') === 'true' || false;
+        navButton.setAttribute('aria-expanded', !expanded);
+    }
+
+    navButton.addEventListener('click', toggleNav);
+</script>
+
+
+<div id="rememberry__extension__root" style="all: unset;"></div>
+</body>
+<div></div>
+</html>
