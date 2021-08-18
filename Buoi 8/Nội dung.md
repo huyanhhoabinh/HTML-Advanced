@@ -18,5 +18,5 @@ a:active {color:navy;}: Đường link đang được nhấp chuột vào.
 
 4)Giao bài tập trong giờ .
 Làm cho chú bài này.
-![](img_2.png)
+![](../Buoi%209/img_2.png)
 5)CHo bài tập về nhà gửi qua mail

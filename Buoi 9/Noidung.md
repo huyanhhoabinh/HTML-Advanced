@@ -1,4 +1,18 @@
-4) Giới thiệu qua về các loại selector :
+1) Review lại kiến thức cũ 10 phút.
+   Flex box.
+   Demo bằng thằng này:
+   https://xuanthulab.net/su-dung-flexbox-bo-cuc-trang-trong-css.html
+Anh thấy anh dạy nó chưa hiểu thằng flex lắm, buổi trước 
+2) Chua bai tap ve nha buoi 8
+
+
+7h30 nhé, link học: https://meet.google.com/hhh-dwwz-eac
+Tài khoản để có quyền accept
+email: its.academy.info@gmail.com
+pass: Yd$4ZYt&nqnA%54n2%&Mz&#SssFf6*Q9
+Optional :
+
+5) Giới thiệu qua về các loại selector :
 1. Basic CSS Selectors
 2. Descendant CSS Selectors
 3. Multiple CSS Selector
