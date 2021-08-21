@@ -1,0 +1,34 @@
+<html>
+	<head>
+	<title>Tim so lon nhat</title>
+		
+	</head>
+	<body>
+	<script>
+			var x="3532526";
+			console.log(x);
+			var i;
+			var max=0;
+			var vt=0;
+			
+			function transformtoArray(){
+			for(i=0;i<x.length;i++){
+			
+				if(parseInt(x.charAt(i))>max){
+						max=parseInt(x.charAt(i));
+						vt=i;
+					}
+				}
+				document.getElementById("demo").innerHTML=max+" "+vt;
+			}
+			
+			
+			
+		</script>
+		<form>
+			
+			<button onclick="transformtoArray()">Nhan gia tri!</button>
+			<p id="demo"></p>
+		</form>
+	</body>
+</html>

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+	button{
+		width:80px;
+        text-align: center;
+	}
+	</style>
+</head>
+
+<body onload="load()">
+	<input type="text" id="name" placeholder="press name">
+	<input type="text" id="value" placeholder="press value">
+	<input type="text" id="time" placeholder="press time exp">
+	<button onclick="add()">Add</button><br>
+	<input type="text" id="nameSearch" placeholder="press name">
+	<button onclick="search()">Search</button><span id="result"></span><br>
+	<input type="text" id="nameDelete" placeholder="press name to delete">
+	<button onclick="delete1()">Delete</button><br>
+	<input type="text" id="cookieFixName" placeholder="press name">
+	<input type="text" id="cookieFixValue" placeholder="press fixed value">
+	
+	<button onclick="replace()">Fix</button><br>
+	<button onclick="deleteAll()">DeleteAll</button>
+</body>
+<script>
+var name1="";
+var value1="";
+var nameSearch="";
+var mang=[];
+var nameDelete="";
+var valueDelete="";
+var cookieFixName="";
+var cookieFixValue="";
+
+var exdays1=document.getElementById("time").value;
+	function setCookie(cname, cvalue, exdays) {
+    var d = new Date();
+    d.setDate(d.getDate() + parseInt(exdays));
+    var expires = "expires="+ d.toUTCString();
+    document.cookie = cname + "=" + cvalue + "; " + expires;
+    console.log(document.cookie);
+   
+	}
+	function setCookieDelete(namevalue) {
+    var d = new Date();
+    d.setDate(d.getDate() -1);
+    var expires = "expires="+ d.toUTCString();
+    document.cookie = namevalue+"; " + expires;
+    
+   
+	}
+	function deleteAll(){
+		mang=(document.cookie).split(";");
+		 for(var x=0;x< mang.length;x++){
+                  var b="";   
+              b=mang[x];
+              setCookieDelete(b);
+          }
+          console.log(document.cookie);
+	}
+	function add(){
+	name1=document.getElementById("name").value;
+	value1=document.getElementById("value").value;
+	
+	setCookie(name1,value1,exdays1);
+	}
+	function search(){
+   nameSearch=document.getElementById("nameSearch").value;
+   document.getElementById("result").innerHTML=find(nameSearch);
+	}
+	function delete1(){
+  nameDelete=document.getElementById("nameDelete").value;
+  valueDelete=find(nameDelete);
+  if(valueDelete==""){alert("Not have cookie");}else{
+  	 setCookie(nameDelete,valueDelete,-1);
+  console.log(document.cookie);
+  }
+ 
+	}
+ 	function find(name) {
+ 				mang=(document.cookie).split(";");
+                for (var x = 0; x < mang.length; x++) {
+                    var b = "";
+                    b = mang[x];
+                    var a=b.split("=");
+                    if (a[0].trim()==name.trim()) 
+                        return b.split('=')[1];
+                }
+                return "";
+    }
+	function replace(){
+	cookieFixName=document.getElementById("cookieFixName").value;
+	cookieFixValue=document.getElementById("cookieFixValue").value;
+	document.cookie=cookieFixName+'='+cookieFixValue;
+	console.log(document.cookie);
+	}
+	function load(){
+		console.log(document.cookie);
+		document.getElementById("name").value="";
+		document.getElementById("value").value="";
+		document.getElementById("nameSearch").value="";
+		document.getElementById("nameDelete").value="";
+		document.getElementById("cookieFixName").value="";
+		document.getElementById("cookieFixValue").value="";
+	}
+</script>
+</html>

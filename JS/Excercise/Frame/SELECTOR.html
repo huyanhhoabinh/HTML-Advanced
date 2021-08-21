@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+   <script>
+      $(document).ready(function() {
+   
+   
+   var parentall=$('[title="hihi"]').parent();
+   
+   var dodai=$(parentall).children().length;
+   
+   var allchild=$(parentall).children().slice($(parentall).children().index($('p[title="hihi"]')),dodai-2);
+   console.log($(parentall).children().index($('p[title="hihi"]')));
+   $(allchild).not("div").css("font-size","40px");
+  // $(allchild).filter("p").css("font-size","40px");
+   // $(allchild).filter("a").css("font-size","50px");
+   
+   
+});
+   </script>
+</head>
+
+<body>
+    
+	<a>
+            <a> 1 </a>
+            <p>910101</p>
+            <a>234702j</a>
+            <p title="hihi" style="color:red"> 2 </p>
+            <p> 3 </p>
+            <p> 4 </p>
+            <a> 5.0 </a>
+            <div> 5.1 </div>
+            <div> Henho </div>
+            <a> 6.0 </a>            
+            <p> 7 </p>
+            <p> 8</p>
+            <div> 5.1 </div>
+            <p> 9</p>
+            <div> 5.1 </div>
+            <p> 10</p>
+            <div>9999</div>
+            <div>11</div>
+            <p>12</p>
+            <span>13</span>
+    </a>
+</body>
+
+</html>

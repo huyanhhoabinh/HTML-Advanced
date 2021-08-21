@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script>
+		var myWin="";
+		var w=500;
+		var h=400;
+		var x =navigator.appCodeName ;
+		console.log(x);
+ 		function  popUp() {
+ 			var left=(window.innerWidth-w)*0.5+window.screenX;
+ 			var top=(window.innerHeight-h)*0.5+window.screenY;
+ 			myWin=window.open("","",'width=' + w + ', height=' + h + ', top=' + top + ', left=' + left);
+ 			myWin.document.write('<form action="">Textbox 1: <input type="text" value="123" id="tb1"></input><br>CheckBox <input type="checkbox" id="cb1" > value1 </input> <input type="checkbox" id="cb2"> value2 </input> <input type="checkbox" id="cb3"> value3 </input><br>Textbox 2: <input type="text" value="abc" id="tb2"></input><br>Textbox 3: <input type="text" value="15656" id="tb3"></input><div id="dv"> a</div></form>');
+ 				myWin.focus();
+ 		}
+ 		
+ 		function disableandclear(){
+ 			if(navigator.appVersion.search("Chrome")>0){alert("Không thể chạy trên trình duyệt Chrome. Hãy sử dụng Firefox");
+ 			myWin.close ();
+ 		}
+ 			else{
+ 				myWin.focus();
+ 				myWin.document.getElementById('tb1').value="";
+ 				myWin.document.getElementById('tb2').value="";
+ 				myWin.document.getElementById('tb3').value="";
+           
+			
+ 			}
+          
+ 			
+ 		
+ 		}
+ 		function checkallbox(){
+ 			 	myWin.focus();
+ 				if(navigator.appVersion.search("Chrome")>0){alert("Không thể chạy trên trình duyệt Chrome. Hãy sử dụng Firefox");myWin.close ();} else{	
+ 				myWin.document.getElementById('cb1').checked =true;
+ 				myWin.document.getElementById('cb2').checked =true;
+ 				myWin.document.getElementById('cb3').checked =true;
+ 			 	
+ 			}
+ 		}
+ 		function alertwindowsize(){
+		myWin.focus();
+            myWin.alert("chieu dai"+w+":chieu cao"+h);
+            
+ 		}
+ 		function closenewwindown(){
+ 			myWin.close ();
+ 		}
+	</script>
+</head>
+<body>
+	 <button onclick="popUp()">Opennewwindow</button><br>
+     <button onclick="disableandclear()">Disable and clear all textBox</button><br>
+     <button onclick="checkallbox()">Check all check box</button><br>
+     <button onclick="alertwindowsize()">Alert window size</button><br>
+     <button onclick="closenewwindown()">close new window</button>
+</body>
+</html>

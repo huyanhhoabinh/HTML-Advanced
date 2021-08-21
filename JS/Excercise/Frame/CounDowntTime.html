@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+   <script type="text/javascript">
+
+   var timer = setTimeout(runtime, 1000);
+   var count=0;
+   var hour;
+   var minute;
+   var second;
+   var total;
+   var time1=setTimeout(runTimeDown, 100);
+   var yeah=0;
+   //var countTime=setTimeout(runTimeDown, 1000);
+   function nhan(){
+    yeah++;
+    if(yeah==1) nhan1();
+  }
+   function nhan1(){
+   		hour=parseInt(document.getElementById("hour").value);
+   		minute=parseInt(document.getElementById("minute").value);
+   		second=parseInt(document.getElementById("second").value);
+   		total=parseInt(hour*3600+minute*60+second);
+   		if((!isNaN(hour))&&(!isNaN(minute))&&(!isNaN(second))){
+   			timer1 = setTimeout(runTimeDown, 1000);
+
+   		}else{
+   			alert("XIn vui long nhap du du lieu cho cac o");
+        yeah=0;
+   		}
+   		
+
+   }
+   function runTimeDown(){
+    if(((isNaN(hour))&&(isNaN(minute))&&(isNaN(second)))){document.getElementById("countTime").innerHTML="--:--:--"}else
+   	if(total>=0){
+      var gio=Math.floor(total/3600)<10?"0"+Math.floor(total/3600):Math.floor(total/3600);
+      var phut=Math.floor(total/60)<10?"0"+Math.floor(total/60):Math.floor(total/60);
+      var giay=(total%60)<10?"0"+Math.floor(total%60):Math.floor(total%60);
+      
+      //document.getElementById("countTime").innerHTML=Math.floor(total/3600)+":"+Math.floor(total/60)+":"+(total%60);
+      document.getElementById("countTime").innerHTML=gio+":"+phut+":"+giay;
+      //(Math.floor(total/3600)<10?"0"+Math.floor(total/3600):Math.floor(total/3600))
+    }
+   	else{
+      var gio1=Math.ceil(total/3600)>-10?(""+Math.ceil(total/3600)).replace('-','-0'):Math.ceil(total/3600);
+      if(Math.ceil(total/3600)==0){
+        gio1="00";
+      }
+      var phut1=Math.ceil(total/60)>-10?(""+Math.ceil(total/60)).replace('-','-0'):Math.ceil(total/60);
+      if(Math.ceil(total/60)==0){
+        phut1="00";
+      }
+      var giay1=(total%60)>-10?(""+Math.ceil(total%60)).replace('-','-0'):Math.ceil(total%60);
+      if((total%60)==0){
+        giay1="00";
+      }
+   		document.getElementById("countTime").innerHTML=gio1+":"+phut1+":"+giay1;
+   	}
+   		
+   		
+   		total--;
+   		if(total==-1) alert("Het gio roi nhe!");
+   		time1=setTimeout(runTimeDown, 1000);
+
+   }
+   function runtime(){
+    count++;
+    if (count==1) document.getElementById("countTime").innerHTML="--:--:--"
+    if(count==1) clearTimeout(time1);
+		document.getElementById("timenow").innerHTML=Date();
+		timer = setTimeout(runtime, 1000);
+}
+    function reset1(){
+    	
+    	yeah=0;
+    	clearTimeout(time1);
+    	document.getElementById("countTime").innerHTML="--:--:--";
+      count=1;
+    }
+   </script>
+</head>
+<body onload="runtime()">
+	<span id="timenow"></span>
+	<br>
+	<input type="text" id="hour" placeholder="enter hour">
+	<input type="text" id="minute" placeholder="enter minute">
+	<input type="text" id="second" placeholder="enter second">
+	<input type="button" onclick="nhan()" value="Nhan"><br>
+	<span id="countTime" style="font-size:30px;"></span><br>
+	<input type="button" onclick="reset1()" value="Reset">
+</body>
+</html>

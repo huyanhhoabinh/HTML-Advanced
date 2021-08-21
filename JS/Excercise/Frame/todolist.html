@@ -1,0 +1,200 @@
+<html>
+	<head>
+	<title>
+	Todo List
+	
+	</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css"/>
+	</head>
+	<body>
+		<script>
+		var name,work,day,tim;
+		var array=[];
+		var index=0;
+		var totalitem=0;
+		var max=0;
+			
+			/*function Nhan(){
+				
+				
+				
+				name=document.getElementById("name").value;
+				
+				work=document.getElementById("work").value;
+				
+				day=document.getElementById("day").value;
+				if((name!="")&&(work!="")&&(day!="")){
+				store();
+				}
+				
+			}
+			function store(){
+			   array[index]=name+"|"+work+"|"+day;
+			   console.log(array[index]);
+			   hienthi();
+			   index=index+1;
+			}
+			
+			function hienthi() {
+			
+			for(var x=0;x<=index;x++){
+				
+				var node = document.createElement("LI");
+				var textnode = document.createTextNode("STT"+x+"-"+array[x]);
+				node.appendChild(textnode);
+				document.getElementById("myList").appendChild(node);
+			}
+			
+			}
+			function xoa(){
+				vt=document.getElementById("index").value;
+				if(vt<=index){
+				delete array[vt];
+				for(var i=vt;i<=index;i++){
+					var i=array[i+1];
+					array[i]=i;
+					
+				}
+				index=index-1;
+				}
+				
+				hienthi();
+			}*/
+			
+			function Nhan(){
+			
+			
+				name=document.getElementById("name").value;
+				
+				work=document.getElementById("work").value;
+				
+				day=document.getElementById("day").value;
+				
+				
+				lam(document.getElementById('myList'),name+" "+work+" "+day);
+				//array[index]=name+" "+work+" "+day;
+				//index=index+1;
+				//console.log(array);
+			}
+			function updateItem(){
+				var cbId=this.id.replace("cb_","");
+				//alert(cbId);
+				var itemText=document.getElementById("item_"+cbId);
+				if(this.checked){
+				itemText.style.textDecoration="line-through";
+				}else{
+				itemText.style.textDecoration="none";
+				}
+				
+				
+			}
+			function lam(list,text){
+				max=max+1;
+				var danhsach=document.createElement('LI');
+				danhsach.id="li_"+totalitem;
+				var checkbox=document.createElement('input');
+				checkbox.type='checkbox';
+				checkbox.id="cb_"+totalitem;
+				checkbox.onclick=updateItem;
+				var button=document.createElement('button');
+				button.type="button";
+				button.innerText="X";
+				button.id="button_"+totalitem;
+				button.onclick=remove;
+				
+				var span=document.createElement('span');
+				span.innerText=text;
+				span.id="item_"+totalitem;
+				span.onclick=rename;
+				danhsach.appendChild(checkbox);
+				
+				danhsach.appendChild(span);
+				danhsach.appendChild(button);
+				list.appendChild(danhsach);
+				array.push(span.innerText);
+				totalitem++;
+				
+				
+			}
+			function lam2(list,text){
+				
+				var danhsach2=document.createElement('LI');
+				
+				var checkbox2=document.createElement('input');
+				checkbox2.type='checkbox';
+				
+				
+				var button2=document.createElement('button');
+				button2.type="button";
+				button2.innerText="X";
+				
+				
+				var span2=document.createElement('span');
+				span2.innerText=text;
+				
+				
+				danhsach2.appendChild(checkbox2);
+				
+				danhsach2.appendChild(span2);
+				danhsach2.appendChild(button2);
+				list.appendChild(danhsach2);
+				
+				
+				
+				
+			}
+			function rename(){
+				var name=prompt("New Name");
+				this.innerText=name;
+				
+			}
+			function remove(){
+				max=max-1;
+				var spanId=this.id.replace("button_","");
+				console.log(spanId);
+				var yeah=document.getElementById("li_"+spanId);
+				
+				yeah.style.display="none";
+				array.splice(spanId,1);
+				
+			}
+			function kiem(){
+				
+				tim=document.getElementById("tim").value;
+				console.log("ok");
+				
+				for(var i=0;i<max;i++){
+				 if((array[i]).search(tim)>=0){
+					lam2(document.getElementById('mysearch'),array[i]);
+				 }
+				}
+				
+			}
+			
+		</script>
+		<div id="input">
+		<form>
+		<!-- thuộc tính required thì nó sẽ bắt buộc chúng ta phải điền -->
+			<input type="text" id="name" placeholder="name" required></input><br>
+			<input type="text" id="work" placeholder="work" required></input><br>
+			<input type="date" id="day" placeholder="date" required></input><br>
+			<input type="text" id="tim" placeholder="index"></input><br>
+			<button type="button" id="them" onClick="Nhan()">Add</button>
+			<button type="button" id="them" onClick="kiem()">Search</button>
+			
+			
+			
+		</form>
+		</div>
+		<div id="display">
+			<ul id="myList">
+			
+			</ul>
+		</div>
+		<div id="putitup">
+			<ul id="mysearch">
+			
+			</ul>
+		</div>
+	</body>
+</html>

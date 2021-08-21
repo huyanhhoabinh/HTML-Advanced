@@ -1,0 +1,114 @@
+<html lang = "en">
+  <head>
+     <meta charset="utf-8" />
+     <title>My to do list</title>
+	 <link rel="stylesheet" style="text/css" />
+	<style>
+		li{
+			border: 1px solid #ccc;
+			background:#eee;
+			padding: 5px 10px;color:#000;
+			position:relative;
+		}
+		ul{
+			list-style: none;
+			 padding:0;
+			 margin:0;
+		}
+		button{
+		position:absolute;
+		top:2px;
+		right:2px;
+		}
+		
+	</style>
+  </head>
+
+  <body>
+        <h1> My To Do List </h1> <br/>
+
+		
+			<ul  id = "myList">
+		
+			</ul>
+		
+		
+	
+
+
+		<br>
+       task: <input type="text" name="yourName" id="yourName"/> <br/> <br/>
+	   who to do list: <input type="text" name="dolist" id="dolist"/> <br/><br/>
+	   date: <input type="date" name="time" id="time"> <br/> <br/>
+	   
+	   <input id="submitbutton" type="button" value="submit" onclick ="concat( getYourName(), getDolist(), getTime() );" >
+	   
+	   <br/> <br/> 
+			
+
+        
+		<script type= "text/javascript">
+		var array=[];
+		var totalitem = 0;
+		  
+			function getYourName(){
+			  return document.getElementById('yourName').value;
+			}
+			
+			function getDolist(){
+				return document.getElementById('dolist').value;
+			}
+			
+			function getTime(){
+				return document.getElementById('time').value;
+			}
+				
+			function concat(){
+			
+			    var node = document.createElement("LI");
+					node.id="li_"+totalitem;
+				
+
+			    var checkBox = document.createElement("input");
+			    checkBox.type="checkbox";
+				checkBox.id="cb_"+totalitem;
+				
+				
+				var span=document.createElement('span');
+				span.id="item_"+totalitem;
+				span.innerText = getYourName() + getDolist()+ getTime() ;
+				array.push(span.innerText);
+				console.log(array);
+				
+				
+				var del=document.createElement("button");
+				del.innerText="x";
+				del.type="button";
+				del.id="button_"+totalitem;
+				del.onclick=remove;
+				
+			
+				node.appendChild(checkBox);
+				node.appendChild(span);
+				node.appendChild(del);
+				
+				document.getElementById("myList").appendChild(node);
+				totalitem++;
+			}	 
+			
+			function remove(){
+			var spanId=this.id.replace("button_","");
+				console.log(spanId);
+				var yeah=document.getElementById("li_"+spanId);
+				
+				yeah.style.display="none";
+				array.splice(parseInt(spanId),1);
+				console.log(array);
+			
+			}
+				
+		</script>
+
+
+  </body>
+</html>
