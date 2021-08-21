@@ -4,3 +4,5 @@
 2. Lên ý tưởng làm bài tập lớn. (30 phút)
 Optional :
    1. Có thể cho làm bài tập làm 1 trang google
+3. Có thể cho làm thêm phần CSS này để các bạn ý biết về cách trang trí thêm :
+   https://www.freecodecamp.org/learn/responsive-web-design/#applied-visual-design

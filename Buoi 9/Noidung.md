@@ -2,7 +2,6 @@
    Flex box.
    Demo bằng thằng này:
    https://xuanthulab.net/su-dung-flexbox-bo-cuc-trang-trong-css.html
-Anh thấy anh dạy nó chưa hiểu thằng flex lắm, buổi trước 
 2) Chua bai tap ve nha buoi 8
 
 
@@ -12,7 +11,7 @@ email: its.academy.info@gmail.com
 pass: Yd$4ZYt&nqnA%54n2%&Mz&#SssFf6*Q9
 Optional :
 
-5) Giới thiệu qua về các loại selector :
+Giới thiệu qua về các loại selector :
 1. Basic CSS Selectors
 2. Descendant CSS Selectors
 3. Multiple CSS Selector
