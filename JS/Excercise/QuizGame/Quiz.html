@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Quiz</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+       
+        <style>
+           
+            #chao{
+               
+                height:40px;
+                
+                color: black;
+                border: 2px solid black;
+            }
+            li{
+                display:block ;
+                font-weight: bold;
+            }
+           #score{
+                font-weight: bold;
+                color: green;
+           }
+           #diem{
+                 height:40px;
+                
+                color: black;
+                border: 2px solid black;
+           }
+           #ketqua1{
+                  height:40px;
+                
+                color: black;
+                border: 2px solid black;
+           }
+        </style>
+    </head>
+    <body>
+        
+        <h2 id="chao">Câu hỏi:<span id="quizX"></span></h2>
+        <ul id="dapan">
+            
+           
+        </ul>
+         <h2 id="ketqua1">Kết quả:<span id="ketqua"></span></h2>
+         <h2 id="diem">Tổng điểm là:<span id="score"></span></h2>
+       
+        <span id="dummy"></span>
+       <audio id="myAudio">
+  
+         <source src="music/button.mp3" type="audio/mpeg">
+      
+        </audio>
+        <audio id="myAudio2">
+  
+         <source src="music/wrong2.mp3" type="audio/mpeg">
+      
+        </audio>
+
+
+         <script src="jquery-3.2.0.min.js"></script>
+        <script src="code.js"></script>
+    </body>
+</html>

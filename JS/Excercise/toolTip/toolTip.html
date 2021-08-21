@@ -1,0 +1,106 @@
+<html>
+<head>
+
+<script type="text/javascript" src="js/jquery.min.js"></script>
+
+<style type="text/css">
+	
+	.tooltip{
+		margin:8px;
+		padding:8px;
+		border:1px solid blue;
+		background-color:yellow;
+		position: absolute;
+		z-index: 2;
+	}
+	/*mình set cho nó có position là absolute thì nó sẽ k bị vướng và set cho z index để nó k bị chèn lên các phần tử*/
+</style>
+
+</head>
+
+<body>
+<p>
+
+		Dân trí  ›   Xã hội  ›   Thứ Ba, 14/03/2017 - 11:56
+Bình Định:
+
+Vụ cha làm Chi cục trưởng, con làm phó: Thiếu sót trong quy trình bổ nhiệm
+
+Chia sẻ  
+Dân trí Đó là khẳng <label title="xin chao">định của ông Trần Châu, Phó Chủ tịch UBND tỉnh Bình Định, về việc “Cha giữ chức Chi cục trưởng Chi cục Kiểm lâm, con làm phó” xảy ra tại Bình Định.</label>
+ >> Cha giữ chức Chi cục trưởng, con làm Phó: "Khi bổ nhiệm đã cân nhắc rất kỹ" (!)
+Ngày 13/3, trao đổi với báo chí, ông Trần Châu, Phó Chủ tịch UBND tỉnh Bình Định, cho biết đoàn công tác của Thanh tra Bộ Nội vụ đã vào địa phương làm việc với Sở NN&PTNT Bình Định để tìm hướng xử lý vụ việc nói trên.
+
+Hiện nay, ông Nguyễn Hiếu Hòa đã thôi kiêm nhiệm chức Chi cục trưởng Chi cục Kiểm lâm để đảm nhiệm công việc Phó Giám đốc Sở NN&PTNT Bình Định. Ngoài ra, Sở này cũng đã kiểm điểm và rút kinh nghiệm vì để xảy ra thiếu sót trong thủ tục bổ nhiệm cán bộ tạo ra luồng dư luận không tốt tại địa phương.
+
+
+<label title="chuc to lam">Ông Nguyễn Hiếu Hòa </label> đã thôi kiêm nhiệm chức Chi cục trưởng Chi cục Kiểm lâm để đảm nhiệm công việc Phó Giám đốc Sở NN&PTNT Bình Định.
+Ông Nguyễn Hiếu Hòa đã thôi kiêm nhiệm chức Chi cục trưởng Chi cục Kiểm lâm để đảm nhiệm công việc Phó Giám đốc Sở NN&PTNT Bình Định.
+“Qua buổi làm việc thì quá trình bổ nhiệm cán bộ không sai gì lớn mà chỉ thiếu một vài thủ tục. Trách nhiệm này thuộc về Sở NN&PTNT nên Sở đã kiểm điểm và rút kinh nghiệm”- ông Châu cho hay.
+
+Trong khi đó, ông Phan Trọng Hổ, Giám đốc Sở NN&PTNT Bình Định cho rằng: “Việc ông Nguyễn Hiếu Hòa, Phó Giám đốc Sở NN&PTNT kiêm Chi cục trưởng Chi cục Kiểm lâm là không sai. Vì trong luật không có quy định cấm cha làm Chi cục trưởng, con làm Chi cục phó cả. Hiện nay, Thanh tra Bộ Nội vụ đã vào làm việc và có thông tin quá trình bổ nhiệm cán bộ (bà <label title="chao he he">Nguyễn Thị Anh Nguyên</label>, con gái ông Hòa) có thiếu sót về thủ tục nhưng những thiếu sót này là không lớn. Đồng thời, Thanh tra cũng đề nghị Sở nghiêm túc tiếp thu, còn kết luận cụ thể thì Sở chưa nhận được nên chưa thông tin”.
+
+Theo ông Hổ, hiện nay, UBND tỉnh Bình Định đã có quyết định cho ông Nguyễn Hiếu Hòa thôi kiêm nhiệm chức Chi cục trưởng Chi cục Kiểm lâm (từ ngày 1/1/2017) để tập trung nhiệm vụ Phó Giám đốc Sở NN&PTNT (theo quy định thông tư 14 của Bộ NNPTNT).
+
+Như Dân trí đã thông tin, ông Nguyễn Hiếu Hòa (SN 1958), giữ chức vụ Phó Giám đốc Sở NN&PTNT kiêm Chi cục trưởng Chi cục Kiểm lâm tỉnh Bình Định và bà <label title="xin chao nhe">Nguyễn Thị Anh Nguyên</label> (SN 1981, con gái ông Hòa) đang giữ chức Phó chi cục trưởng Chi cục này.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</p>
+
+
+
+
+<script type="text/javascript">
+
+$(document).ready(function() {
+	//khai báo kiểu biến này thì hàm nó sẽ chạy theo vị trí mình di chuyển con chuột
+	var changeTooltipPosition = function(event) {
+	  var tooltipX = event.pageX - 8;
+	  var tooltipY = event.pageY + 8;
+	  $('div.tooltip').css({top: tooltipY, left: tooltipX});
+	};
+	//hàm này sẽ showtooltip nó  sẽ remove cái div mà có class tooltip sau đó nó sẽ tạo 1 phần tử có nội dung lấy từ tittle và cho
+	//và append vào body
+
+	var showTooltip = function(event) {
+	  $('div.tooltip').remove();
+	  var s=$(this).attr("title");
+	  var divH=$('<div class="tooltip">'+s+'</div>');
+	  if(event.pageX>$(window).width()-100){
+	  	$(divH).css("background-color", "red");
+	  }
+	  if(event.pageY>$(window).height()-100){
+	  	$(divH).css("background-color", "blue");
+	  }
+	  divH.appendTo('body');
+	  changeTooltipPosition(event);
+	};
+
+	var hideTooltip = function() {
+	   $('div.tooltip').remove();
+	};
+//hàm này sẽ gán hành động cho các sự kiển của chuột như mousemove mouseenter và mouseleave
+//với hàm blind này thì ta có thể gán cùng lúc nhiều chức năng cho 1 đối tượng
+	$("label").bind({
+	   mousemove : changeTooltipPosition,
+	   mouseenter : showTooltip,
+	   mouseleave: hideTooltip
+	});
+});
+
+</script>
+
+</body>
+</html>

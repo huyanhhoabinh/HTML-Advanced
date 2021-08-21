@@ -1,0 +1,40 @@
+<html>
+	<head>
+	
+	</head>
+	
+	<body>
+		
+		
+		
+	
+		
+		<script type="text/javascript">
+				var mang =[1,2,3,4,5,6,4,9,10,4,5,6];
+		var max=mang[0];
+		var index=0;
+			
+			
+			function so_lon_nhat()
+				{	
+					//bắt đầu = 0
+					// so sánh từng số 1 nếu > hơn thì nhận ko loại ss tiếp
+					for(var i=1;i<mang.length;i++){
+						if(mang[i]>max){
+							max=mang[i];
+							index=i;
+						
+						}
+					}
+					console.log("Phan tu lon nhat la"+max+" tai vi tri thu "+index);
+			
+				
+				}
+
+				so_lon_nhat();
+
+		</script>
+		
+	</body>
+	
+</html>

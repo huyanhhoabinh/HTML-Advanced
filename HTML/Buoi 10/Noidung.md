@@ -6,3 +6,9 @@ Optional :
    1. Có thể cho làm bài tập làm 1 trang google
 3. Có thể cho làm thêm phần CSS này để các bạn ý biết về cách trang trí thêm :
    https://www.freecodecamp.org/learn/responsive-web-design/#applied-visual-design
+4. Email học sinh:
+   dxxdmxnstxr@gmail.com
+   xanh19vinschooltheharmony@gmail.com
+   info.nguyenthanhhung@gmail.com
+   masterd.biz@gmail.com
+   xanh19vinschooltheharmony@gmail.com
