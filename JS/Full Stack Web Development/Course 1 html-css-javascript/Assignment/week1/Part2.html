@@ -1,0 +1,98 @@
+<!DOCTYPE>
+<html>
+<head>
+	<title></title>
+	<style type="text/css">
+		fieldset{
+			border: 10px solid yellow;
+			background: lightyellow ;
+			margin-bottom: 10px;
+			width: 720px;
+
+		}
+		label{
+			width: 180px;
+			display: inline-block;
+			text-align: right;
+			text-align: top;
+		}
+		textarea{
+			width: 360px;
+			height: 50px;
+
+		}
+		.huy{
+			width: auto;
+
+		}
+		.red{
+			background-color: red;
+		}
+		.purle{
+			background-color: purple;
+		}
+		span{
+			display:inline-block;
+			width: 40px;
+			color:white;
+		}
+	</style>
+</head>
+<body>
+<h1>Please Enter Your Details For Out Dating Website!</h1>
+<form method="post" enctype="multipart/form-data" action="https://ihome.ust.hk/~rossiter/cgi-bin/show_everything.php">
+	<fieldset>
+		<legend>Your Face</legend>
+		<label for="avatar">Your image:</label>
+		<input type="file" name="fileToUpload" id="avatar" required><br>
+		<label>image preview:</label>
+		<img src="" id="preview">
+	</fieldset>
+	<fieldset>
+		<legend>Your General Details</legend>
+		<label>Name:</label>
+		<input type="text" name="name" required><br>
+		<label>Gender:</label>
+		<input type="radio" class="huy"><label style="width:auto">Male</label>
+		<input type="radio" class="huy" required><label style="width:auto">Female</label><br>
+		<label>Age:</label>
+		<input type="number" name="age" required><br>
+		<label>Date of birth:</label>
+		<input type="date" name="date"><br>
+		<label>Favorite color:</label>
+		<input type="color" name="color"><br>
+		<label>Which country:</label>
+		<select>
+			<option value="vietnam">VietNam</option>
+			<option value="campuchia">VietNam</option>
+			<option value="hongkong">VietNam</option>
+			<option value="hanoi">VietNam</option>
+			<option value="jakata">VietNam</option>
+			<option value="vietnam">VietNam</option>
+		</select>
+	</fieldset>
+	<fieldset>
+		<legend>Your indicators</legend>
+		<label>Height:</label><span class="red">Short</span><input type="range" name="Height" min="0" max="100"><span class="purle">Tall</span><br>
+		<label>Salary:</label><span class="red">Poor</span><input type="range" name="Height" min="0" max="100"><span class="purle">Rich</span>
+	</fieldset>
+	<fieldset>
+		<legend>Your Contact Information</legend>
+		<label>Email</label>
+		<input type="text" name="email" required><br>
+		<label>Phone</label>
+		<input type="tel" name="tel"><br>
+		<label>Address</label>
+		<textarea></textarea><br>
+		<label>Method to contact you:</label>
+		 <input type="checkbox" name="items" value="car"><label class="huy">Email</label>
+    	<input type="checkbox" name="items" value="teddy bear"><label class="huy">What app</label>
+    	<input type="checkbox" name="items" value="toothbrush"><label class="huy">In-app chat</label>
+	
+
+	</fieldset>
+	<input type="submit" name="Submit!" value="Send">
+
+</form>
+</body>
+</html>
