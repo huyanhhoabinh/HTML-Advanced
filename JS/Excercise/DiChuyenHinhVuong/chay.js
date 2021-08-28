@@ -35,7 +35,7 @@ function Box(object) {
 
         moveSlow();
     }
-    ;
+
     function moveSlow() {
         //truong hop ma vi tri kick chuot co toa do theo chieu ngang nho hon
         if (x > trunggianX) {
@@ -68,7 +68,7 @@ function Box(object) {
             animate = setTimeout(moveSlow, 10);
         }
     }
-    ;
+
 }
 var chay = new Box(box);
 chay.init();
