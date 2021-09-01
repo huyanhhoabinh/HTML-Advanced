@@ -8,14 +8,14 @@ Link :https://drive.google.com/drive/folders/1OB0n5kAY47muMknjKK5E-j4fBNEJjUSE?u
 - Tóm tắt các phần đã làm hôm nay (nếu không có trừ 20 coin mỗi phần) :
 + https://www.freecodecamp.org/learn/responsive-web-design/#applied-accessibility
 + https://www.freecodecamp.org/learn/responsive-web-design/#css-flexbox
-- Bài tập kiém coin chú đính kèm trên file + file ảnh sử dụng (thưởng 60 coin nếu đạt các tiêu chí) :
-    + Giống trên 90%
-    + Khi hover vào các đường link chuột sẽ đổi hình bàn tay
-    + Hover vào button thì đổi màu button
-    + Phần màu xanh với logo cái kèn thì sẽ cố định khi kéo thanh cuộn xuống.
-    + Footer có màu nền
-      Gợi ý :
-      Vói các icon hình ngọn lửa, ô tô tải, hình cục pin thì nhúng thư viện css sau :
+  - Bài tập kiém coin chú đính kèm trên file + file ảnh sử dụng (một người được thôi thưởng 60 coin nếu đạt các tiêu chí) :
+      + Giống trên 90%
+      + Khi hover vào các đường link chuột sẽ đổi hình bàn tay
+      + Hover vào button thì đổi màu button
+      + Phần màu xanh với logo cái kèn thì sẽ cố định khi kéo thanh cuộn xuống.
+      + Footer có màu nền
+        Gợi ý :
+        Vói các icon hình ngọn lửa, ô tô tải, hình cục pin thì nhúng thư viện css sau :
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
          Sử dụng thẻ:
 <i class="fa fa-3x fa-truck"></i>
