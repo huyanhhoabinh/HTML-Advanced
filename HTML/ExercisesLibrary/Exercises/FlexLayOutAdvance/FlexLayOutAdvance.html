@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Học web chuẩn</title>
+    <style>
+        /* Reset */
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        ul {
+            list-style: none;
+        }
+        body {
+            color: #a6a6a6;
+            font-family: Helvetica,sans-serif;
+            font-size: 16px;
+            line-height: 1.6;
+        }
+
+        /* Layout */
+        .learning {
+            margin: 30px auto;
+            width: 1150px;
+            display: flex;
+            flex-direction: row;
+            /*flex-wrap: wrap;*/
+        }
+        .learning > .photo {
+            background-color: #66d469;
+            flex: 1;
+            justify-content: center;
+            align-items: center;
+            display: flex;
+
+        }
+        .phototitle{
+            font-size: 20px;
+            color: white;
+        }
+        .learning > .info {
+            flex: 3;
+            padding-left: 20px;
+        }
+        .learning .info h2 {
+            color: #000;
+            font-size: 28px;
+            line-height: 1.5;
+            margin-bottom: 31px;
+        }
+        .bold-text {
+            background-color: #01bacf;
+            color: #fff;
+            display: inline-block;
+            font-style: normal;
+            padding: 0 10px;
+        }
+        .learning .info .lead-text {
+            margin-bottom: 50px;
+        }
+        .learning .info .learning-list {
+            height: 165px;
+            margin-bottom: 60px;
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+        }
+        .learning .info .more a {
+            background-color: #01bacf;
+            color: #fff;
+            display: inline-block;
+            font-size: 14px;
+            font-weight: bold;
+            height: 48px;
+            line-height: 48px;
+            min-width: 194px;
+            padding: 0 10px;
+            text-align: center;
+            text-decoration: none;
+            transition: 5s background-color;
+        }
+        .learning > .info > .more > a:hover {
+            background-color: black;
+        }
+    </style>
+</head>
+<body>
+<div class="learning">
+    <div class="photo"><p class="phototitle">Học web chuẩn<p></div>
+    <div class="info">
+        <h2>We are passionate <em class="bold-text">learning system</em> from London. Do beautiful and easy-to-use digital design &amp; web development</h2>
+        <p class="lead-text">Nullam eu justo quis mi varius malesuada nec vitae magna. Pellentesque nec volutpat neque. Praesent a imperdiet sapien, non placerat purus. Donec et finibus ante. Morbi justo enim, semper pulvinar mollis et, accumsan sed dolor.</p>
+        <div class="learning-list clearfix">
+            <div>&#129409; Custom Shortcodes</div>
+            <div>&#129409; Font Awesome Icons</div>
+            <div>&#129409; Shopping Layouts</div>
+            <div>&#129409; Visual Page Builder</div>
+            <div>&#129409; Pre-Defined Colors</div>
+            <div>&#129409; Pre-Defined Fonts</div>
+            <div>&#129409; Unlimited Shortcodes</div>
+            <div>&#129409; AJAX Transitions</div>
+            <div>&#129409; Style Changers</div>
+            <div>&#129409; Responsive Theme</div>
+            <div>&#129409; High Quality Support</div>
+            <div>&#129409; Footer Styles</div>
+            <div>&#8987; Tons of Layouts</div>
+            <div>&#8987; Unlimited Options</div>
+            <div>&#8987; Header Styles</div>
+        </div>
+        <p class="more"><a href="..">Learn more about us</a></p>
+    </div>
+</div>
+</body>
+</html>
