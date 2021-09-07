@@ -1,0 +1,3 @@
+# Bài tập ngắn trong giờ 20 phút kiếm 10 coin.
+# Dạy về @media query để làm responsive
+# Hỏi về giờ học của Vy, trừ coin...
