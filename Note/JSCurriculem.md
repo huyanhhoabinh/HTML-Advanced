@@ -34,9 +34,6 @@
   - Một số hàm hay dùng :
     - Math.random()
 - Operator Precedence
-- Loop :
-  - Loop
-  - While loop
 - Strings and Template Literals
 - Logical :
   - Taking Decisions if  else Statements
@@ -48,3 +45,16 @@
   - The switch Statement
   - Statements and Expressions
   - The Conditional (Ternary) Operator
+## 2 . JavaScript Fundamentals 2
+- Functions
+- Function Declarations vs. Expressions
+- Arrow Functions
+- Functions Calling Other Functions
+- Introduction to Objects
+- Dot vs. Bracket Notation
+- Object Methods
+- Loop :
+  - Loop
+  - While loop
+  - Looping Arrays, Breaking and Continuing
+  - Looping Backwards and Loops in Loops
