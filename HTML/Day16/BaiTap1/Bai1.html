@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Study HTML</title>
+    <style>
+        .news.clearfix {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+        }
+        .image-news img {
+            width: 300px;
+            height: 100%;
+        }
+
+        body {
+            color: #000;
+            font-family: Helvetica, sans-serif;
+            font-size: 16px;
+            line-height: 1.8;
+        }
+        .info-news {
+            width: 33%;
+            display: flex;
+            flex-direction: column;
+            margin-left: 3%;
+        }
+
+        .news .info-news h2 {
+            font-size: 30px;
+            font-weight: 400;
+            margin: 10px 0 12px;
+            text-transform: uppercase;
+        }
+
+        .news .info-news .detail a {
+            border: 2px solid #333;
+            border-radius: 4px;
+            color: #333;
+            padding: 5px 20px 1px;
+            min-width: 70px;
+            text-align: center;
+            text-decoration: none;
+            transition: 0.3s all;
+        }
+
+        .news .info-news .detail a:hover {
+            background-color: #333;
+            color: #fff;
+        }
+        .detail {
+            align-self: center;
+        }
+    </style>
+</head>
+<body>
+<section class="news clearfix">
+    <div class="image-news">
+        <img alt="" src="Dog.png">
+    </div>
+    <div class="info-news">
+        <h2>Web Thú Cưng – Chia sẻ thông tin, hình ảnh, video, cách chăm sóc thú cưng (pet)</h2>
+        <div class="inner">
+            <p>Aenean facilisis lectus ante, ut rutrum eros convallis et.<br>
+                Vestibulum ullamcorper ut leo quis tristique. Donec in erat commodo, pharetra purus ac, consectetur
+                lacus. Suspendisse odio sapien, egestas at ex sit amet, molestie sagittis est.</p>
+            <p>In id purus imperdiet nisl accumsan scelerisque. Donec nec justo sed enim dapibus rhoncus. Morbi sed elit
+                vitae metus ullamcorper efficitur.</p>
+            <p>Fusce aliquam magna id ipsum ultricies interdum. Maecenas nibh risus.</p>
+        </div>
+        <p class="detail"><a href="./">DETAIL</a></p>
+    </div>
+</section>
+</body>
+</html>
