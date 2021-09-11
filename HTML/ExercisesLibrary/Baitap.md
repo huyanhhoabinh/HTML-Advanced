@@ -10,6 +10,10 @@
 ![](Images/layout-flex.png)
 - FlexLayOut2
 ![](Images/FlexLayOut2.png)
+- FlexLayOut3
+![](Images/FlexLayOut3.png)
+- FlexLayOut4
+![](Images/FlexLayOut4.png)
 - SimpleListInstagram
 ![img.png](Images/SimpleListInstagram.png)
 - FlexLayOutAdvance

@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Học</title>
+    <style>
+        body {
+            color: #333;
+            font-family: Helvetica,sans-serif;
+            font-size: 16px;
+        }
+
+        /* Layout */
+        .best-shared {
+            margin: 20px auto;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 800px;
+        }
+        .logo {
+            margin-bottom: 15px;
+        }
+        .best-shared h2 {
+            font-size: 45px;
+            font-weight: normal;
+            margin-bottom: 25px;
+        }
+        .best-shared h2 strong {
+            color: #00aeef;
+            font-weight: 600;
+        }
+        .lead-text {
+            margin-bottom: 40px;
+        }
+        .btn-list {
+            display: flex;
+            justify-content: space-between;
+            width: 45%;
+        }
+        @media (max-width: 500px) {
+            .btn-list  {
+                flex-direction: column;
+            }
+            .btn-list div {
+                margin-top: 10px;
+            }
+        }
+
+        .btn-list div a {
+            text-decoration: none;
+            color: #fff;
+        }
+        .btn-list div {
+            background-color: #2d3032;
+            border-radius: 4px;
+            display: inline-block;
+            height: 56px;
+            line-height: 56px;
+            min-width: 170px;
+            transition: 0.3s background-color;
+            text-align: center;
+        }
+        .btn-list div:hover {
+            background-color: #00aeef;
+        }
+    </style>
+</head>
+
+<body>
+<section class="best-shared">
+    <div class="logo"><img src="Logo.png" alt=""></div>
+    <h2>Best <strong>Mobile Product</strong> Company</h2>
+    <p class="lead-text">With this beautiful mobile, you can do any things you want.</p>
+    <div class="btn-list">
+        <div><a href="#">View Plans</a></div>
+        <div><a href="#">All Features</a></div>
+    </div>
+</section>
+</body>
+</html>
