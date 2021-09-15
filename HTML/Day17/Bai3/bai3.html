@@ -1,0 +1,143 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>HTML</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+
+        ul {
+            list-style: none;
+        }
+        body {
+            color: #9a9a9a;
+            font-family: Helvetica,sans-serif;
+            font-size: 16px;
+            line-height: 1.8;
+        }
+        input[type="text"],
+        input[type="email"],
+        textarea {
+            border: 1px solid #ccc;
+            box-shadow: 0 1px 2px 0 #ddd inset;
+            /* Cần cho full-width */
+            box-sizing: border-box;
+            font-size: 15px;
+            padding-left: 20px;
+            width: 100%;
+        }
+        input[type="text"],
+        input[type="email"] {
+            height: 40px;
+        }
+        textarea {
+            font-family: Helvetica,sans-serif;
+            padding-top: 10px;
+        }
+        button {
+            background-color: #0cb8b6;
+            border: 1px solid #0cb8b6;
+            color: #fff;
+            cursor: pointer;
+            min-width: 135px;
+            padding: 11px 10px;
+            text-align: center;
+            transition: 0.3s background-color;
+        }
+        button:hover {
+            background-color: #18ccca;
+        }
+
+        /* Layout */
+        .contact-us {
+            margin: 30px auto;
+            width: 1140px;
+        }
+        .contact-us .info {
+            float: left;
+            width: 380px;
+        }
+        .contact-us h2 {
+            color: #222;
+            font-size: 29px;
+            font-weight: 500;
+            margin-bottom: 42px;
+            position: relative;
+        }
+        /* Line cho h2 */
+        .contact-us h2:after {
+            background-color: #ffb737;
+            bottom: -5px;
+            content: "";
+            display: block;
+            left: 0;
+            height: 3px;
+            width: 60px;
+            position: absolute;
+        }
+        .contact-us h3 {
+            color: #222;
+            font-size: 22px;
+            font-weight: 500;
+            margin-bottom: 32px;
+        }
+        .contact-us .contact-list li {
+            line-height: 1.4;
+            margin-bottom: 36px;
+            padding-left: 48px;
+            position: relative;
+        }
+        .contact-us .contact-list li i {
+            font-size: 27px;
+            position: absolute;
+            left: 0;
+            text-align: center;
+            width: 34px;
+        }
+        .contact-us .contact-list li a {
+            color: #9a9a9a;
+            text-decoration: none;
+        }
+        .contact-us .contact-form {
+            float: right;
+            width: 750px;
+        }
+        .contact-us .contact-form p {
+            margin-bottom: 15px;
+        }
+        .contact-us .contact-form .submit-btn {
+            margin-top: -10px;
+        }
+        .contact-us .contact-form textarea {
+            height: 114px;
+        }
+    </style>
+</head>
+<body>
+<section class="contact-us">
+    <h2>CONTACT US</h2>
+    <div class="clearfix">
+        <div class="info">
+            <h3>Contact Info</h3>
+            <ul class="contact-list">
+                <li><i class="fa fa-location-arrow"></i> 321 Awesome Street<br>
+                    New York, NY 17022</li>
+                <li><i class="fa fa-envelope-o"></i> info@companyname.com</li>
+                <li><i class="fa fa-mobile"></i> <a href="tel:+18001231234">+1 800 123 1234</a></li>
+            </ul>
+        </div>
+
+        <div class="contact-form">
+            <h3>Having Any Query! Or Book an appointment</h3>
+            <form method="" action="">
+                <p><input type="text" name="name" placeholder="Your Name" value=""></p>
+                <p><input type="email" name="email" placeholder="Your Email" value=""></p>
+                <p><input type="text" name="subject" placeholder="Subject" value=""></p>
+                <p><textarea name="message" placeholder="Message" cols="50" rows="10"></textarea></p>
+                <p class="submit-btn"><button type="submit">Send Message</button></p>
+            </form>
+        </div>
+    </div>
+</section>
+</body>
+</html>

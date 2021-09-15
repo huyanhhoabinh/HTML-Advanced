@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>HTML</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<!--    <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">-->
+    <style>
+
+        ul {
+            list-style: none;
+        }
+
+        body {
+            color: #191919;
+            font-family: Helvetica, sans-serif;
+            font-size: 15px;
+            line-height: 1.5;
+        }
+
+        /* Layout */
+        .comment {
+            margin: 30px auto;
+            width: 978px;
+        }
+
+        .comment h2 {
+            font-size: 22px;
+            font-weight: normal;
+            margin-bottom: 14px;
+        }
+
+        .comment .comment-list li {
+            background-color: #fbfbfb;
+            margin-bottom: 10px;
+            padding: 15px 15px 18px;
+        }
+
+        .comment .comment-list li:nth-child(2n) {
+            background-color: #f7f7f7;
+        }
+
+        .comment .head-commnent {
+            position: relative;
+        }
+
+        .comment .head-commnent .avatar {
+            border: 1px solid #d7d7d7;
+            font-size: 30px;
+            height: 38px;
+            padding-top: 0;
+            position: absolute;
+            right: 0;
+            text-align: center;
+            top: 0;
+            width: 38px;
+        }
+
+        .comment .head-commnent .name {
+            font-weight: 600;
+            margin-bottom: 8px;
+        }
+
+        .comment .head-commnent .name em {
+            color: #a2b70d;
+            font-style: normal;
+        }
+
+        .comment .head-commnent .time {
+            font-size: 13px;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+<section class="comment">
+    <h2>COMMENTS</h2>
+    <ul class="comment-list">
+        <li>
+            <div class="head-commnent">
+                <p class="name">By <em>A Name</em></p>
+                <p class="time">Friday, 6th April 2015 @08:15:00</p>
+                <p class="avatar"><i class="fa fa-user"></i></p>
+            </div>
+            <p class="content">Vestibulum justo libero, dapibus vitae nibh at, faucibus dignissim massa. Curabitur quis
+                urna scelerisque, dignissim turpis nec, volutpat risus.</p>
+        </li>
+
+        <li>
+            <div class="head-commnent">
+                <p class="name">By <em>A Name</em></p>
+                <p class="time">Friday, 6th April 2015 @08:15:00</p>
+                <p class="avatar"><i class="fa fa-user"></i></p>
+            </div>
+            <p class="content">Mauris nec dictum ipsum. Proin massa orci, laoreet non scelerisque in, tempor quis nunc.
+                Maecenas lacus arcu, posuere et congue sed, volutpat posuere orci.</p>
+        </li>
+
+        <li>
+            <div class="head-commnent">
+                <p class="name">By <em>A Name</em></p>
+                <p class="time">Friday, 6th April 2015 @08:15:00</p>
+                <p class="avatar"><i class="fa fa-user"></i></p>
+            </div>
+            <p class="content">Etiam ac pharetra leo. Ut vel diam sagittis, vestibulum neque et, efficitur nisi. Lorem
+                ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </li>
+    </ul>
+</section>
+</body>
+</html>
