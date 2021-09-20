@@ -6,7 +6,6 @@
 - Giới thiệu qua về JS (HTML, CSS để hiển thị, còn JS giúp web có các chức năng, sự kiện ...)
   - Các open source framework Vue, Angular, React (Typescript) cuối cùng đều dịch ra javascript
   - Chính là phần mà người ta hay nó là **front end** - để kết hợp với backend
-> ![](imgs/js.png)
 - Linking a JavaScript File :
   - Nhúng js vào file HTML (internal)
   - Js External (để 1 file js riêng)
@@ -58,3 +57,29 @@
   - While loop
   - Looping Arrays, Breaking and Continuing
   - Looping Backwards and Loops in Loops
+## 3. Developer Skills & Editor Setup
+- VS Code (format code)
+- Cài đặt Node js để cài thư viện
+- Search google, tìm kiếm lỗi trên stack over flow (câu trả lời đã được verified)
+- Debug bằng google chrome dev tool
+## 4. Ôn lại về HTML,CSS căn bản
+- Basic HTML
+- Attribute, Class and ID.
+- Basic Styling with css
+- CSS Box Model. (box sizing, flex chia layout)
+## 5. JavaScript in the Browser DOM and Events Fundamentals (thao tác với DOM của brower and các sự kiện cơ bản)
+- DOM and DOM Manipulation
+- Selecting and Manipulating Elements
+- Handling Click Events
+- Manipulating CSS Styles
+ > # Small Project :
+ >   - Guess my number
+ >   - PROJECT #2 Modal Window
+ >   - Manipulating CSS (thao tác thay đổi css với js)
+ >   - Working With Classes
+ >   - Handling an Esc Keypress Event
+ >   - PROJECT #3 Pig Game
+ >   - Rolling the Dice
+ >   - Switching the Active Player
+ >   - Holding Current Score
+ >   - Resetting the Game
