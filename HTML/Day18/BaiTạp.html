@@ -6,8 +6,10 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
     <style type="text/css">
         .container {
-            width: 70%;
+            width: 60%;
             margin: 0 auto;
+            display: flex;
+            flex-direction: column;
         }
 
         .logo span {
@@ -21,12 +23,13 @@
 
         .header .navigator {
             display: flex;
+            align-items: center;
         }
 
         .header .navigator li {
             list-style-type: none;
             margin-right: 15px;
-
+            white-space: nowrap
         }
 
         .header .navigator li a {
@@ -38,6 +41,91 @@
             display: flex;
             align-items: center;
         }
+
+        .more span {
+            position: absolute;
+            margin-top: -3px;
+            font-weight: bold;
+        }
+        .space {
+            width: 17%;
+        }
+
+        .content {
+            display: flex;
+            gap: 10px;
+        }
+
+        .content .content-left {
+            width: 28%;
+        }
+
+        .content .content-mid {
+            width: 40%;
+        }
+
+        .content .content-right {
+            width: 28%;
+
+        }
+
+        .content-left {
+            display: flex;
+            flex-direction: column;
+            row-gap: 10px;
+        }
+        @media (min-width: 374px) and (max-width: 770px){
+            .content {
+                display: flex;
+                flex-direction: column;
+            }
+        }
+
+        .content-left .row1 {
+            padding-bottom: 5px;
+            border-bottom: 1px solid greenyellow;
+        }
+
+        .content .content-mid img, .content .content-right img {
+            width: 100%;
+        }
+
+        .content .content-left img {
+            width: 50%;
+        }
+
+        .content p {
+            font-weight: bold;
+        }
+
+        .content-left .row1 {
+            display: flex;
+            gap: 10px;
+        }
+        .navigator {
+            display: flex;
+            gap: 2px;
+        }
+        .style-keyword {
+            font-family: Arial;
+            font-size: 13px;
+            color: #000;
+            border-radius: 100px;
+            background-color: #f0f0f0;
+            padding: 0 8px 0 12px;
+            height: 24px;
+            line-height: 24px;
+        }
+        .small-text {
+            display: flex;
+        }
+        img.test-image {
+            margin-top: -10px;
+        }
+        img.test-image2 {
+            margin-top: -8px;
+        }
+
     </style>
 </head>
 <body>
@@ -75,9 +163,13 @@
             <li class="parent tac-gia ">
                 <a href="/tac-gia.html" title="Tác giả">Tác giả</a>
             </li>
-
+            <li class="more">
+                <a href="#"><span>...</span></a>
+            </li>
         </ul>
-        <div class="right" style="display: flex;float: right">
+        <div class="space">
+        </div>
+        <div class="right" style="display: flex">
             <div>
                 <i class="fa fa-user"></i>
             </div>
@@ -88,10 +180,54 @@
 
     </div>
     <div class="navigator">
-
+        <img src="Resources/stat.svg" alt="" class="test-image2" height="">
+        <p class="style-keyword"># So lieu Covid-19</p>
+        <p class="style-keyword"># So lieu Covid-19</p>
+        <p class="style-keyword"># So lieu Covid-19</p>
+        <p class="style-keyword"># So lieu Covid-19</p>
+        <div style="width: 18%"></div>
+        <p class="small-text"><span style="font-weight: bold">Hoa Binh</span><span><em>27°C </em> / 24-30°C</span><img src="Resources/hazy.png" height="30px" class="test-image"></p>
     </div>
     <div class="content">
+        <div class="content-left">
+            <div class="row1" style="">
+                <img class="" src="Resources/111.jpg">
+                <p>In publishing,<br> Lorem ipsum is a placeholder text commonly</p>
+            </div>
+            <div class="row1" style="">
+                <img class="" src="Resources/anh1.jpg">
+                <p>In publishing,<br> Lorem ipsum is a placeholder text commonly</p>
+            </div>
+            <div class="row1" style="">
+                <img class="" src="Resources/anh2.jpg">
+                <p>In publishing,<br> Lorem ipsum is a placeholder text commonly</p>
+            </div>
+            <div class="row1" style="">
+                <img class="" src="Resources/anh3.jpg">
+                <p>In publishing,<br> Lorem ipsum is a placeholder text commonly</p>
+            </div>
 
+        </div>
+        <div class="content-mid">
+            <div>
+                <img class="" src="Resources/1.jpg">
+            </div>
+            <h2>Lorem ipsum is a placeholder text commonly</h2>
+            <p style="font-weight: normal">In publishing,<br>Lorem ipsum is a placeholder text commonlyLorem ipsum is a placeholder text commonly
+                Lorem ipsum is a placeholder text commonly<br>Lorem ipsum is a placeholder text commonly</p>
+        </div>
+
+        <div class="content-right">
+            <div class="">
+                <img class="" src="Resources/hung_dep_traizing_8.jpg">
+                <p>In publishing,<br> Lorem ipsum is a placeholder text commonly</p>
+            </div>
+
+            <div class="">
+                <img class="" src="Resources/tiemmui11_y_kien.jpg">
+                <p>In publishing,<br> Lorem ipsum is a placeholder text commonly</p>
+            </div>
+        </div>
     </div>
 </div>
 </body>
