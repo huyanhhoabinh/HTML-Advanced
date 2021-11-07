@@ -1,5 +1,6 @@
 # Lộ trình học JS
-Link:
+Link: https://www.udemy.com/course/the-complete-javascript-course/
+https://freesoft4download.com/the-complete-javascript-course-2021-from-zero-to-expert/
 ## 1 . JavaScript Fundamentals
 - Bắt đầu với Helloworld :
   - Cách bật console trên trình duyệt để thao tác lệnh js trực tiếp
