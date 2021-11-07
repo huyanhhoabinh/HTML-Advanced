@@ -1,0 +1,123 @@
+.support {
+    display: flex;
+    justify-content: flex-start; 
+    font-size: 12px; 
+    margin-right: 30px;
+}
+
+.contact {
+    display: flex;
+    margin-top: 6px;
+}
+
+header {
+    background-color: rgb(0, 0, 90);
+    padding: 10px;
+    padding-bottom: 0px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.headerm {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    justify-content: space-evenly;
+}
+
+.menu {
+    display: flex;
+}
+
+.dropdown1 {
+    padding: 0;
+    background-color: white;
+    color: black;
+    border: 0;
+}
+
+.menup {
+    color: black;
+    margin: 10px;
+}
+
+.jumbotron {
+    background-image: url(slider-bg-1.jpg);
+    display: flex;
+    justify-content: space-around;
+    height: 600px;
+}
+
+.box3 {
+    display: flex;
+    margin-top: -100px;
+    justify-content: center;
+}
+
+.smallbox {
+    width: 400px;
+    height: 410px;
+    border-radius: 10%;
+    background-color: white;
+    box-shadow: 0 0 6px rgb(158, 158, 158);
+    color: rgb(0, 0, 90);
+    display: flex; 
+    padding: 30px;
+    display: flex; 
+    flex-direction: column;
+    line-height: 200%;
+    margin: 0 15px 0 15px;
+}
+
+.box3logo {
+    scale: (4);
+}
+
+.img3 {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.address {
+    display: flex; 
+    justify-content: flex-end; 
+    font-size: 12px;
+}
+
+.iheader {
+    margin: 4px; 
+    color: white;
+}
+
+.dropdown .dropdown-menu {
+    position: absolute;
+    display: block;
+    background: #fff;
+    min-width: 240px;
+    top: 130%;
+    left: 0;
+    right: 0px;
+    opacity: 0;
+    padding: 0px;
+    visibility: hidden;
+    transition: all 0.3s ease-out 0s;
+    border: 0px;
+    border-top: 5px solid #e12454;
+    border-radius: 0px;
+}
+.dropdown:hover .dropdown-menu {
+    opacity: 1;
+    visibility: visible;
+    top: 115%;
+}
+
+.dropdown .dropdown-menu a {
+    color: black;
+}
+
+.headerm .dropdown a {
+    color: black!important;
+}

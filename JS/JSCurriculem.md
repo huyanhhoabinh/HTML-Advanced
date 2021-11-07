@@ -1,4 +1,5 @@
 # Lộ trình học JS
+Link:
 ## 1 . JavaScript Fundamentals
 - Bắt đầu với Helloworld :
   - Cách bật console trên trình duyệt để thao tác lệnh js trực tiếp
