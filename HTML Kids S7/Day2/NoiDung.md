@@ -4,4 +4,3 @@
 - Cách tạo ra 1 tables
   https://www.w3schools.com/html/html_tables.asp
 - Làm bài tập thời khóa biểu
-- 

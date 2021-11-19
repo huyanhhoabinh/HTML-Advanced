@@ -1,0 +1,3 @@
+- Làm lại về table
+- Free code camp dạy phần HTML đến bài 12/20
+- Làm bài tập thời khóa biểu
