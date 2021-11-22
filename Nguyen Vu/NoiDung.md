@@ -1,0 +1,4 @@
+- Hỏi qua cháu học tới đâu rồi.
+- Cháu đã làm đươc những phần nào.
+- Có thể lấy bài của lớp T4T7 ra để kiểm tra cháu đã học được tới đâu
+- Có thể cho làm free code camp
