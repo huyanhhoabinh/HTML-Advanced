@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset=utf-8/>
+    <title>JS DOM paragraph style</title>
+
+</head>
+<body>
+<p id='text'>JavaScript Exercises - w3resource</p>
+<p id='tex2'>JavaScript Exercises - w3resource</p>
+<div>
+    <button id="jsstyle"
+            onclick="jsStyle()">Style
+    </button>
+    <button id="jsstyle1"
+            onclick="jsContent()">Style
+    </button>
+</div>
+<script type="application/javascript">
+    var text = document.getElementById("text");
+    var text2 = document.getElementById("tex2");
+
+    function jsStyle() {
+        //font styles added by JS:
+        text.style.fontSize = "14pt";
+        text.style.fontFamily = "Comic Sans MS";
+        text.style.color = "green";
+    }
+
+    function jsContent() {
+        //font styles added by JS:
+        text2.innerHTML = "change text";
+    }
+</script>
+</body>
+</html>
