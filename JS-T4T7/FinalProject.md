@@ -1,5 +1,5 @@
 - Todo List
 - Caculator Simple
 - Bootstrap :
-  - Carosel
+  - Carosel bằng js thuần
   - 
