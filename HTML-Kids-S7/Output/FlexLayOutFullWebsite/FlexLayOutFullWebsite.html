@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        .container {
+            display: flex;
+            flex-direction: column;
+        }
+        body {
+            font-family: sans-serif;
+        }
+
+        /*header*/
+        .header {
+            background: linear-gradient(120deg, gray, lightgray, gray);
+            text-align: center;
+            padding: 2em 1em;
+        }
+
+        /**navigation bar**/
+        .nav {
+            display: flex;
+            background-color: #333;
+        }
+
+        /*menu*/
+        .menu {
+            flex: 70%;
+            padding: 0.6em;
+        }
+
+        .nav a {
+            text-decoration: none;
+            color: white;
+            margin: 1em;
+        }
+
+        .nav a:hover:not(.active) {
+            font-weight: bold;
+            color: #ffa366;
+        }
+
+        .active {
+            color: orange;
+            font-weight: bold;
+        }
+
+        /*search*/
+        .search-zone {
+            flex: 30%;
+            margin: 0.5em;
+        }
+
+        .search-zone input[type="text"] {
+            width: 100%;
+            padding: 0.3em;
+            border-radius: 1em;
+            border: 1px solid gray;
+            outline: none;
+        }
+
+        .search-zone input[type="text"]:focus {
+            background-color: lightgray;
+        }
+
+        /**content**/
+        .section {
+            display: flex;
+        }
+
+        /*left side*/
+        .aside {
+            flex: 32%;
+            background-color: #e0e0e0;
+            padding: 1em;
+        }
+
+        #fakeimg1 {
+            height: 12em;
+            background-color: darkgray;
+            border-radius: 2px;
+            width: 100%;
+        }
+
+        #fakeimg2 {
+            height: 12em;
+            background-color: darkgray;
+            border-radius: 2px;
+            width: 100%;
+        }
+
+        #fakeimg3 {
+            height: 12em;
+            background-color: darkgray;
+            border-radius: 2px;
+            width: 100%;
+        }
+
+        #fakeimg4 {
+            height: 12em;
+            background-color: darkgray;
+            border-radius: 2px;
+            width: 100%;
+        }
+
+        .contact-box .box {
+            width: 100%;
+            height: 2em;
+            margin-top: 0.5em;
+            border-radius: 4px;
+            background-color: darkgray;
+        }
+
+        /*main side*/
+        .article {
+            flex: 68%;
+            background-color: #f8f8f8;
+            padding: 1em;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .post h1 {
+            font-size: 32px;
+        }
+
+        /*footer*/
+        .footer {
+            background-color: #333;
+            text-align: center;
+            color: white;
+            padding: 0.6em;
+        }
+
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="header">
+        <h1>Website's Logo</h1>
+    </div>
+    <div class="nav">
+        <div class="menu">
+            <a class="active" href="#link">Home</a>
+            <a href="#link">News</a>
+            <a href="#link">Something</a>
+            <a href="#link">Something</a>
+        </div>
+        <div class="search-zone">
+            <form>
+                <input placeholder="Search..." type="text">
+            </form>
+        </div>
+    </div>
+    <div class="section">
+        <div class="aside">
+            <h1>About me</h1>
+            <p>Lorem ipsum dolor sit amet</p>
+            <p>consectetur adipiscing elit. Proin pulvinar vehicula ex, ac efficitur metus efficitur eu. Vestibulum
+                tincidunt quam urna, quis venenatis risus hendrerit sit amet. Maecenas vulputate ultrices maximus</p>
+            <div id="fakeimg4">
+                Image
+            </div>
+            <h1>Contact</h1>
+            <p>consectetur adipiscing elit. Proin pulvinar vehicula ex, ac efficitur metus efficitur eu. Vestibulum .
+                Maecenas vulputate ultrices maximus</p>
+            <div class="contact-box">
+                <div class="box">Facebook</div>
+                <div class="box">Instagram</div>
+                <div class="box">Twitter</div>
+                <div class="box">Github</div>
+            </div>
+        </div>
+        <div class="article">
+            <div class="post">
+                <h1>Your post topic: bla bla bla</h1>
+                <div id="fakeimg1">Image</div>
+                <p>Sed massa neque, convallis vel mauris nec, ornare iaculis lorem. Praesent et sapien eu tellus rutrum
+                    scelerisque. Ut id purus venenatis, suscipit tellus vel, bibendum nunc. Phasellus vel mauris vel mi
+                    elementum tempor a et odio</p>
+                <p>Sed massa neque, convallis vel mauris nec, ornare iaculis lorem. Praesent et sapien eu tellus rutrum
+                    scelerisque.</p>
+            </div>
+            <div class="post">
+                <h1>Your post topic: bla bla bla</h1>
+                <div id="fakeimg2">Image</div>
+                <p>Sed massa neque, convallis vel mauris nec, ornare iaculis lorem. Praesent et sapien eu tellus rutrum
+                    scelerisque. Ut id purus venenatis, suscipit tellus vel, bibendum nunc. Phasellus vel mauris vel mi
+                    elementum tempor a et odio</p>
+                <p>Sed massa neque, convallis vel mauris nec, ornare iaculis lorem. Praesent et sapien eu tellus rutrum
+                    scelerisque.</p>
+            </div>
+            <div class="post">
+                <h1>Your post topic: bla bla bla</h1>
+                <div id="fakeimg3">Image</div>
+                <p>Sed massa neque, convallis vel mauris nec, ornare iaculis lorem. Praesent et sapien eu tellus rutrum
+                    scelerisque. Ut id purus venenatis, suscipit tellus vel, bibendum nunc. Phasellus vel mauris vel mi
+                    elementum tempor a et odio</p>
+                <p>Sed massa neque, convallis vel mauris nec, ornare iaculis lorem. Praesent et sapien eu tellus rutrum
+                    scelerisque.</p>
+            </div>
+
+        </div>
+    </div>
+    <div class="footer">
+        <h3>Your name &copy; 2xxx</h3>
+    </div>
+</div>
+</body>
+</html>
