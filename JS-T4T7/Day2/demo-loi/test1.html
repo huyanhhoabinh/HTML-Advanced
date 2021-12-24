@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <p id="p1">Hello xin chao</p>
+    <button onclick="showText()">Show</button>
+    <button onclick="hiddendText()">Hidden</button>
+    <script>
+        var p1 = document.getElementById("p1");
+        function showText() {
+            p1.style.display = "block";
+        }
+
+        function hiddendText() {
+            p1.style.display = "none";
+        }
+    </script>
+</body>
+</html>
