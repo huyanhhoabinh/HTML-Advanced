@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset=utf-8/>
+    <title>JS DOM paragraph style</title>
+
+</head>
+<body>
+<p id='tex2'>JavaScript Exercises - w3resource</p>
+<div>
+    <button id="jsstyle1"
+            onclick="jsContent()">Style
+    </button>
+</div>
+<script type="application/javascript">
+    var text2 = document.getElementById("tex2");
+    var tokens = ['Apple', 'Banana', 'The', 'Data'];
+    var randomIndex;
+
+    function jsContent() {
+        //font styles added by JS:
+        randomIndex = Math.floor(Math.random() * tokens.length)
+        text2.innerHTML = tokens[randomIndex];
+    }
+</script>
+</body>
+</html>
