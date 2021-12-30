@@ -1,4 +1,6 @@
-# Nội dung buổi học
+# Nội dung buổi học dạy về JS DOM
+
+
 1) Nội dung giảng dạy
 - Cho làm bài tập số 3 trong mục bài tập (củng cố kiến thức về array)
 - Cho các bạn làm bài tập số 5 trong mục bài tập, tính thể tích hình cầu.
