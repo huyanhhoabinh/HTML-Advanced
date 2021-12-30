@@ -1,6 +1,6 @@
 # Nội dung buổi học
-## 1. Đi lại qua về nội dung buổi số 2
-## Bổ sung thêm kiến thức về popup
-## 
-## 2. Làm nốt các bài tập
-## 3. Làm giao diện dần cho phần to do list
+1) Nội dung giảng dạy
+- Cho làm bài tập số 3 trong mục bài tập (củng cố kiến thức về array)
+- Cho các bạn làm bài tập số 5 trong mục bài tập, tính thể tích hình cầu.
+2) Thao tác với html : thêm phần tử, xoá phần tử
+- Cho làm bài tập số 

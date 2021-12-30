@@ -1,36 +1,40 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<html lang="en">
 <head>
-    <meta charset=utf-8/>
-    <title>JS DOM paragraph style</title>
+    <meta charset="utf-8">
+    <title>Volume of a Sphere</title>
+    <style>
+        body {
+            padding-top: 30px;
+        }
 
+        label, input {
+            display: block;
+        }
+    </style>
 </head>
 <body>
-<p id='text'>JavaScript Exercises - w3resource</p>
-<p id='tex2'>JavaScript Exercises - w3resource</p>
-<div>
-    <button id="jsstyle"
-            onclick="jsStyle()">Style
-    </button>
-    <button id="jsstyle1"
-            onclick="jsContent()">Style
-    </button>
-</div>
+<p>Input radius value and get the volume of a sphere.</p>
+<form action="" method="post" id="MyForm">
+    <label for="radius">Radius</label>
+    <input type="text" name="radius" id="radius" required>
+    <label for="volume">Volume</label>
+    <input type="text" name="volume" id="volume">
+    <input type="submit" value="Calculate" id="submit">
+</form>
 <script type="application/javascript">
-    var text = document.getElementById("text");
-    var text2 = document.getElementById("tex2");
-
-    function jsStyle() {
-        //font styles added by JS:
-        text.style.fontSize = "14pt";
-        text.style.fontFamily = "Comic Sans MS";
-        text.style.color = "green";
+    function volume_sphere() {
+        var volume;
+        var radius = document.getElementById('radius').value;
+        radius = Math.abs(radius);
+        volume = (4 / 3) * Math.PI * Math.pow(radius, 3);
+        volume = volume.toFixed(4);
+        document.getElementById('volume').value = volume;
+        return false;
     }
 
-    function jsContent() {
-        //font styles added by JS:
-        text2.innerHTML = "change text";
-    }
+    window.onload = document.getElementById('MyForm').onsubmit = volume_sphere;
 </script>
 </body>
+
 </html>

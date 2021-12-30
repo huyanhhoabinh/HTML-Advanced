@@ -6,25 +6,21 @@
 
 </head>
 <body>
-<p id='text'>JavaScript Exercises - w3resource</p>
+<p id='tex2'>JavaScript Exercises - w3resource</p>
 <div>
-    <button id="jsstyle"
-            onclick="hide()">Hide
-    </button>
     <button id="jsstyle1"
-            onclick="show()">Show
+            onclick="jsContent()">Style
     </button>
 </div>
 <script type="application/javascript">
-    var text = document.getElementById("text");
-    function hide() {
-        //font styles added by JS:
-        text.style.display = "none";
-    }
+    var text2 = document.getElementById("tex2");
+    var tokens = ['Apple', 'Banana', 'The', 'Data'];
+    var randomIndex;
 
-    function show() {
+    function jsContent() {
         //font styles added by JS:
-        text.style.display = "block";
+        randomIndex = Math.floor(Math.random() * tokens.length)
+        text2.innerHTML = tokens[randomIndex];
     }
 </script>
 </body>
