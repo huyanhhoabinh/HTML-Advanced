@@ -1,0 +1,1289 @@
+﻿<xml xmlns="https://developers.google.com/blockly/xml">
+  <block type="html" id="|a7%;Or^Iu)N8v!}KaWs" x="513" y="162">
+    <statement name="content">
+      <block type="head" id="{V~#sWIOu8]w7K[Rc[6$">
+        <statement name="content">
+          <block type="text_content" id="[dTnK=Nj-Vttgd1t;xms">
+            <value name="content">
+              <shadow type="textinline" id="]4pK%-`X|94b7_uK)KUE">
+                <field name="text">&lt;link rel="preconnect" href="https://fonts.googleapis.com"&gt; &lt;link rel="preconnect" href="https://fonts.gstatic.com" crossorigin&gt; &lt;link href="https://fonts.googleapis.com/css2?family=The+Nautigal&amp;display=swap" rel="stylesheet"&gt;</field>
+              </shadow>
+            </value>
+            <next>
+              <block type="style_block" id="({:+A{zO7QlJVH/][@oi">
+                <statement name="content">
+                  <block type="element_style" id="76hJj{[9.J/);JA68k1@">
+                    <value name="element">
+                      <shadow type="textinline" id="cUn[oF$,J`M`@sTw;A;z">
+                        <field name="text">.style1</field>
+                      </shadow>
+                    </value>
+                    <statement name="content">
+                      <block type="text_align" id="81I+Uz^25C)g]RlBI`)L">
+                        <field name="align">center</field>
+                        <next>
+                          <block type="text_color" id="e5/Ruaki@i}35wNp93tF">
+                            <value name="content">
+                              <shadow type="textinline" id="A%Nl7)k:Xw%wb`R28o*i">
+                                <field name="text">#ffffff</field>
+                              </shadow>
+                            </value>
+                          </block>
+                        </next>
+                      </block>
+                    </statement>
+                    <next>
+                      <block type="element_style" id="^]ghQw%bH),DS~;cZWkv">
+                        <value name="element">
+                          <shadow type="textinline" id=".7%_cRQ)3.3pP=M88]bo">
+                            <field name="text">.background1</field>
+                          </shadow>
+                        </value>
+                        <statement name="content">
+                          <block type="background_image" id="uH%a9vKYU;b:-(:!=-Mm">
+                            <value name="content">
+                              <shadow type="textinline" id="Ho})DWN!I953#fk}{Tuw">
+                                <field name="text"/>
+                              </shadow>
+                            </value>
+                            <next>
+                              <block type="background_size" id="I^G`w{`V|{^FD4LU:Fe5">
+                                <field name="options">cover</field>
+                                <next>
+                                  <block type="border_radius" id="s%%4;-dJn3BzthVkuzEj">
+                                    <field name="size">px</field>
+                                    <value name="content">
+                                      <shadow type="textinline" id="~|_H)gn51i424+gdnM$Q">
+                                        <field name="text">20</field>
+                                      </shadow>
+                                    </value>
+                                  </block>
+                                </next>
+                              </block>
+                            </next>
+                          </block>
+                        </statement>
+                        <next>
+                          <block type="element_style" id="GCn_|,%-2C=2!d`ID5hS">
+                            <value name="element">
+                              <shadow type="textinline" id="!ASoFlAb;]L%-cIQ5VuY">
+                                <field name="text">.style2</field>
+                              </shadow>
+                            </value>
+                            <statement name="content">
+                              <block type="text_align" id="dp|IFkZp[0Y/9Hv/w;%K">
+                                <field name="align">center</field>
+                              </block>
+                            </statement>
+                            <next>
+                              <block type="element_style" id="_k#6t5.br`[t@bd!_To=">
+                                <value name="element">
+                                  <shadow type="textinline" id="m!ec~oU@apB2E8-Rq`La">
+                                    <field name="text">.paragraph1</field>
+                                  </shadow>
+                                </value>
+                                <statement name="content">
+                                  <block type="font_size_value" id="c~_21Tx=+CL?]Rktz]9h">
+                                    <field name="type">px</field>
+                                    <value name="content">
+                                      <shadow type="textinline" id="H.LK5g)?yLE*{MqO4_X)">
+                                        <field name="text">20</field>
+                                      </shadow>
+                                    </value>
+                                    <next>
+                                      <block type="text_align" id="@VyevYiUE*Oqcx%Z$Cz,">
+                                        <field name="align">center</field>
+                                        <next>
+                                          <block type="padding" id="Vwk52d+rfg9!@Qao6^Dk">
+                                            <field name="unit">px</field>
+                                            <value name="content">
+                                              <shadow type="textinline" id="]N`@Hpn,BJ)|*)[Pc::9">
+                                                <field name="text">1</field>
+                                              </shadow>
+                                            </value>
+                                          </block>
+                                        </next>
+                                      </block>
+                                    </next>
+                                  </block>
+                                </statement>
+                                <next>
+                                  <block type="element_style" id="A17=?}m6){H)J/d1ns{M">
+                                    <value name="element">
+                                      <shadow type="textinline" id="KJsI:Cn2w!n;CUwq}#QR">
+                                        <field name="text">form</field>
+                                      </shadow>
+                                    </value>
+                                    <statement name="content">
+                                      <block type="text_align" id="V(egLz*hP$QWn^,[S!qN">
+                                        <field name="align">center</field>
+                                        <next>
+                                          <block type="margin_direction" id="=sEQ/dN.s-ISYy%jEE/y">
+                                            <field name="direction">top</field>
+                                            <field name="unit">px</field>
+                                            <value name="content">
+                                              <shadow type="textinline" id="HK#X-zfuIu0Sg*t--lW-">
+                                                <field name="text">0</field>
+                                              </shadow>
+                                            </value>
+                                          </block>
+                                        </next>
+                                      </block>
+                                    </statement>
+                                    <next>
+                                      <block type="element_style" id="G8%fSzn^$3Pvo4Xd8vQ.">
+                                        <value name="element">
+                                          <shadow type="textinline" id="`c0Uv?A6.y9ZF,(/e11E">
+                                            <field name="text">table, th, td</field>
+                                          </shadow>
+                                        </value>
+                                        <statement name="content">
+                                          <block type="border_set" id="x#3/o15W{m)UWZhAu5xf">
+                                            <field name="size">px</field>
+                                            <field name="type">solid</field>
+                                            <value name="content">
+                                              <shadow type="textinline" id="w#@uDny(Juf3ODR]@0#)">
+                                                <field name="text">2</field>
+                                              </shadow>
+                                            </value>
+                                            <value name="color">
+                                              <shadow type="textinline" id="?LBV#~E7!2ECUO_CUtlu">
+                                                <field name="text">#cecece</field>
+                                              </shadow>
+                                            </value>
+                                          </block>
+                                        </statement>
+                                        <next>
+                                          <block type="element_style" id="!YoK@Qohd$udUe(bc]52">
+                                            <value name="element">
+                                              <shadow type="textinline" id="HBf)-z*e]3JPsQbK@Y+U">
+                                                <field name="text">.background2</field>
+                                              </shadow>
+                                            </value>
+                                            <statement name="content">
+                                              <block type="background_color" id="cTv6z3SLO[F[Dx`etSn[">
+                                                <value name="content">
+                                                  <shadow type="textinline" id="B|6Nwa;J}#2w~Y5_^K2+">
+                                                    <field name="text">#ffffff</field>
+                                                  </shadow>
+                                                </value>
+                                                <next>
+                                                  <block type="background_size" id="-4o3a?+F47cN~9915z0=">
+                                                    <field name="options">cover</field>
+                                                    <next>
+                                                      <block type="border_radius" id="]c1!S?Z#tr])yha_G^it">
+                                                        <field name="size">px</field>
+                                                        <value name="content">
+                                                          <shadow type="textinline" id="i:FL9![%!aXkZ+^8{d|u">
+                                                            <field name="text">20</field>
+                                                          </shadow>
+                                                        </value>
+                                                        <next>
+                                                          <block type="padding" id="%mNd@~l%O*~QHKE-hZ//">
+                                                            <field name="unit">px</field>
+                                                            <value name="content">
+                                                              <shadow type="textinline" id="bkUE).4OR}8ks!~lAzY*">
+                                                                <field name="text">10</field>
+                                                              </shadow>
+                                                            </value>
+                                                          </block>
+                                                        </next>
+                                                      </block>
+                                                    </next>
+                                                  </block>
+                                                </next>
+                                              </block>
+                                            </statement>
+                                            <next>
+                                              <block type="element_style" id="Q6_*-jy`95b?)OGOyJeg">
+                                                <value name="element">
+                                                  <shadow type="textinline" id="ohd,pT,`r0C;]]dxu5rF">
+                                                    <field name="text">body</field>
+                                                  </shadow>
+                                                </value>
+                                                <statement name="content">
+                                                  <block type="background_color" id="0,Ar{IR%Z_?z/U`zX1BT">
+                                                    <value name="content">
+                                                      <shadow type="textinline" id="65:!z`TMqckV1D#VvYy3">
+                                                        <field name="text">#efefef</field>
+                                                      </shadow>
+                                                    </value>
+                                                    <next>
+                                                      <block type="font_family" id="v14xI(fZFE)Q5+kC*bD,">
+                                                        <value name="content">
+                                                          <shadow type="textinline" id="u[%%U_*UuQnL:vEuxYB0">
+                                                            <field name="text">cursive</field>
+                                                          </shadow>
+                                                        </value>
+                                                      </block>
+                                                    </next>
+                                                  </block>
+                                                </statement>
+                                                <next>
+                                                  <block type="element_style" id="|4J=_Lk:X~M*Idn%l,DT">
+                                                    <value name="element">
+                                                      <shadow type="textinline" id="Bs+FV_#PQK6?I7}aG.vp">
+                                                        <field name="text">#table</field>
+                                                      </shadow>
+                                                    </value>
+                                                    <statement name="content">
+                                                      <block type="element_width" id="Fqjh=PrKbQC-)MW}^_3q">
+                                                        <field name="unit">%</field>
+                                                        <value name="content">
+                                                          <shadow type="textinline" id=".PIf1^M`kWh?U(ha+sS9">
+                                                            <field name="text">100</field>
+                                                          </shadow>
+                                                        </value>
+                                                      </block>
+                                                    </statement>
+                                                    <next>
+                                                      <block type="element_style" id="{5nUhLH3N!!-H6Y!b0(y">
+                                                        <value name="element">
+                                                          <shadow type="textinline" id="`LQ/FpP9J~2SQg0S_(FK">
+                                                            <field name="text">.selected</field>
+                                                          </shadow>
+                                                        </value>
+                                                        <statement name="content">
+                                                          <block type="background_color" id=":LfGi:WGOKBhrdFx2sR@">
+                                                            <value name="content">
+                                                              <shadow type="textinline" id="%{D~[@LxAg7dh-QKvImJ">
+                                                                <field name="text">#f36f48</field>
+                                                              </shadow>
+                                                            </value>
+                                                            <next>
+                                                              <block type="text_color" id="ye]lsQokdc(J8Dctv~*r">
+                                                                <value name="content">
+                                                                  <shadow type="textinline" id=".EdWfU|ZkcZdS=:S{8-L">
+                                                                    <field name="text">white</field>
+                                                                  </shadow>
+                                                                </value>
+                                                              </block>
+                                                            </next>
+                                                          </block>
+                                                        </statement>
+                                                        <next>
+                                                          <block type="element_style" id="!td4KX7~LOHfXfT]{GLC">
+                                                            <value name="element">
+                                                              <shadow type="textinline" id="W{9^|(u,Z.C{nyV{G75p">
+                                                                <field name="text">.section</field>
+                                                              </shadow>
+                                                            </value>
+                                                            <statement name="content">
+                                                              <block type="background_color" id="_;^W-$R@J0HOh$6hV`k(">
+                                                                <value name="content">
+                                                                  <shadow type="textinline" id="i4@F)5Uc/4F+FS{De$gA">
+                                                                    <field name="text">#fff</field>
+                                                                  </shadow>
+                                                                </value>
+                                                                <next>
+                                                                  <block type="padding" id="Y1G|@:SnFwK9YvGd]RGm">
+                                                                    <field name="unit">px</field>
+                                                                    <value name="content">
+                                                                      <shadow type="textinline" id="#aK,{/[`?29=;t@S.1WN">
+                                                                        <field name="text">15</field>
+                                                                      </shadow>
+                                                                    </value>
+                                                                    <next>
+                                                                      <block type="border_radius" id="EFj+q-eB`sjOJlnUMo)B">
+                                                                        <field name="size">px</field>
+                                                                        <value name="content">
+                                                                          <shadow type="textinline" id="{?mps,*cQg_?8k|3kf~+">
+                                                                            <field name="text">10</field>
+                                                                          </shadow>
+                                                                        </value>
+                                                                        <next>
+                                                                          <block type="margin_direction" id=")/q:XI5?bX$-8{?viKL;">
+                                                                            <field name="direction">top</field>
+                                                                            <field name="unit">px</field>
+                                                                            <value name="content">
+                                                                              <shadow type="textinline" id="pPH-Hqp(.eE=O;[D:JYu">
+                                                                                <field name="text">20</field>
+                                                                              </shadow>
+                                                                            </value>
+                                                                          </block>
+                                                                        </next>
+                                                                      </block>
+                                                                    </next>
+                                                                  </block>
+                                                                </next>
+                                                              </block>
+                                                            </statement>
+                                                            <next>
+                                                              <block type="element_style" id="}ipe6|WpNZ}n{xB/Njgt">
+                                                                <value name="element">
+                                                                  <shadow type="textinline" id="yEQ_CsfoALq6WlBq:=Jg">
+                                                                    <field name="text">progress</field>
+                                                                  </shadow>
+                                                                </value>
+                                                                <statement name="content">
+                                                                  <block type="text_content" id="L:x`i#QtEu)1-T9hHi9}">
+                                                                    <value name="content">
+                                                                      <shadow type="textinline" id="rT,BRA2~%Qta5j2uZY_m">
+                                                                        <field name="text"> width: 100%;height: 20px;color: #3fb6b2;background: #efefef;</field>
+                                                                      </shadow>
+                                                                    </value>
+                                                                  </block>
+                                                                </statement>
+                                                                <next>
+                                                                  <block type="text_content" id=";;LK@C?iIzC#~pmPsb3b">
+                                                                    <value name="content">
+                                                                      <shadow type="textinline" id="Rl!)h}LGRUfSN8U[50D;">
+                                                                        <field name="text"> progress::-webkit-progress-bar {       background: #efefef;     }      progress::-webkit-progress-value {       background: #3fb6b2;     }</field>
+                                                                      </shadow>
+                                                                    </value>
+                                                                    <next>
+                                                                      <block type="element_style" id="s!a~l?QrZqBHOqaE=e-H">
+                                                                        <value name="element">
+                                                                          <shadow type="textinline" id="/b6%W*aQ#-ZO(PEWH6+.">
+                                                                            <field name="text">.submit</field>
+                                                                          </shadow>
+                                                                        </value>
+                                                                        <statement name="content">
+                                                                          <block type="text_content" id="8furd[*2NtT?q7B7{j-!">
+                                                                            <value name="content">
+                                                                              <shadow type="textinline" id="@N2RP6w$gwMY-ckK~UM[">
+                                                                                <field name="text">background-color: #3fb6b2; padding: 12px 45px;border-radius: 5px;cursor: pointer;color: #ffffff;border: none;outline: none;margin: 0;font-weight: bold;</field>
+                                                                              </shadow>
+                                                                            </value>
+                                                                          </block>
+                                                                        </statement>
+                                                                        <next>
+                                                                          <block type="element_style" id="ZLI3}SMDHQ@=/?u~=LvI">
+                                                                            <value name="element">
+                                                                              <shadow type="textinline" id="rsfh_+a}AMPhkRTb$,3O">
+                                                                                <field name="text">.submit:hover</field>
+                                                                              </shadow>
+                                                                            </value>
+                                                                            <statement name="content">
+                                                                              <block type="background_color" id="f?F`}6if))wkYMX9)78[">
+                                                                                <value name="content">
+                                                                                  <shadow type="textinline" id="jrX0Gw70izIsLNOjpA}~">
+                                                                                    <field name="text">#43a09d</field>
+                                                                                  </shadow>
+                                                                                </value>
+                                                                              </block>
+                                                                            </statement>
+                                                                            <next>
+                                                                              <block type="element_style" id="b_AmRmJO3cKh1sGz$k}S">
+                                                                                <value name="element">
+                                                                                  <shadow type="textinline" id="D61/rdw(ytAF]a2+id;n">
+                                                                                    <field name="text">input, textarea</field>
+                                                                                  </shadow>
+                                                                                </value>
+                                                                                <statement name="content">
+                                                                                  <block type="text_content" id="_*GFWK1sM~w9}RwuB{-^">
+                                                                                    <value name="content">
+                                                                                      <shadow type="textinline" id="i7RC#U!hax4y0.=+)bdO">
+                                                                                        <field name="text">margin-bottom:10px;font-size:11pt;padding:15px 10px 10px;border:1pxsolid#cecece;background-color:#efefef;color:#787575;border-radius:5px;width:70%;outline:none;</field>
+                                                                                      </shadow>
+                                                                                    </value>
+                                                                                  </block>
+                                                                                </statement>
+                                                                                <next>
+                                                                                  <block type="element_style" id="JA3{]*#33iT78:1TV_Mh">
+                                                                                    <value name="element">
+                                                                                      <shadow type="textinline" id="u8-IpYtU7#AEb^)H^Y-!">
+                                                                                        <field name="text">textarea</field>
+                                                                                      </shadow>
+                                                                                    </value>
+                                                                                    <statement name="content">
+                                                                                      <block type="element_height" id="ZV^J+FTMNN@(-+g=+T-c">
+                                                                                        <field name="unit">px</field>
+                                                                                        <value name="content">
+                                                                                          <shadow type="textinline" id="_%/Waqy0(S%vtpK;AG9l">
+                                                                                            <field name="text">100</field>
+                                                                                          </shadow>
+                                                                                        </value>
+                                                                                      </block>
+                                                                                    </statement>
+                                                                                    <next>
+                                                                                      <block type="element_style" id="NeO_TS]%K?w@`4!-iLRy">
+                                                                                        <value name="element">
+                                                                                          <shadow type="textinline" id="Rm^1NIQ}{@v*yiA$D~B(">
+                                                                                            <field name="text">#contacts img:hover</field>
+                                                                                          </shadow>
+                                                                                        </value>
+                                                                                        <statement name="content">
+                                                                                          <block type="text_content" id=".-NM8877%!{5-f^p4g6a">
+                                                                                            <value name="content">
+                                                                                              <shadow type="textinline" id="-jL+ji5[.,a4|~ny,!Z^">
+                                                                                                <field name="text">opacity: 0.8</field>
+                                                                                              </shadow>
+                                                                                            </value>
+                                                                                          </block>
+                                                                                        </statement>
+                                                                                        <next>
+                                                                                          <block type="element_style" id="_}L#CO19W,ckbB9~Pe3#">
+                                                                                            <value name="element">
+                                                                                              <shadow type="textinline" id="|0/JN$!3iKg`0]Zp8fIP">
+                                                                                                <field name="text">#contacts</field>
+                                                                                              </shadow>
+                                                                                            </value>
+                                                                                            <statement name="content">
+                                                                                              <block type="text_align" id="6~s6XAu5.fCkmr.7whh*">
+                                                                                                <field name="align">center</field>
+                                                                                              </block>
+                                                                                            </statement>
+                                                                                            <next>
+                                                                                              <block type="element_style" id="O#Fq*sYQc0)sF(}gg0JA">
+                                                                                                <value name="element">
+                                                                                                  <shadow type="textinline" id="We9d)S|+GWG{y_SiGL$^">
+                                                                                                    <field name="text">#contacts img</field>
+                                                                                                  </shadow>
+                                                                                                </value>
+                                                                                                <statement name="content">
+                                                                                                  <block type="element_width" id="#8yOO@Tnp#ya?|3L]Kd`">
+                                                                                                    <field name="unit">px</field>
+                                                                                                    <value name="content">
+                                                                                                      <shadow type="textinline" id="5nr:@X8Z}Lk4GHEUp1em">
+                                                                                                        <field name="text">50</field>
+                                                                                                      </shadow>
+                                                                                                    </value>
+                                                                                                    <next>
+                                                                                                      <block type="element_height" id="Rl:D24$b6KMx_6b2=-:|">
+                                                                                                        <field name="unit">px</field>
+                                                                                                        <value name="content">
+                                                                                                          <shadow type="textinline" id="O8L%a]@Q@=*CO,YwAn;J">
+                                                                                                            <field name="text">50</field>
+                                                                                                          </shadow>
+                                                                                                        </value>
+                                                                                                        <next>
+                                                                                                          <block type="margin_direction" id="gh},|MMo[*l]q@+e6$nn">
+                                                                                                            <field name="direction">left</field>
+                                                                                                            <field name="unit">px</field>
+                                                                                                            <value name="content">
+                                                                                                              <shadow type="textinline" id="-ZZ%Nqy!.7KFV,H,V1aX">
+                                                                                                                <field name="text">7</field>
+                                                                                                              </shadow>
+                                                                                                            </value>
+                                                                                                            <next>
+                                                                                                              <block type="margin_direction" id="nnac%D}~o{8!g:JXSbpw">
+                                                                                                                <field name="direction">right</field>
+                                                                                                                <field name="unit">px</field>
+                                                                                                                <value name="content">
+                                                                                                                  <shadow type="textinline" id="jF$pY2~a:j7apAeL8_Pf">
+                                                                                                                    <field name="text">7</field>
+                                                                                                                  </shadow>
+                                                                                                                </value>
+                                                                                                                <next>
+                                                                                                                  <block type="padding_direction" id="KanKg;jeWH!PZaQ7vORe">
+                                                                                                                    <field name="direction">bottom</field>
+                                                                                                                    <field name="unit">px</field>
+                                                                                                                    <value name="content">
+                                                                                                                      <shadow type="textinline" id="oK75,j@C5O]SA$Zb*5^a">
+                                                                                                                        <field name="text">10</field>
+                                                                                                                      </shadow>
+                                                                                                                    </value>
+                                                                                                                    <next>
+                                                                                                                      <block type="text_color" id="e1K^L{d/_*.U*Os:THS2">
+                                                                                                                        <value name="content">
+                                                                                                                          <shadow type="textinline" id="9xKC:!^^8G@9:ZIXMa__">
+                                                                                                                            <field name="text">grey</field>
+                                                                                                                          </shadow>
+                                                                                                                        </value>
+                                                                                                                      </block>
+                                                                                                                    </next>
+                                                                                                                  </block>
+                                                                                                                </next>
+                                                                                                              </block>
+                                                                                                            </next>
+                                                                                                          </block>
+                                                                                                        </next>
+                                                                                                      </block>
+                                                                                                    </next>
+                                                                                                  </block>
+                                                                                                </statement>
+                                                                                                <next>
+                                                                                                  <block type="element_style" id="ba8T`3o3n]F2R+AV6qE[">
+                                                                                                    <value name="element">
+                                                                                                      <shadow type="textinline" id="(*_sh%U|:*~_Ixsj*hJR">
+                                                                                                        <field name="text">.copyright</field>
+                                                                                                      </shadow>
+                                                                                                    </value>
+                                                                                                    <statement name="content">
+                                                                                                      <block type="font_size_value" id="pWx+%*7VgyY8_}PLrGyS">
+                                                                                                        <field name="type">px</field>
+                                                                                                        <value name="content">
+                                                                                                          <shadow type="textinline" id="!543YY(iF^^~t|1Q$=4R">
+                                                                                                            <field name="text">20</field>
+                                                                                                          </shadow>
+                                                                                                        </value>
+                                                                                                        <next>
+                                                                                                          <block type="text_align" id="RyGDEazUGc?{Xp|q*eju">
+                                                                                                            <field name="align">right</field>
+                                                                                                          </block>
+                                                                                                        </next>
+                                                                                                      </block>
+                                                                                                    </statement>
+                                                                                                    <next>
+                                                                                                      <block type="element_style" id="kxo4P-73Moz.]ffd29K`">
+                                                                                                        <value name="element">
+                                                                                                          <shadow type="textinline" id="K~qJa+T$G)!F$*XP|2es">
+                                                                                                            <field name="text">.no-decoration a</field>
+                                                                                                          </shadow>
+                                                                                                        </value>
+                                                                                                        <statement name="content">
+                                                                                                          <block type="text_content" id="fOzk:Gftw*gM($Ze!Ejh">
+                                                                                                            <value name="content">
+                                                                                                              <shadow type="textinline" id="/C6DH)9gfKP1vw;~0krA">
+                                                                                                                <field name="text">text-decoration:none;</field>
+                                                                                                              </shadow>
+                                                                                                            </value>
+                                                                                                          </block>
+                                                                                                        </statement>
+                                                                                                      </block>
+                                                                                                    </next>
+                                                                                                  </block>
+                                                                                                </next>
+                                                                                              </block>
+                                                                                            </next>
+                                                                                          </block>
+                                                                                        </next>
+                                                                                      </block>
+                                                                                    </next>
+                                                                                  </block>
+                                                                                </next>
+                                                                              </block>
+                                                                            </next>
+                                                                          </block>
+                                                                        </next>
+                                                                      </block>
+                                                                    </next>
+                                                                  </block>
+                                                                </next>
+                                                              </block>
+                                                            </next>
+                                                          </block>
+                                                        </next>
+                                                      </block>
+                                                    </next>
+                                                  </block>
+                                                </next>
+                                              </block>
+                                            </next>
+                                          </block>
+                                        </next>
+                                      </block>
+                                    </next>
+                                  </block>
+                                </next>
+                              </block>
+                            </next>
+                          </block>
+                        </next>
+                      </block>
+                    </next>
+                  </block>
+                </statement>
+              </block>
+            </next>
+          </block>
+        </statement>
+        <next>
+          <block type="body" id="vQr@SE3P_h@-#/3p2NLN">
+            <statement name="content">
+              <block type="div_container" id="B/f2U,aO*1?*?ZfSo)p*">
+                <value name="class">
+                  <block type="class" id="^F)T*X]AwmxZ9d_u!=|P">
+                    <value name="content">
+                      <shadow type="textinline" id="#|TE~^zIvakpM@jq|e#y">
+                        <field name="text">background1</field>
+                      </shadow>
+                    </value>
+                  </block>
+                </value>
+                <statement name="content">
+                  <block type="heading" id="})ysN_#be4#w0!|9mJ:t">
+                    <value name="type">
+                      <shadow type="sliderinline" id="|w^jY/J+lo0E5V^1y+bn">
+                        <field name="slider">1</field>
+                      </shadow>
+                    </value>
+                    <value name="attributes">
+                      <block type="class" id="NGvbKR7:l42_*a_%tS%*">
+                        <value name="content">
+                          <shadow type="textinline" id="-,83hD*(!BV_@~Mj4UN$">
+                            <field name="text">style1</field>
+                          </shadow>
+                        </value>
+                      </block>
+                    </value>
+                    <value name="content">
+                      <shadow type="textinline" id="V_,Xc9w-kz/s+phj-8To">
+                        <field name="text">//fill your name</field>
+                      </shadow>
+                    </value>
+                  </block>
+                </statement>
+                <next>
+                  <block type="div_container" id="KU(u`[|q`PHWOS.!lMAj">
+                    <value name="class">
+                      <block type="class" id="swx.:b5q;/o8+vgHWeS$">
+                        <value name="content">
+                          <shadow type="textinline" id="EF`.gSAVX9!o@8s?+z26">
+                            <field name="text">background2</field>
+                          </shadow>
+                        </value>
+                      </block>
+                    </value>
+                    <statement name="content">
+                      <block type="heading" id="@ga=!d{t+j!+~^*8({%H">
+                        <value name="type">
+                          <shadow type="sliderinline" id="ns^z[gGL_SRt@{6yKo)%">
+                            <field name="slider">2</field>
+                          </shadow>
+                        </value>
+                        <value name="attributes">
+                          <block type="class" id="-=+eaZliyE)!V[w1Y)R2">
+                            <value name="content">
+                              <shadow type="textinline" id="dM9;E-]d!JY2]S}HwiKf">
+                                <field name="text">style2</field>
+                              </shadow>
+                            </value>
+                          </block>
+                        </value>
+                        <value name="content">
+                          <shadow type="textinline" id=";:n}$m?Q^0(u@Npw79Zr">
+                            <field name="text">&lt;span style="border: 3px dashed #20bcd5;"&gt;//fill me&lt;/span&gt;</field>
+                          </shadow>
+                        </value>
+                        <next>
+                          <block type="paragraph" id="Rm~T=rQKW|-O!J%r7vmT">
+                            <value name="attributes">
+                              <block type="class" id="~HEqept2$17zM0T/qWpF">
+                                <value name="content">
+                                  <shadow type="textinline" id="1i!DC5`3y8sX/p.kVI(3">
+                                    <field name="text">paragraph1</field>
+                                  </shadow>
+                                </value>
+                              </block>
+                            </value>
+                            <value name="content">
+                              <shadow type="textinline" id="sWTG~~d)1.=+(P8M_y?1">
+                                <field name="text">//fill me</field>
+                              </shadow>
+                            </value>
+                            <next>
+                              <block type="paragraph" id="X=@BGxza9|TRS8qe5?q0">
+                                <value name="attributes">
+                                  <block type="style" id="l4!5e)b,^HXppa-/w`^F">
+                                    <value name="content">
+                                      <shadow type="textinline" id="ybwBjVuZPN?Xw!#*x5E8">
+                                        <field name="text"/>
+                                      </shadow>
+                                    </value>
+                                  </block>
+                                </value>
+                                <value name="content">
+                                  <shadow type="textinline" id="C?9z2**:eZC*~D#$CHc-">
+                                    <field name="text">// fill me and make me on the right</field>
+                                  </shadow>
+                                </value>
+                              </block>
+                            </next>
+                          </block>
+                        </next>
+                      </block>
+                    </statement>
+                    <next>
+                      <block type="div_container" id="!39-fl5GpCpGVw=L%N`Z">
+                        <value name="class">
+                          <block type="class" id="P-=%peJfIia/HvEuA)/%">
+                            <value name="content">
+                              <shadow type="textinline" id=".G*BzT7@_Gm|CflXm7:B">
+                                <field name="text">section</field>
+                              </shadow>
+                            </value>
+                          </block>
+                        </value>
+                        <statement name="content">
+                          <block type="heading" id="=Y2qR)~}Cq)s~6#x3~K{">
+                            <value name="type">
+                              <shadow type="sliderinline" id="AG*`N{_g`zC-6%7,k*qQ">
+                                <field name="slider">2</field>
+                              </shadow>
+                            </value>
+                            <value name="attributes">
+                              <block type="class" id="S^-=}fJvd+5v@RdT!77@">
+                                <value name="content">
+                                  <shadow type="textinline" id="8b;#TQU0oSn!5rAK;lii">
+                                    <field name="text">style2</field>
+                                  </shadow>
+                                </value>
+                              </block>
+                            </value>
+                            <value name="content">
+                              <shadow type="textinline" id="~]6x^M3;eeF5U17]{!)0">
+                                <field name="text">&lt;span style="border: 3px dashed #20bcd5;"&gt;My Schedule&lt;/span&gt;</field>
+                              </shadow>
+                            </value>
+                            <next>
+                              <block type="table" id="=``]{vC@;$T#p3!~FpLU">
+                                <value name="class">
+                                  <block type="attributes" id="Mrlc~zoC`zowedNlm,ai">
+                                    <mutation inputCount="3"/>
+                                    <value name="in1">
+                                      <block type="id" id="=vs]`Q:IJa6#2p#h:[St">
+                                        <value name="content">
+                                          <shadow type="textinline" id="yIHb5Kni0hSgyl;GHq^:">
+                                            <field name="text">table</field>
+                                          </shadow>
+                                        </value>
+                                      </block>
+                                    </value>
+                                    <value name="in2">
+                                      <block type="style" id="3+eOot0ukx$b:??-kbeO">
+                                        <value name="content">
+                                          <shadow type="textinline" id="VH1xfws_RJMz3;U|;zSq">
+                                            <field name="text">border-collapse: collapse;text-align: center;table-layout: fixed;</field>
+                                          </shadow>
+                                        </value>
+                                      </block>
+                                    </value>
+                                  </block>
+                                </value>
+                                <statement name="content">
+                                  <block type="table_row" id="Bo(4x5$CZuYiB@.G,TQ|">
+                                    <statement name="content">
+                                      <block type="table_header" id="-k)08$HmtVM0_I|,2xQy">
+                                        <statement name="content">
+                                          <block type="paragraph" id="jWbJq|+eD}xu~aRuPH5G">
+                                            <value name="content">
+                                              <shadow type="textinline" id="mdhW{*LX)p^8}8j_89{A">
+                                                <field name="text">//fill me</field>
+                                              </shadow>
+                                            </value>
+                                          </block>
+                                        </statement>
+                                        <next>
+                                          <block type="table_header" id="wd`2Q@.oId5gf%8(52q2">
+                                            <statement name="content">
+                                              <block type="paragraph" id="qZ0(*@.$Ogw$*;*UCaCX">
+                                                <value name="content">
+                                                  <shadow type="textinline" id="6Lw*aU45Ohc_C@|.jjSo">
+                                                    <field name="text">//fill me</field>
+                                                  </shadow>
+                                                </value>
+                                              </block>
+                                            </statement>
+                                            <next>
+                                              <block type="table_header" id="{/CW6;lt-b|?eaP+:{k$">
+                                                <statement name="content">
+                                                  <block type="paragraph" id="l2?@B:7(83McZ|vt^k},">
+                                                    <value name="content">
+                                                      <shadow type="textinline" id="pU`svDon-MEvQ+wMYdco">
+                                                        <field name="text">//fill me</field>
+                                                      </shadow>
+                                                    </value>
+                                                  </block>
+                                                </statement>
+                                                <next>
+                                                  <block type="table_header" id="RP=`=z!QlCY4!sP[`-O-">
+                                                    <statement name="content">
+                                                      <block type="paragraph" id="#)_PFW-%Lt_TorOS}1SI">
+                                                        <value name="content">
+                                                          <shadow type="textinline" id="-6(|ep$[N2}I}2K@Wgj4">
+                                                            <field name="text">//fill me</field>
+                                                          </shadow>
+                                                        </value>
+                                                      </block>
+                                                    </statement>
+                                                    <next>
+                                                      <block type="table_header" id="!5yf!g1b-I)?fA_,l02=">
+                                                        <statement name="content">
+                                                          <block type="paragraph" id="x-yR}6k1,ept)K^OH4Aq">
+                                                            <value name="content">
+                                                              <shadow type="textinline" id="VA.c@Wz-|s{/X80RClaU">
+                                                                <field name="text">//fill me</field>
+                                                              </shadow>
+                                                            </value>
+                                                          </block>
+                                                        </statement>
+                                                        <next>
+                                                          <block type="table_header" id="(pmJSm:ylX3kN%F1XIeR">
+                                                            <statement name="content">
+                                                              <block type="paragraph" id="g,}0$O^CE9R=jl#~RjkA">
+                                                                <value name="content">
+                                                                  <shadow type="textinline" id="MZMS|$e*V^GZg;ne6N:_">
+                                                                    <field name="text">//fill me</field>
+                                                                  </shadow>
+                                                                </value>
+                                                              </block>
+                                                            </statement>
+                                                            <next>
+                                                              <block type="table_header" id="dOlb4AT9#PM2H?AE(+ni">
+                                                                <statement name="content">
+                                                                  <block type="paragraph" id="5@WpN,NY7(|Gm%nr4}pu">
+                                                                    <value name="content">
+                                                                      <shadow type="textinline" id="bnv3XN#jl03!Es6by,fK">
+                                                                        <field name="text">//fill me</field>
+                                                                      </shadow>
+                                                                    </value>
+                                                                  </block>
+                                                                </statement>
+                                                                <next>
+                                                                  <block type="table_row" id="-C7[TN+:![LE-AGxn9N]">
+                                                                    <statement name="content">
+                                                                      <block type="table_data" id="o5tt1Pfb*W5o+;ibvOMX">
+                                                                        <statement name="content">
+                                                                          <block type="paragraph" id="D+^Y($[xotSms@]^~Bh(">
+                                                                            <value name="content">
+                                                                              <shadow type="textinline" id="1($R=4H8rvCLGnYr6Df0">
+                                                                                <field name="text">//fill me</field>
+                                                                              </shadow>
+                                                                            </value>
+                                                                          </block>
+                                                                        </statement>
+                                                                        <next>
+                                                                          <block type="table_data" id="aRWr6gylWTG_;O/r4#bB">
+                                                                            <value name="class">
+                                                                              <block type="class" id="3te(!ly6!q%oM/.k+[Tn">
+                                                                                <value name="content">
+                                                                                  <shadow type="textinline" id="xWf[uRYxJKgIQPaJ#Q`e">
+                                                                                    <field name="text">selected</field>
+                                                                                  </shadow>
+                                                                                </value>
+                                                                              </block>
+                                                                            </value>
+                                                                            <statement name="content">
+                                                                              <block type="paragraph" id="bdeIVUc|$nv=$_J`b]Dj">
+                                                                                <value name="content">
+                                                                                  <shadow type="textinline" id="2{^?X96ST/qiVQ1;f2bR">
+                                                                                    <field name="text">//fill me and make me orance</field>
+                                                                                  </shadow>
+                                                                                </value>
+                                                                              </block>
+                                                                            </statement>
+                                                                            <next>
+                                                                              <block type="table_data" id="%**2Qr`#wN*n4ms,2kX[">
+                                                                                <next>
+                                                                                  <block type="table_data" id="$`1daW8Ceus1tD2MNcpg">
+                                                                                    <next>
+                                                                                      <block type="table_data" id="CE.mgr9j%D$rzFJi}%K7">
+                                                                                        <next>
+                                                                                          <block type="table_data" id=";v7;!l|:=kImDeC6tp6t">
+                                                                                            <next>
+                                                                                              <block type="table_data" id="EibPN!=tKIBf=KMW98RR"/>
+                                                                                            </next>
+                                                                                          </block>
+                                                                                        </next>
+                                                                                      </block>
+                                                                                    </next>
+                                                                                  </block>
+                                                                                </next>
+                                                                              </block>
+                                                                            </next>
+                                                                          </block>
+                                                                        </next>
+                                                                      </block>
+                                                                    </statement>
+                                                                  </block>
+                                                                </next>
+                                                              </block>
+                                                            </next>
+                                                          </block>
+                                                        </next>
+                                                      </block>
+                                                    </next>
+                                                  </block>
+                                                </next>
+                                              </block>
+                                            </next>
+                                          </block>
+                                        </next>
+                                      </block>
+                                    </statement>
+                                    <next>
+                                      <block type="table_row" id="on5MfJU*yF!IpYaM6U^z">
+                                        <statement name="content">
+                                          <block type="table_data" id="JjaGL|]E/{;NN1=9:hG=">
+                                            <next>
+                                              <block type="table_data" id="U{I8ZsrxV~n|]Mst3YMV">
+                                                <next>
+                                                  <block type="table_data" id="}`Tph*`VQ{(6lb]nm|ws">
+                                                    <next>
+                                                      <block type="table_data" id="^Pm;7w?3]r1vYtZC0GrZ">
+                                                        <next>
+                                                          <block type="table_data" id="i6RLQ7|mz/DU.EbLr0b}">
+                                                            <next>
+                                                              <block type="table_data" id="d;P4#7KONyU1ZKGf|1}v">
+                                                                <next>
+                                                                  <block type="table_data" id="@z)h6Rk@dW,YJZ+|NA%v"/>
+                                                                </next>
+                                                              </block>
+                                                            </next>
+                                                          </block>
+                                                        </next>
+                                                      </block>
+                                                    </next>
+                                                  </block>
+                                                </next>
+                                              </block>
+                                            </next>
+                                          </block>
+                                        </statement>
+                                        <next>
+                                          <block type="table_row" id="uCW`,-N%8uD$C`EGbRJA">
+                                            <statement name="content">
+                                              <block type="table_data" id="t:),v2VbRD6bcLnIXwwJ">
+                                                <next>
+                                                  <block type="table_data" id="iPM:fk^)0Icb;[fK:(Og">
+                                                    <next>
+                                                      <block type="table_data" id="F|?2PRSw%pP.4e4p,hpe">
+                                                        <next>
+                                                          <block type="table_data" id="b7r0|d]P49[/2H{PkSw!">
+                                                            <next>
+                                                              <block type="table_data" id="?G_JXf,nFn4FCr{.6zwc">
+                                                                <next>
+                                                                  <block type="table_data" id="NjN|5{u23_vtk?1ZNwo_"/>
+                                                                </next>
+                                                              </block>
+                                                            </next>
+                                                          </block>
+                                                        </next>
+                                                      </block>
+                                                    </next>
+                                                  </block>
+                                                </next>
+                                              </block>
+                                            </statement>
+                                          </block>
+                                        </next>
+                                      </block>
+                                    </next>
+                                  </block>
+                                </statement>
+                              </block>
+                            </next>
+                          </block>
+                        </statement>
+                        <next>
+                          <block type="div_container" id="#YDUbN[55$B6naTdXmU)">
+                            <value name="class">
+                              <block type="attributes" id="UwWm;`x9{VNQw;4b/om{">
+                                <mutation inputCount="3"/>
+                                <value name="in1">
+                                  <block type="style" id="t(1Md,B!San2LsptaNm,">
+                                    <value name="content">
+                                      <shadow type="textinline" id="1Q5nx)#}/j7w[$TjEgDw">
+                                        <field name="text">margin-top:20px</field>
+                                      </shadow>
+                                    </value>
+                                  </block>
+                                </value>
+                                <value name="in2">
+                                  <block type="class" id="YMiRIm^+}Tq,$0AOnmls">
+                                    <value name="content">
+                                      <shadow type="textinline" id="5?;avr3u_O}CZxz(RhCb">
+                                        <field name="text">background2</field>
+                                      </shadow>
+                                    </value>
+                                  </block>
+                                </value>
+                              </block>
+                            </value>
+                            <statement name="content">
+                              <block type="heading" id="BV^DFY:i~j7WnG;JJ{J0">
+                                <value name="type">
+                                  <shadow type="sliderinline" id="y1jS4^EV!Ix#+SDmv/)I">
+                                    <field name="slider">2</field>
+                                  </shadow>
+                                </value>
+                                <value name="attributes">
+                                  <block type="class" id="Ak-q@FQP(B/]G*F?+L+^">
+                                    <value name="content">
+                                      <shadow type="textinline" id="j]H5BvJ{,1e~p`MS.XK4">
+                                        <field name="text">style2</field>
+                                      </shadow>
+                                    </value>
+                                  </block>
+                                </value>
+                                <value name="content">
+                                  <shadow type="textinline" id="UiNyJ/c$o?3bnCK$(h{D">
+                                    <field name="text">&lt;span style="border: 3px dashed #20bcd5;"&gt;My skill&lt;/span&gt;</field>
+                                  </shadow>
+                                </value>
+                                <next>
+                                  <block type="ul" id="!F_zNB]dZjVd=q+e[|rH">
+                                    <statement name="content">
+                                      <block type="li" id="?XX/l3fY]hk2K:oj|r!x">
+                                        <next>
+                                          <block type="li" id="UY+C5!NzK#GvTpHQkl1{">
+                                            <next>
+                                              <block type="li" id=")7$@JVZKOLR+*/Exn-9*"/>
+                                            </next>
+                                          </block>
+                                        </next>
+                                      </block>
+                                    </statement>
+                                  </block>
+                                </next>
+                              </block>
+                            </statement>
+                            <next>
+                              <block type="div_container" id="|:T)G95NxRq1Z#HY-+Y+">
+                                <value name="class">
+                                  <block type="attributes" id="*#{,J9F#E@;S3*OH{yae">
+                                    <mutation inputCount="3"/>
+                                    <value name="in1">
+                                      <block type="style" id="K,Ck?Sx9HzklqaQ7~VF$">
+                                        <value name="content">
+                                          <shadow type="textinline" id="Q7=r6@Z!4C@8npa{)%N7">
+                                            <field name="text">margin-top:20px</field>
+                                          </shadow>
+                                        </value>
+                                      </block>
+                                    </value>
+                                    <value name="in2">
+                                      <block type="class" id="1~x+[RN?I1x@5g~o-e{)">
+                                        <value name="content">
+                                          <shadow type="textinline" id="O!OECNhM3[n{VEg8J@yb">
+                                            <field name="text">background2</field>
+                                          </shadow>
+                                        </value>
+                                      </block>
+                                    </value>
+                                  </block>
+                                </value>
+                                <statement name="content">
+                                  <block type="heading" id="4q6ZU;vGeg#lk=UhEhn5">
+                                    <value name="type">
+                                      <shadow type="sliderinline" id="x:KezIGKxer@G$#CKU)8">
+                                        <field name="slider">2</field>
+                                      </shadow>
+                                    </value>
+                                    <value name="attributes">
+                                      <block type="class" id="|q3g^^8?u??cB;3JtAJG">
+                                        <value name="content">
+                                          <shadow type="textinline" id="0rU~2Xe+nlw@%+9$g,{o">
+                                            <field name="text">style2</field>
+                                          </shadow>
+                                        </value>
+                                      </block>
+                                    </value>
+                                    <value name="content">
+                                      <shadow type="textinline" id="4ODxEHc|ljJ*,bf1(}K.">
+                                        <field name="text">&lt;span style="border: 3px dashed #20bcd5;"&gt;My media&lt;/span&gt;</field>
+                                      </shadow>
+                                    </value>
+                                    <next>
+                                      <block type="iframe" id="nTmPR;S-bxx4PmQVaG5p">
+                                        <value name="content">
+                                          <shadow type="textinline" id="Eh;+w$3$ki91RVuLWEB$">
+                                            <field name="text"/>
+                                          </shadow>
+                                        </value>
+                                        <value name="attributes">
+                                          <block type="attributes" id="PPfQtrX%6#5dfBKPzUZ|">
+                                            <mutation inputCount="2"/>
+                                            <value name="in1">
+                                              <block type="style" id="l0k7VnXo+MUOX(%x15Hs">
+                                                <value name="content">
+                                                  <shadow type="textinline" id="(lk3y)JnrdFg{?9m:@S#">
+                                                    <field name="text">display:block;margin: 0 auto;</field>
+                                                  </shadow>
+                                                </value>
+                                              </block>
+                                            </value>
+                                            <value name="in2">
+                                              <block type="textinline" id="]#yiWMR|G|CQ/VQ@v$De">
+                                                <field name="text">allowfullscreen frameborder="0" height="150" width="300"</field>
+                                              </block>
+                                            </value>
+                                          </block>
+                                        </value>
+                                      </block>
+                                    </next>
+                                  </block>
+                                </statement>
+                                <next>
+                                  <block type="div_container" id="Ng20n`K.z4fRrdyC[loQ">
+                                    <value name="class">
+                                      <block type="attributes" id="?FO`#GUYnmO?[=.`i.J}">
+                                        <mutation inputCount="3"/>
+                                        <value name="in1">
+                                          <block type="style" id="5,iTWufMs{~dK;RXO05G">
+                                            <value name="content">
+                                              <shadow type="textinline" id="1n38`u*d|?d)6q~v=Lw@">
+                                                <field name="text">margin-top:20px</field>
+                                              </shadow>
+                                            </value>
+                                          </block>
+                                        </value>
+                                        <value name="in2">
+                                          <block type="class" id=")C#`ATZPCr)@OhoI=9S+">
+                                            <value name="content">
+                                              <shadow type="textinline" id="TRwv-mR;sEr0QY4{p.z*">
+                                                <field name="text">background2</field>
+                                              </shadow>
+                                            </value>
+                                          </block>
+                                        </value>
+                                      </block>
+                                    </value>
+                                    <statement name="content">
+                                      <block type="heading" id="dy;571^lrz)(N|{gs/]N">
+                                        <value name="type">
+                                          <shadow type="sliderinline" id="n+}+v]^l/AyN4Ly_,In`">
+                                            <field name="slider">2</field>
+                                          </shadow>
+                                        </value>
+                                        <value name="attributes">
+                                          <block type="class" id="w1udpgOvzI,!uM:yAA+l">
+                                            <value name="content">
+                                              <shadow type="textinline" id="e9AlDe@-GI_Yr9sO#u7]">
+                                                <field name="text">style2</field>
+                                              </shadow>
+                                            </value>
+                                          </block>
+                                        </value>
+                                        <value name="content">
+                                          <shadow type="textinline" id="4sH=w,jNYda.2KQ54]s^">
+                                            <field name="text">&lt;span style="border: 3px dashed #20bcd5;"&gt;Contact me&lt;/span&gt;</field>
+                                          </shadow>
+                                        </value>
+                                        <next>
+                                          <block type="form" id="kojA%`-JV4sEw5I2%7}0"/>
+                                        </next>
+                                      </block>
+                                    </statement>
+                                    <next>
+                                      <block type="div_container" id="q%5MA0x.@@tD~tx$S4Qg">
+                                        <value name="class">
+                                          <block type="attributes" id="pmwhQgWt}_MBtBb7l2~g">
+                                            <mutation inputCount="3"/>
+                                            <value name="in1">
+                                              <block type="style" id="$v4j~{*7e=.`M!,f1mMo">
+                                                <value name="content">
+                                                  <shadow type="textinline" id="5;p5SP1`7D}^AZq:u0}=">
+                                                    <field name="text">margin-top:20px</field>
+                                                  </shadow>
+                                                </value>
+                                              </block>
+                                            </value>
+                                            <value name="in2">
+                                              <block type="class" id="vr~$L2d}{NGDa9gzu[/U">
+                                                <value name="content">
+                                                  <shadow type="textinline" id="G_e?7_i8vZhfo|+=SEI]">
+                                                    <field name="text">background2</field>
+                                                  </shadow>
+                                                </value>
+                                              </block>
+                                            </value>
+                                            <value name="in3">
+                                              <block type="id" id="1~kt|FT2D,;YqbBvrN|#">
+                                                <value name="content">
+                                                  <shadow type="textinline" id="cZoQ0S4v)uF6p;Rv)Dzp">
+                                                    <field name="text">contacts</field>
+                                                  </shadow>
+                                                </value>
+                                              </block>
+                                            </value>
+                                          </block>
+                                        </value>
+                                        <statement name="content">
+                                          <block type="heading" id="`5+vg?vb$$3$+dS%)BGA">
+                                            <value name="type">
+                                              <shadow type="sliderinline" id="m?/Xj-B?zafEA#L=nDOR">
+                                                <field name="slider">2</field>
+                                              </shadow>
+                                            </value>
+                                            <value name="attributes">
+                                              <block type="class" id="1;#)g.TDC3HZH%o=1Por">
+                                                <value name="content">
+                                                  <shadow type="textinline" id="!P*9vH9@0]f|$bDMp;Ie">
+                                                    <field name="text">style2</field>
+                                                  </shadow>
+                                                </value>
+                                              </block>
+                                            </value>
+                                            <value name="content">
+                                              <shadow type="textinline" id="+11Z0,2%3PS5De:YAQEt">
+                                                <field name="text">&lt;span style="border: 3px dashed #20bcd5;"&gt;Follow me&lt;/span&gt;</field>
+                                              </shadow>
+                                            </value>
+                                            <next>
+                                              <block type="div_container" id="O`V8AGhwK.MfPnQ#H]|h">
+                                                <value name="class">
+                                                  <block type="class" id="4=3|NT~?@xeX;A$jl{CD">
+                                                    <value name="content">
+                                                      <shadow type="textinline" id="e[r),P?pYLPD|1[p_r}{">
+                                                        <field name="text">no-decoration</field>
+                                                      </shadow>
+                                                    </value>
+                                                  </block>
+                                                </value>
+                                                <statement name="content">
+                                                  <block type="link" id="o$Jl}3Yt_`5+QPd-Z){x">
+                                                    <value name="url">
+                                                      <shadow type="textinline" id="=m_[gFGaTo3HUoVO;]i:">
+                                                        <field name="text"/>
+                                                      </shadow>
+                                                    </value>
+                                                    <next>
+                                                      <block type="link" id="aQy^CEsrFs:DF7F7y?8(">
+                                                        <value name="url">
+                                                          <shadow type="textinline" id="u{f-fBjOdSm1YTP21xS]">
+                                                            <field name="text"/>
+                                                          </shadow>
+                                                        </value>
+                                                        <next>
+                                                          <block type="link" id="H~RqV7Z]do:|E4#I?1w:">
+                                                            <value name="url">
+                                                              <shadow type="textinline" id="u4z02YCpV.Gn(_)2oQa,">
+                                                                <field name="text"/>
+                                                              </shadow>
+                                                            </value>
+                                                          </block>
+                                                        </next>
+                                                      </block>
+                                                    </next>
+                                                  </block>
+                                                </statement>
+                                              </block>
+                                            </next>
+                                          </block>
+                                        </statement>
+                                        <next>
+                                          <block type="div_container" id="J*j4}v.d6#snTbIJ8Yq#">
+                                            <value name="class">
+                                              <block type="class" id="qp-dblt4]55P*wsnGGC$">
+                                                <value name="content">
+                                                  <shadow type="textinline" id="I7r4u[iOflV~1kt{G:AT">
+                                                    <field name="text">copyright</field>
+                                                  </shadow>
+                                                </value>
+                                              </block>
+                                            </value>
+                                            <statement name="content">
+                                              <block type="text_content" id="kphwl([1QKeR.6RhHHL+">
+                                                <value name="content">
+                                                  <shadow type="textinline" id="}l2C`2*_.gE`r|o((1{.">
+                                                    <field name="text">//fill me and make me to the right</field>
+                                                  </shadow>
+                                                </value>
+                                              </block>
+                                            </statement>
+                                          </block>
+                                        </next>
+                                      </block>
+                                    </next>
+                                  </block>
+                                </next>
+                              </block>
+                            </next>
+                          </block>
+                        </next>
+                      </block>
+                    </next>
+                  </block>
+                </next>
+              </block>
+            </statement>
+          </block>
+        </next>
+      </block>
+    </statement>
+  </block>
+[]
+</xml>
