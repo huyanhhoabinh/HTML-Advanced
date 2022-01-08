@@ -6,7 +6,8 @@
 ## Bài tập Array
 - Bài số 1 :
   - TÍnh tổng các phần tử trong mảng , viết 1 hàm truyền vào mảng số nguyên và tính tổng (dùng for và while, foreach)
-
+- Bài số 2 :
+  - Nhập 1 số in ra các số từ 1 tới số đó, mỗi số 1 dòng
 
 
 
