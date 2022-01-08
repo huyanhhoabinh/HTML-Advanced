@@ -1,4 +1,16 @@
 # Thao tác với DOM
+
+## Thao tác với mảng
+
+
+## Bài tập Array
+- Bài số 1 :
+  - TÍnh tổng các phần tử trong mảng , viết 1 hàm truyền vào mảng số nguyên và tính tổng (dùng for và while, foreach)
+
+
+
+
+## Bài tập DOM
 - Bài số 1 :
   - Yêu cầu bài toán như sau:
   Bạn hãy viết một đoạn mã Javascript xử lý: Khi click vào chữ "tìm kiếm nâng cao" thì hiển thị chuyên mục, và đồng thời đổi nội dung của của nó lại thành "bỏ tìm kiếm nâng cao".
