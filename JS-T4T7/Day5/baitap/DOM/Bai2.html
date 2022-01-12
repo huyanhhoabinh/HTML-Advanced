@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>xóa thẻ html</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+</head>
+<body>
+<h1>Xóa thẻ HTML</h1>
+<div style="display: flex">
+    <input type="text" placeholder="Type in here to more todo list" id="inputData"/><input type="button" value="Add" onclick="add()"/>
+</div>
+
+<table border="1" cellspacing="0" cellpadding="5" id="table">
+    <tr>
+        <td>1</td>
+        <td><input type="text" disabled="true" value="test"/></td>
+        <td>
+            <input type="button" value="Delete" class="delete"/>
+        </td>
+    </tr>
+    <tr>
+        <td>2</td>
+        <td><input type="text" disabled="true" value="test2"/></td>
+        <td>
+            <input type="button" value="Delete" class="delete"/>
+        </td>
+    </tr>
+    <tr>
+        <td>3</td>
+        <td><input type="text" disabled="true" value="test2"/></td>
+        <td>
+            <input type="button" value="Delete" class="delete"/>
+        </td>
+    </tr>
+    <tr>
+        <td>4</td>
+        <td><input type="text" disabled="true" value="test2"/></td>
+        <td>
+            <input type="button" value="Delete" class="delete"/>
+        </td>
+    </tr>
+</table>
+<script language="javascript">
+
+    window.onload = function() {
+        var listInput = document.getElementsByClassName('delete');
+        for (let i = 0; i < listInput.length; i++) {
+            listInput[i].addEventListener("click", function () {
+                var parent = this.parentElement.parentElement;
+                parent.remove();
+            })
+        }
+    }
+    var index = 5;
+
+    function add() {
+        console.log("hello");
+        var tr = document.createElement("tr");
+
+        var td1 = document.createElement("td");
+        td1.appendChild(document.createTextNode(index));
+        var td2 = document.createElement("td");
+        var input1 = document.createElement("input");
+        input1.value = document.getElementById("inputData").value;
+        input1.addEventListener("mouseover", function () {
+            this.disabled = false;
+            console.log("1")
+        });
+        input1.addEventListener("keypress", function (e) {
+            console.log("2")
+            if(e.code = 13) {
+                this.disabled = true;
+
+            }
+        });
+
+        input1.addEventListener("focusout", function (e) {
+            this.disabled = true;
+            console.log("3")
+        });
+        resetInput()
+
+
+
+        td2.appendChild(input1);
+        var td3 = document.createElement("td");
+        var input2 = document.createElement("input");
+        input2.type = "button";
+        input2.value = "delete";
+        input2.addEventListener("click", function () {
+            var parent = this.parentElement.parentElement;
+            parent.remove();
+        })
+
+        td3.appendChild(input2);
+        tr.appendChild(td1);
+        tr.appendChild(td2);
+        tr.appendChild(td3);
+
+        var table = document.getElementById("table");
+        table.appendChild(tr);
+        index++;
+    }
+
+    function resetInput() {
+        document.getElementById("inputData").value = "";
+    }
+
+</script>
+</body>
+</html>
