@@ -16,39 +16,35 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
 </head>
 <body>
-<h1>Xóa thẻ HTML</h1>
+<h1>Simple todo list</h1>
 <div style="display: flex">
-    <input type="text" placeholder="Type in here to more todo list" id="inputData"/><input type="button" value="Add" onclick="add()" id="addButton"/>
+    <input type="text" placeholder="Type in here to more todo list" id="inputData" /><input type="button" value="Add" onclick="add()" id="addButton"/>
 </div>
 
-<table border="1" cellspacing="0" cellpadding="5" id="table" class="table">
-</table>
+<ul class="list-group" id="listData">
+</ul>
 <script language="javascript">
-    // function test(e) {
-    //     console.log(e);
-    //     if(e.keyCode == 13) {
+    window.onload = function () {
+        var typeInput = document.getElementById("inputData");
+        typeInput.addEventListener("keypress", function (event) {
+            if(event.keyCode == 13) {
+                add();
+            }
+        });
+    };
+    var index = 1;
+    // function enterData(event) {
+    //     if(event.keyCode == 13) {
     //         add();
     //     }
     // }
-    // window.onload = function(){
-    //     var button = document.getElementById("addButton");
-    //     button.addEventListener("keypress", function (event) {
-    //         console.log("test");
-    //         if(event.keyCode == 13) {
-    //             add();
-    //         }
-    //     });
-    // };
-    var index = 1;
-
     function add() {
-        // create table row
-        var tr = document.createElement("tr");
-
-        // create first table detail
-        var td1 = document.createElement("td");
-        td1.appendChild(document.createTextNode(index));
-        var td2 = document.createElement("td");
+        // create Li
+        var liElement = document.createElement("li");
+        liElement.className = "list-group-item";
+        // create index
+        liElement.appendChild(document.createTextNode(index));
+        // var td2 = document.createElement("td");
         var input2 = document.createElement("input");
         input2.value = document.getElementById("inputData").value;
         input2.addEventListener("keypress", function (e) {
@@ -64,39 +60,31 @@
 
         // create delete button
 
-        td2.appendChild(input2);
+        liElement.appendChild(input2);
 
-        var td3 = document.createElement("td");
         var input3 = document.createElement("input");
         input3.type = "button";
         input3.value = "delete";
         input3.addEventListener("click", function () {
-            var parent = this.parentElement.parentElement;
+            var parent = this.parentElement;
             parent.remove();
         })
-        td3.appendChild(input3);
+        liElement.appendChild(input3);
 
         // create edit button
-        var td4 = document.createElement("td");
         var input4 = document.createElement("input");
         input4.type = "button";
         input4.value = "edit";
         input4.addEventListener("click", function () {
-            var inputContent = this.parentElement.previousSibling.previousSibling.firstChild;
+            var inputContent = this.previousSibling.previousSibling;
             inputContent.disabled = false;
         });
-        td4.appendChild(input4);
+        liElement.appendChild(input4);
 
-
-        // add td to row of table
-        tr.appendChild(td1);
-        tr.appendChild(td2);
-        tr.appendChild(td3);
-        tr.appendChild(td4);
 
         // append row to table
-        var table = document.getElementById("table");
-        table.appendChild(tr);
+        var table = document.getElementById("listData");
+        table.appendChild(liElement);
 
         // increate index for first td
         index++;
