@@ -21,10 +21,9 @@
     <input type="text" placeholder="Type in here to more todo list" id="inputData" /><input type="button" value="Add" onclick="add()" id="addButton"/>
 </div>
 
-<ol class="list-group" id="listData"></ol>
+<ul class="list-group" id="listData"></ul>
 <script language="javascript">
-
-    window.onload = function () {
+    function ganSuKienChoNutAdd() {
         var typeInput = document.getElementById("inputData");
         typeInput.addEventListener("keypress", function (event) {
             if(event.keyCode == 13) {
@@ -32,15 +31,15 @@
             }
         });
     };
-    // var index = 1;
+    window.onload = ganSuKienChoNutAdd();
+    var index = 1;
 
     function add() {
         // create Li
         var liElement = document.createElement("li");
         liElement.className = "list-group-item";
         // create index
-        var ulParent = document.getElementById("listData");
-        var index = ulParent.childNodes.length;
+        var ul = document.getElementById("listData");
         liElement.appendChild(document.createTextNode(index));
         var input2 = document.createElement("input");
         input2.value = document.getElementById("inputData").value;
@@ -80,8 +79,8 @@
 
 
         // append row to table
-        var table = document.getElementById("listData");
-        table.appendChild(liElement);
+        var ulList = document.getElementById("listData");
+        ulList.appendChild(liElement);
 
         // increate index for first td
         index++;
