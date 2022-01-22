@@ -21,9 +21,9 @@
     <input type="text" placeholder="Type in here to more todo list" id="inputData" /><input type="button" value="Add" onclick="add()" id="addButton"/>
 </div>
 
-<ul class="list-group" id="listData">
-</ul>
+<ol class="list-group" id="listData"></ol>
 <script language="javascript">
+
     window.onload = function () {
         var typeInput = document.getElementById("inputData");
         typeInput.addEventListener("keypress", function (event) {
@@ -32,13 +32,15 @@
             }
         });
     };
-    var index = 1;
+    // var index = 1;
 
     function add() {
         // create Li
         var liElement = document.createElement("li");
         liElement.className = "list-group-item";
         // create index
+        var ulParent = document.getElementById("listData");
+        var index = ulParent.childNodes.length;
         liElement.appendChild(document.createTextNode(index));
         var input2 = document.createElement("input");
         input2.value = document.getElementById("inputData").value;
