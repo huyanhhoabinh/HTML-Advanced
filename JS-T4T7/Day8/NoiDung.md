@@ -1,0 +1,6 @@
+- console :
+  - Nơi in ra lỗi
+  - Trong java script thì console là 1 từ khoá đặc biệt, đã được xây dựng sẵn
+- comment :
+  - As we write JavaScript, we can write comments in our code that the computer will ignore as our program runs. These comments exist just for human readers
+- 
