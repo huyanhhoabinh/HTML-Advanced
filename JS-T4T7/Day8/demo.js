@@ -1,5 +1,5 @@
+// INTRODUCTION TO JAVASCRIPT
 var x = "hello";
-
 
 // build in method
 console.log(Math.floor(Math.random() * 100));
@@ -54,3 +54,23 @@ let newVariable = 'Playing around with typeof.';
 console.log(typeof newVariable);
 newVariable = 1;
 console.log(typeof newVariable);
+
+// CONDITION STATEMENT
+
+
+let sale = true;
+if(sale) {
+    console.log('Time to buy!');
+}
+
+let sale = true;
+
+sale = false;
+
+if(sale) {
+    console.log('Time to buy!');
+} else {
+    console.log('Time to wait for a sale.');
+}
+
+

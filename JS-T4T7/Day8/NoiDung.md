@@ -1,3 +1,6 @@
+https://www.w3schools.com/quiztest/quiztest.asp?qtest=JS
+# Welcome to learn JavaScript
+# Introduction
 - console :
   - Nơi in ra lỗi
   - Trong java script thì console là 1 từ khoá đặc biệt, đã được xây dựng sẵn
@@ -28,3 +31,14 @@
   - The Increment and Decrement Operator: ++, --
   - String Concatenation with Variables:
   - String Interpolation
+
+# Conditionals :
+  - if, else if, and else statements :
+    - If
+    - Else
+    - ifelse
+  - comparison operators
+  - logical operators
+  - truthy vs falsy values
+  - ternary operators
+  - switch statement
