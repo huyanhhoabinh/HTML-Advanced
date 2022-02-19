@@ -1,0 +1,14 @@
+# Conditionals :
+- if, else if, and else statements :
+    - If
+    - Else
+    - Else If Statements:
+      - 
+- comparison operators: >, <, <= , >=, ===, !==
+    - Whats the different between two (`==`) and three (`===`) equal signs? 3 equals signs is known as Identity / strict equality, meaning that the data types also must be equal:
+- logical operators: &&, ||, !
+- truthy vs falsy values :
+    - falsy: 0, "", '', null, undefined, NaN
+- ternary operators
+- switch statement :
+    - Giống if else nhưng dễ đọc hơn
