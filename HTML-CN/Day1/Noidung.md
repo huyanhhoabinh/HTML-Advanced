@@ -18,7 +18,7 @@ Các phần tử của HTML chia làm nhiều phần như “Phần mở đầu(
     </html> 
 ```
 ## Giải thích :
-- '<!DOCTYPE html> mô tả đây là 1 file HTML5 và được lưu dưới tên xx.html
+- '<!DOCTYPE html> mô tả đây là định dạng file HTML5 và được lưu dưới tên xx.html
 - Phần tử <html> là phần tử gốc của trang HTML
 - Phần tử <head> chứa thông tin meta về trang HTML
 - <title> định nghĩa tiêu đề cho trang web
