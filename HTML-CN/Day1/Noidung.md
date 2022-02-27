@@ -234,3 +234,12 @@ https://www.codecademy.com/courses/learn-html/lessons/intro-to-html/exercises/in
 Sau đó làm các phần Introduction to HTML và HTML Document Standards
 Coding
 Lập trình trực tiếp online: https://replit.com/
+
+## Bài tập thực hành :
+Tạo ra 2 page :
+Đều theo format sau :
+- Trong trang web phải có đường dẫn để link về file html còn lại
+- 1 page về bản thân, 1 page về sở thích
+- format: đầu tiên là 1 ảnh được để theo 1 kích cỡ xác định, sau đó bên dưới là 1 đoạn paragrapth vắn tắt
+- ở page cá nhân thì có phần thông tin liên hệ ở cuối trang
+
