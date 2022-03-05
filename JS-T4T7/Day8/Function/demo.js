@@ -113,6 +113,14 @@ const plantNeedsWater = (day) => {
     }
 };
 
+function plantNeedsWater(day) {
+    if (day === 'Wednesday') {
+        return true;
+    } else {
+        return false;
+    }
+}
+plantNeedsWater('Wednesday');
 
 // Concise Body Arrow Functions
 const squareNum = (num) => {

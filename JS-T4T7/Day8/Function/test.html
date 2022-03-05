@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+<script>
+    function getSleepHours(day) {
+        if (day === 'monday') {
+            return 6;
+        }
+        if (day === 'tuesday') {
+            return 8;
+        }
+        if (day === 'wednesday') {
+            return 9;
+        }
+        if (day === 'thursday') {
+            return 4;
+        }
+        if (day === 'friday') {
+            return 7;
+        }
+        if (day === 'saturday') {
+            return 15;
+        }
+        if (day === 'sunday') {
+            return 20;
+        }
+
+    }
+
+    function getActualSleepHours() {
+        return (getSleepHours('monday') + getSleepHours('tuesday') + getSleepHours('wednesday') + getSleepHours('thursday') + getSleepHours('friday') + getSleepHours('saturday') + getSleepHours('sunday'));
+    }
+
+    function getIdealSleepHours() {
+        var idealSleepHours = 8;
+        return (idealSleepHours * 7);
+    }
+
+    function calculateSleepDebt() {
+        var actualSleepHours = getActualSleepHours();
+        var idealSleepHours = getIdealSleepHours();
+        if (actualSleepHours === idealSleepHours) {
+            console.log('perfect sleeping hours')
+        } else if (actualSleepHours >= idealSleepHours) {
+            console.log("user needs" + (actualSleepHours - idealSleepHours));
+        } else if (actualSleepHours <= idealSleepHours) {
+            console.log("user needs" + (actualSleepHours - idealSleepHours));
+        }
+
+
+    }
+
+    calculateSleepDebt();
+</script>
+</body>
+
+</html>
+
