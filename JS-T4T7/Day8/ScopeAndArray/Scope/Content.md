@@ -1,3 +1,8 @@
+# Nội dung dạy :
+- Các khái niệm về block và scope
+- Bài tập tối ưu code
+- Quiz
+
 # Blocks and Scope
 ## Khái niệm Scope và khái niệm block
 - Scope:
