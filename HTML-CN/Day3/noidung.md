@@ -1,4 +1,8 @@
-
+## Các nội dung trong buổi học :
+- Định nghĩa về form và các thành phần của form
+- Form validation
+- Bài tập về form trong mục form
+- Quiz nếu có thời gian
 ## Form
 - Chúng ta dùng form hằng ngày, giống như những mẫu form survey, khi điền thông tin thanh toán để nạp coin ..., trang google cũng là 1 form tìm kiếm
 - VD về form :
