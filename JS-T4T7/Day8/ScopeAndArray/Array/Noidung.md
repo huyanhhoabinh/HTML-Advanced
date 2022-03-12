@@ -16,4 +16,4 @@ let time = [10, true, '2022'];
 - More array methos
 - Arrays and Functions
 - NestArray
-[bài tập](https://cafedev.vn/tu-hoc-javascript-bai-tap-full-bai-huong-dan-ve-array-va-ham-array-trong-javascript/)
+- [bài tập](https://cafedev.vn/tu-hoc-javascript-bai-tap-full-bai-huong-dan-ve-array-va-ham-array-trong-javascript/)
