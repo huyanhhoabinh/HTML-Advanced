@@ -17,3 +17,24 @@ let time = [10, true, '2022'];
 - Arrays and Functions
 - NestArray
 - [bài tập](https://cafedev.vn/tu-hoc-javascript-bai-tap-full-bai-huong-dan-ve-array-va-ham-array-trong-javascript/)
+# Bài tập
+- Bài 1: Đoạn code này sẽ hiển thị gì?
+```
+let fruits = ["Apples", "Pear", "Orange"];
+
+// push a new value into the "copy"
+let shoppingCart = fruits;
+shoppingCart.push("Banana");
+
+// what's in fruits?
+alert( fruits.length ); 
+```
+- Bài 2:
+Hãy thử 5 phép toán trong mảng.
+Tạo mảng có tên là styles với các mục “Jazz” và “Blues”.
+Thêm “Rock-n-Roll” vào cuối.
+Thay thế giá trị ở giữa bằng “Classics”. Code để tìm giá trị giữa sẽ hoạt động với bất kỳ mảng nào có độ dài lẻ.
+Tách giá trị đầu tiên của mảng và hiển thị nó.
+Thêm trước Rap và Reggae vào mảng.
+
+
