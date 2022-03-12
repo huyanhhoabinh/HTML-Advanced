@@ -8,4 +8,11 @@ let time = [10, true, '2022'];
 - Cách truy cập vào phần tử trong array bằng index giống như số thứ tự trong 1 danh sách
 - Index của mảng bắt đầu từ con số 0 `time[0]`
 - Thay đổi phần tử ở index trong mảng, hoặc truy cập vào phần tử là 1 index không có trong mảng
-- 
+# Một số thuộc tính của mạng:
+- .length property
+- .push() method
+- .pop() method
+- Array with let and const
+- More array methos
+- Arrays and Functions
+- NestArray
