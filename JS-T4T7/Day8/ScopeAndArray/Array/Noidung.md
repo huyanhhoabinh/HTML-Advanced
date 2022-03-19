@@ -31,10 +31,23 @@ alert( fruits.length );
 ```
 - Bài 2:
 Hãy thử 5 phép toán trong mảng.
-Tạo mảng có tên là styles với các mục “Jazz” và “Blues”.
-Thêm “Rock-n-Roll” vào cuối.
-Thay thế giá trị ở giữa bằng “Classics”. Code để tìm giá trị giữa sẽ hoạt động với bất kỳ mảng nào có độ dài lẻ.
-Tách giá trị đầu tiên của mảng và hiển thị nó.
-Thêm trước Rap và Reggae vào mảng.
+1) Tạo mảng có tên là styles với các mục “Jazz” và “Blues”.
+2) Thêm “Rock-n-Roll” vào cuối.
+3) Thay thế giá trị ở giữa bằng “Classics”. Code để tìm giá trị giữa sẽ hoạt động với bất kỳ mảng nào có độ dài lẻ.
+4) Tách giá trị đầu tiên của mảng và hiển thị nó.
+5) Thêm trước `Rap` và `Reggae` vào mảng.
+- Bài 3:
+```html
+let arr = ["a", "b"];
 
+arr.push(function() {
+  alert( this );
+})
 
+arr[2](); // ?
+```
+- Bài 4:
+Viết hàm sumInput() rằng:
+- Yêu cầu người dùng nhập các giá trị bằng cách sử dụng prompt và lưu trữ các giá trị trong mảng.
+- Kết thúc yêu cầu khi người dùng nhập một giá trị không phải số, một chuỗi trống hoặc nhấn “Hủy”.
+- Tính toán và trả về tổng của các mục mảng.
