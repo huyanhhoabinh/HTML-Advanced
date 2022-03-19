@@ -8,9 +8,22 @@ let time = [10, true, '2022'];
 - Cách truy cập vào phần tử trong array bằng index giống như số thứ tự trong 1 danh sách
 - Index của mảng bắt đầu từ con số 0 `time[0]`
 - Thay đổi phần tử ở index trong mảng, hoặc truy cập vào phần tử là 1 index không có trong mảng
+# Arrays with let and const :
+- You may recall that you can declare variables with both the `let` and `const` keywords. Variables declared with `let` can be reassigned.
+- Variables declared with the `const` keyword cannot be reassigned. However, elements in an array declared with const remain mutable. Meaning that we can change the contents of a `const` array, but cannot reassign a new array or a different value.
+- 
 # Một số thuộc tính của mạng:
 - .length property
-- .push() method
+- .push() method:
+```html
+const itemTracker = ['item 0', 'item 1', 'item 2'];
+ 
+itemTracker.push('item 3', 'item 4');
+ 
+console.log(itemTracker); 
+// Output: ['item 0', 'item 1', 'item 2', 'item 3', 'item 4'];
+```
+
 - .pop() method
 - Array with let and const
 - More array methos
