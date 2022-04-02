@@ -11,7 +11,7 @@ let time = [10, true, '2022'];
 # Arrays with let and const :
 - You may recall that you can declare variables with both the `let` and `const` keywords. Variables declared with `let` can be reassigned.
 - Variables declared with the `const` keyword cannot be reassigned. However, elements in an array declared with const remain mutable. Meaning that we can change the contents of a `const` array, but cannot reassign a new array or a different value.
-- 
+
 # Một số thuộc tính của mạng:
 - .length property
 - .push() method:
@@ -35,6 +35,7 @@ console.log(newItemTracker);
 console.log(removed);
 // Output: item 2
 ```
+[- More array method ](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array)
 - Array with let and const
 - More array methos
 - Arrays and Functions
