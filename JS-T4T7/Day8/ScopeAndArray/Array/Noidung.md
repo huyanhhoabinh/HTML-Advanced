@@ -103,8 +103,3 @@ arr.push(function() {
 
 arr[2](); // ?
 ```
-- Bài 4:
-Viết hàm sumInput() rằng:
-- Yêu cầu người dùng nhập các giá trị bằng cách sử dụng prompt và lưu trữ các giá trị trong mảng.
-- Kết thúc yêu cầu khi người dùng nhập một giá trị không phải số, một chuỗi trống hoặc nhấn “Hủy”.
-- Tính toán và trả về tổng của các mục mảng.
