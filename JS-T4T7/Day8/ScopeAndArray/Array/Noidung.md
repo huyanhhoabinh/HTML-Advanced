@@ -67,7 +67,12 @@ console.log(flowers);
 ```
   
 - NestArray
-
+```html
+const nestedArr = [[1], [2, 3]];
+ 
+console.log(nestedArr[1]); // Output: [2, 3]
+console.log(nestedArr[1][0]); // Output: 2
+```
 - [bài tập](https://cafedev.vn/tu-hoc-javascript-bai-tap-full-bai-huong-dan-ve-array-va-ham-array-trong-javascript/)
 # Bài tập
 - Bài 1: Đoạn code này sẽ hiển thị gì?
