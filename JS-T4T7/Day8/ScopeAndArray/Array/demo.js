@@ -17,3 +17,32 @@ const chores = ['wash dishes', 'do laundry', 'take out trash', 'cook dinner', 'm
 
 chores.pop();
 console.log(chores);
+
+// some array method
+
+// SHIFT
+const groceryList = ['orange juice', 'bananas', 'coffee beans', 'brown rice', 'pasta', 'coconut oil', 'plantains'];
+groceryList.shift();
+
+
+//UNSHIFT
+const array1 = [1, 2, 3];
+
+console.log(array1.unshift(4, 5));
+// expected output: 5
+
+console.log(array1);
+// expected output: Array [4, 5, 1, 2, 3]
+
+
+// SLICE
+const animals = ['ant', 'bison', 'camel', 'duck', 'elephant'];
+
+console.log(animals.slice(2));
+// expected output: Array ["camel", "duck", "elephant"]
+
+console.log(animals.slice(2, 4));
+// expected output: Array ["camel", "duck"]
+
+console.log(animals.slice(1, 5));
+// expected output: Array ["bison", "camel", "duck", "elephant"]

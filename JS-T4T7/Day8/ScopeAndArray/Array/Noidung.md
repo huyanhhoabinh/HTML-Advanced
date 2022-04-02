@@ -35,9 +35,12 @@ console.log(newItemTracker);
 console.log(removed);
 // Output: item 2
 ```
-[- More array method ](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array)
 - Array with let and const
-- More array methos
+[- More array method ](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array)
+    - Some arrays methods that are available to JavaScript developers include: .join(), .slice(), .splice(), .shift(), .unshift(), and .concat()
+    - Use the .shift() method to remove the first item from the array
+    - .unshift('popcorn')
+    
 - Arrays and Functions
 - NestArray
 - [bài tập](https://cafedev.vn/tu-hoc-javascript-bai-tap-full-bai-huong-dan-ve-array-va-ham-array-trong-javascript/)
