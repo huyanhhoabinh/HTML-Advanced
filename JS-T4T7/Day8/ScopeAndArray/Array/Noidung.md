@@ -53,7 +53,21 @@ const pastaIndex = groceryList.indexOf('pasta');
 console.log(pastaIndex);
 ```
 - Arrays and Functions
+  - So when you pass an array into a function, if the array is mutated inside the function, that change will be maintained outside the function as well. You might also see this concept explained as pass-by-reference since what we’re actually passing to the function is a reference to where the variable memory is stored and changing the memory.
+  - In Javascript objects and arrays are passed by reference
+```html
+const flowers = ['peony', 'daffodil', 'marigold'];
+function addFlower(arr) {
+  arr.push('lily');
+}
+ 
+addFlower(flowers);
+console.log(flowers);
+
+```
+  
 - NestArray
+
 - [bài tập](https://cafedev.vn/tu-hoc-javascript-bai-tap-full-bai-huong-dan-ve-array-va-ham-array-trong-javascript/)
 # Bài tập
 - Bài 1: Đoạn code này sẽ hiển thị gì?

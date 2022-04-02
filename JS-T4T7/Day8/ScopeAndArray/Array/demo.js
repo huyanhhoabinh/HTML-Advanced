@@ -46,3 +46,19 @@ console.log(animals.slice(2, 4));
 
 console.log(animals.slice(1, 5));
 // expected output: Array ["bison", "camel", "duck", "elephant"]
+
+/*Pass by referance*/
+
+const concept = ['arrays', 'can', 'be', 'mutated'];
+
+function changeArr(arr){
+    arr[3] = 'MUTATED';
+}
+
+changeArr(concept);
+console.log(concept);
+function removeElement(arr){
+    arr.pop();
+}
+removeElement(concept);
+console.log(concept);
