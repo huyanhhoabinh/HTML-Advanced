@@ -62,6 +62,8 @@ while (counterTwo < 4) {
 - Remember, this is called an `infinite loop` and it’s something we always want to avoid.
 - Small exercise : Cho 1 mảng gồm 4 const cards = ['diamond', 'spade', 'heart', 'club']; dùng vòng lặp while dừng lại cho đến khi tìm ra `spade`, `currentCard = cards[Math.floor(Math.random() * 4)];`
 ## Do...While Statements
+Flowchart:
+![img_2.png](img_2.png)
 ```html
 let countString = '';
 let i = 0;
