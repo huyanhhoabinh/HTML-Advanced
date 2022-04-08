@@ -36,7 +36,7 @@ higherOrderFunc(() => {
 ## Iterators
 - Better tool for loop : have access to built-in array methods which make looping easier.
 ### The .forEach() Method
-![img.png](img.png)
+![img.png](highorderfuntion.png)
 - `groceries.forEach()` calls the forEach method on the groceries array.
 - `.forEach()` takes an argument of callback function. Remember, a callback function is a function passed as an argument into another function.
 - `.forEach()` loops through the array and executes the callback function for each element. During each execution, the current element is passed as an argument to the callback function.
