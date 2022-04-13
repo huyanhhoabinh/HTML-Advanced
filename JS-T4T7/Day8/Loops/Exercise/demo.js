@@ -1,7 +1,7 @@
 //text that we will translate into whale language
 let input = 'xin chao cac ban';
 //an array of vowels that we are going to look for in input
-const vowels = ['u', 'e', 'i', 'a'];
+const vowels = ['u', 'e', 'i', 'a', 'o'];
 //array where we will store vowels that we will find
 let resultArray = [];
 
