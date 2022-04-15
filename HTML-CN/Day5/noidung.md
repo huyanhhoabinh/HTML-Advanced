@@ -137,3 +137,40 @@ h1,
 font-family: Georgia;
 }
 ```
+## Visual rule :
+- Font Family: like Microsoft Word or Google Docs, chances are that you probably also used a feature that allowed you to change the font you were typing in
+```html
+
+h1 {
+  font-family: Garamond;
+}
+```
+- Font Size
+```html
+p {
+  font-size: 18px;
+}
+```
+- Font weight :
+```html
+p {
+  font-weight: bold;
+}
+```
+- Text Align :will align text to the element that holds it, otherwise known as its parent.
+  - left — aligns text to the left side of its parent element, which in this case is the browser.
+  - center — centers text inside of its parent element.
+  - right — aligns text to the right side of its parent element.
+  - justify— spaces out text in order to align with the right and left side of the parent element.
+```html
+h1 {
+  text-align: right;
+}
+```
+- Color and Background Color :
+  - color: this property styles an element’s foreground color
+  - background-color: this property styles an element’s background color
+```html
+
+
+```
