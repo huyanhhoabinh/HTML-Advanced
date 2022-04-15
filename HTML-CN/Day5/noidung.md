@@ -16,8 +16,8 @@
   - Property—The first part of the declaration that signifies what visual characteristic of the element is to be modified.
   - Value—The second part of the declaration that signifies the value of the property.
 
-![img.png](cssanatomy.png)
-
+[//]: # (![img.png]&#40;cssanatomy.png&#41;)
+<img src="cssanatomy.png" alt="drawing" width="800px" height="800px"/>
 - `Bài tập thực hành :` đổi 1 style từ inline style sang internal style và external style
 ## Selector :
 - Type : type selector matches the type of the element in the HTML document.
