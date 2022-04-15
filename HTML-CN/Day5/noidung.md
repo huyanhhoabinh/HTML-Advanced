@@ -171,6 +171,32 @@ h1 {
   - color: this property styles an element’s foreground color
   - background-color: this property styles an element’s background color
 ```html
+h1 {
+  color: red;
+  background-color: blue;
+}
+```
 
+- Opacity : It’s measured from 0 to 1, with 1 representing 100%, or fully visible and opaque, and 0 representing 0%, or fully invisible.
+```html
+.overlay {
+  opacity: 0.5;
+}
+```
+- Background Image : CSS has the ability to change the background of an element. One option is to make the background of an element an image
+```html
+.main-banner {
+  background-image: url('https://www.example.com/image.jpg');
+}
+```
+- Important : It will override any style no matter how specific it is. As a result, it should almost never be used. Once !important is used, it is very hard to override.
+```html
 
+p {
+  color: blue !important;
+}
+ 
+.main p {
+  color: red;
+}
 ```
