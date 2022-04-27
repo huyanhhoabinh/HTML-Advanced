@@ -14,3 +14,16 @@ let spaceship = {
 };
 ```
     The spaceship object has two properties Fuel Type and color. 'Fuel Type' has quotation marks because it contains a space character.
+- Accessing Properties: Let’s explore the first way— dot notation, `.`
+```html
+let spaceship = {
+homePlanet: 'Earth',
+color: 'silver'
+};
+spaceship.homePlanet; // Returns 'Earth',
+spaceship.color; // Returns 'silver',
+
+// If we try to access a property that does not exist on that object, undefined will be returned.
+
+spaceship.favoriteIcecream; // Returns undefined
+```
