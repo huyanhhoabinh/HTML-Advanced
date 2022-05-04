@@ -1,43 +1,29 @@
 const menu = {
     _meal: '',
-    _courses: {
-        appetizers:[],
-        mains:[],
-        desserts:[]
-    },
-    get appetizers () {
-        return this._courses.appetizers;
-    },
-    set appetizers (appetizer) {
-        this._courses.appetizers.push(appetizer);
-    },
-    get mains () {
-        return this._courses.mains;
-    },
-    set mains (main) {
-        this._courses.mains.push(main);
-    },
-    get desserts () {
-        return this._courses.desserts;
-    },
-    set desserts (dessert) {
-        this._courses.desserts.push(dessert)
-    },
-    get courses () { // _courses(){
-        return {
-            appetizers: this.appetizers,
-            mains: this.mains,
-            desserts: this.desserts
+    _price: 0,
+    set meal(mealToCheck) {
+        if(typeof mealToCheck === 'string') {
+            this._meal = mealToCheck;
+            return this._meal;
         }
     },
-    addDishToCourse(courseName,dishName,dishPrice){
-        const dish = {
-            name: dishName,
-            price: dishPrice,
-        };
-        //return
-        this._courses[courseName] = dish;//.push(dish);
+    get todaysSpecial() {
+        if(typeof this._meal === 'string' && typeof this._price === 'number')   {
+            console.log(`Today’s Special is ${this._meal} for $${this._price}!`);
+        } else {
+            console.log('Meal or price was not set correctly!');
+        }
+    },
+    set price(priceToCheck) {
+        if(typeof priceToCheck  === 'number') {
+            this._price = priceToCheck;
+            return this._price;
+        }
     }
-}
-menu.addDishToCourse('appetizers', 'dumplings', 10.50);
-console.log(menu.courses.appetizers);
+};
+menu.meal = 'beaf';
+menu.price = 10;
+menu.todaysSpecial;
+
+
+
