@@ -16,7 +16,7 @@ let spaceship = {
     The spaceship object has two properties Fuel Type and color. 'Fuel Type' has quotation marks because it contains a space character.
 - Accessing Properties: 
   - Let’s explore the first way— dot notation, `.`
-  - Bracket Notation
+  - Bracket Notation (use bracket notation when accessing keys that have numbers, spaces, or special characters in them)
 ```html
 let spaceship = {
 homePlanet: 'Earth',
@@ -50,7 +50,21 @@ returnAnyProp(spaceship, 'homePlanet'); // Returns 'Earth'
   - If the property already exists on the object, whatever value it held before will be replaced with the newly assigned value.
   - If there was no property with that name, a new property will be added to the object.
   - You can delete a property from an object with the `delete` operator.
-![img.png](propertyassignment.png)  - 
+  - ![img.png](propertyassignment.png)
+```html
+const spaceship = {type: 'shuttle'};
+spaceship = {type: 'alien'}; // TypeError: Assignment to constant variable.
+spaceship.type = 'alien'; // Changes the value of the type property
+spaceship.speed = 'Mach 5'; // Creates a new key of 'speed' with a value of 'Mach 5'
+
+const spaceship = {
+'Fuel Type': 'Turbo Fuel',
+homePlanet: 'Earth',
+mission: 'Explore the universe'
+};
+
+delete spaceship.mission;  // Removes the mission property
+```
 - Methods: When the data stored on an object is a function we call that a method. A property is what an object has, while a method is what an object does.
 ```html
 const alienShip = {
@@ -59,6 +73,12 @@ const alienShip = {
   }
 };
 
+With the new method syntax introduced in ES6 we can omit the colon and the function keyword.
+const alienShip = {
+invade () {
+console.log('Hello! We have come to dominate your planet. Instead of Earth, it shall be called New Xaculon.')
+}
+};
 
 alienShip.invade(); // Prints 'Hello! We have come to dominate your planet. Instead of Earth, it shall be called New Xaculon.'
 ```
@@ -112,6 +132,29 @@ paintIt(spaceship);
  
 spaceship.color // Returns 'glorious gold'
  
+```
+
+```html
+However, reassignment of the spaceship variable wouldn’t work in the same way
+let spaceship = {
+  homePlanet : 'Earth',
+  color : 'red'
+};
+let tryReassignment = obj => {
+  obj = {
+    identified : false, 
+    'transport type' : 'flying'
+  }
+  console.log(obj) // Prints {'identified': false, 'transport type': 'flying'}
+ 
+};
+tryReassignment(spaceship) // The attempt at reassignment does not work.
+spaceship // Still returns {homePlanet : 'Earth', color : 'red'};
+ 
+spaceship = {
+  identified : false, 
+  'transport type': 'flying'
+}; // Regular reassignment still works.
 ```
 
 - Looping Through Objects
