@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+    Hello
+</title>
+    <script type="text/javascript">
+
+    let nguoitot = {
+        ten: 'micheal',
+        tuoi: 23,
+        'bo bo': 'thang',
+        friends: ['huy','thang', 'hao'],
+        bo: {
+            ten: 'micheal',
+            tuoi: 23,
+            'bo bo': 'thang',
+            friends: ['huy','thang', 'hao'],
+        },
+        hello(x) {
+            console.log(`chao ${x}`);
+        },
+        showMyName() {
+            console.log(this.ten);
+            this.hello("xxxx");
+        }
+    };
+    // console.log(nguoitot.friends);
+    // console.log(nguoitot.bo);
+    // delete nguoitot.bo;
+    // console.log(nguoitot);
+    nguoitot.hello("huy anh");
+    nguoitot.showMyName();
+</script>
+</head>
+
+<body>
+
+
+</body>
+
+</html>
+
