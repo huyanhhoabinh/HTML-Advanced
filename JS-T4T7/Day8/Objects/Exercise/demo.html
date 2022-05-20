@@ -26,12 +26,10 @@
             this.hello("xxxx");
         }
     };
-    // console.log(nguoitot.friends);
-    // console.log(nguoitot.bo);
-    // delete nguoitot.bo;
-    // console.log(nguoitot);
-    nguoitot.hello("huy anh");
-    nguoitot.showMyName();
+
+    for (const property in nguoitot) {
+        console.log(`${property} : ${nguoitot[property]}`)
+    }
 </script>
 </head>
 
