@@ -21,14 +21,14 @@ const bg = {
         sctx.drawImage(this.sprite, this.x, y);
     }
 };
-
+const gndSprite = new Image();
+gndSprite.src = "img/ground.png";
 const gnd = {
-    sprite: new Image(),
     x: 0,
     y: 0,
     draw: function () {
-        this.y = parseFloat(scrn.height - this.sprite.height);
-        sctx.drawImage(this.sprite, this.x, this.y);
+        this.y = parseFloat(scrn.height - gndSprite.height);
+        sctx.drawImage(gndSprite, this.x, this.y);
     },
     update: function () {
         if (state.curr != state.Play) return;
