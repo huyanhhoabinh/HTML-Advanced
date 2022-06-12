@@ -40,59 +40,6 @@ const bg = {
 
     }
 }
-const pipes = {
-    position : [],
-
-    top : {
-        sX : 553,
-        sY : 0
-    },
-    bottom:{
-        sX : 502,
-        sY : 0
-    },
-
-    w : 53,
-    h : 400,
-    gap : 85,
-    maxYPos : -150,
-    dx : 2,
-
-    draw : function(){
-        for(let i  = 0; i < this.position.length; i++){
-            let p = this.position[i];
-
-            let topYPos = p.y;
-            let bottomYPos = p.y + this.h + this.gap;
-
-            // top pipe
-            ctx.drawImage(sprite, this.top.sX, this.top.sY, this.w, this.h, p.x, topYPos, this.w, this.h);
-
-            // bottom pipe
-            ctx.drawImage(sprite, this.bottom.sX, this.bottom.sY, this.w, this.h, p.x, bottomYPos, this.w, this.h);
-        }
-    },
-    update: function () {
-        if(state.current !== state.game) {
-            return;
-        }
-
-        if(frames%100 == 0) {
-            this.position.push({
-                x: cvs.width,
-                y: this.maxYPos * (Math.random() + 1)
-            });
-
-        }
-        for (let i = 0; i < this.position.length; i++) {
-            let p = this.position[i];
-            p.x -= this.dx;
-            if(p.x + this.w <= 0) {
-                this.position.shift();
-            }
-        }
-    }
-}
 const fg = {
     sX: 276,
     sY:0,
@@ -100,7 +47,6 @@ const fg = {
     h:112,
     x:0,
     y: cvs.height - 112,
-    dx : 2,
     draw: function (){
         ctx.drawImage(sprite, this.sX, this.sY,
             this.w, this.h, this.x, this.y, this.w, this.h);
@@ -108,9 +54,7 @@ const fg = {
             this.w, this.h, this.x + this.w, this.y, this.w, this.h);
     },
     update: function () {
-        if(state.current == state.game) {
-            this.x = (this.x - this.dx)%(this.w/2);
-        }
+        
     }
 }
 const bird = {
@@ -129,8 +73,6 @@ const bird = {
     gravity: 0.25,
     jump: 4.6,
     rotation: 0,
-    radius: 12,
-
     draw: function() {
         let bird = this.animation[this.frame];
         ctx.save();
@@ -199,15 +141,12 @@ const gameOver = {
 };
 function update() {
     bird.update();
-    pipes.update();
-    fg.update();
 }
 function draw() {
     ctx.fillStyle = "#70c5ce";
     ctx.fillRect(0,0 , cvs.width, cvs.height);
     bg.draw();
     fg.draw();
-    pipes.draw();
     bird.draw();
     getReady.draw();
     gameOver.draw();
