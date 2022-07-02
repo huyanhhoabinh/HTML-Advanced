@@ -24,6 +24,8 @@
 ![img.png](Images/SimpleListInstagram.png)
 - FlexLayOutAdvance
 ![img_1.png](Images/FlexLayOutAdvance.png)
+- FlexLayOutZingNew
+![](Images/FlexLayOutZingNews.png)
 - FlexLayOutFullWebsite
 ![](Images/FlexLayOutFullWebsite.png)
 # Boostrap Design
@@ -31,6 +33,8 @@
 ![](Images/Bootstrap-checkoutform.png)
 - Heading page
 ![](Images/Bootstrap-headingpage.png)
+- Blogs
+![](Images/BlogBootStrap.png)
 # Bài tập tổng hợp
 - Page CV
 ![](Images/CVPage.png)
