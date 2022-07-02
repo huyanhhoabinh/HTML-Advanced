@@ -6,6 +6,8 @@
 - FormBeauty
 ![](Images/FormBeauty.png)
 # Bài tập về flex (chia lay out)
+- FlexLayOut0
+  ![](Images/FlexBasic0.png)
 - FlexLayOut1
 ![](Images/layout-flex.png)
 - FlexLayOut2
@@ -20,6 +22,11 @@
 ![img_1.png](Images/FlexLayOutAdvance.png)
 - FlexLayOutFullWebsite
 ![](Images/FlexLayOutFullWebsite.png)
+# Boostrap Design
+- Checkout form
+![](Images/Bootstrap-checkoutform.png)
+- Heading page
+![](Images/Bootstrap-headingpage.png)
 # Bài tập tổng hợp
 - Page CV
 ![](Images/CVPage.png)

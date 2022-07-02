@@ -7,6 +7,7 @@ var titlesClicked = 0;
 var flagEnabled = false;
 var gameOver = false;
 window.onload = function () {
+    window.addEventListener("contextmenu", e => e.preventDefault());
     startGame();
 }
 function setMines() {
