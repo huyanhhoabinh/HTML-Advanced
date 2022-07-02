@@ -5,6 +5,10 @@
 ![img.png](Images/TableExercise.png)
 - FormBeauty
 ![](Images/FormBeauty.png)
+- Nutrition
+![](Images/Nutrition.png)
+- ColorMarkers
+![](Images/ColorMarkers.png)
 # Bài tập về flex (chia lay out)
 - FlexLayOut0
   ![](Images/FlexBasic0.png)
