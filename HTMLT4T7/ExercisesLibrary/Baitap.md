@@ -35,6 +35,8 @@
 ![](Images/Bootstrap-headingpage.png)
 - Blogs
 ![](Images/BlogBootStrap.png)
+- CV Page
+![](Images/CvPages.png)
 # Bài tập tổng hợp
 - Page CV
 ![](Images/CVPage.png)
