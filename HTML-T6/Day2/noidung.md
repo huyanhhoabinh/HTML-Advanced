@@ -29,3 +29,6 @@ table, th, td {
 }
 ```
 - Bài tập
+Bài tập table trong library
+- Bài tập thêm :
+https://www.freecodecamp.org/learn/2022/responsive-web-design/learn-basic-css-by-building-a-cafe-menu/step-1
