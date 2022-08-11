@@ -50,6 +50,7 @@ function startGame() {
     }
 }
 function clickTile(e) {
+
     let tile = this;
     if(e.button === 0) {
         if(tile.innerText == "🚩") {
