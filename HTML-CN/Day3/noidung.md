@@ -11,10 +11,11 @@
 <form action="/example.html" method="POST">
 </form>
 ```
-- The `action` attribute determines where the information is sent.
-- The `method` attribute is assigned a HTTP verb that is included in the HTTP request. (Request trong tiếng Anh nghĩa là lời yêu cầu, lời đề nghị. Trong lập trình Web, HTTP Request được gọi là “thông báo yêu cầu HTTP“. Đây là thông tin từ client gửi đến server, yêu cầu server làm một việc gì đó.)
-- Các thành phần bên trong  1 form:
-    - Text Input : `type="text"`  without the `name` attribute, information in the `<input>` won’t be sent when the `<form>` is submitted
+- Phần `action` quyết định thông tin sẽ được gửi đi đâu.
+- Phần `method` là một HTTP(Hyper Text Transfer Protocol) verb (GET/POST). (Request trong tiếng Anh nghĩa là lời yêu cầu, lời đề nghị. Đây là thông tin từ client gửi đến server, yêu cầu server làm một việc gì đó.)
+## Các thành phần bên trong  1 form:
+
+- Text Input : `type="text"`  without the `name` attribute, information in the `<input>` won’t be sent when the `<form>` is submitted
 ```html
 <form action="/example.html" method="POST">
   <input type="text" name="first-text-field" value="already pre-filled">
@@ -123,7 +124,7 @@
   <input type="submit" value="Send">
 </form>
 ```
-- Form Validation:
+### Form Validation:
     - Requiring an Input : we can add the `required` attribute to an `<input>` element
 
 ```html

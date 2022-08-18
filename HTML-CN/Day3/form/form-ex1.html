@@ -18,6 +18,7 @@
             font-size: 16px;
         }
     </style>
+</head>
 <body>
 <form>
     <table border="3" cellspacing="5px">
@@ -25,27 +26,27 @@
             <th colspan="2"> Registration Form</th>
         </tr>
         <tr>
-            <td>Enter Name</td>
-            <td><input class="" type="text"/></td>
+            <td>Enter Name(*)</td>
+            <td><input class="" type="text" name="name" minlength="5" maxlength="15" required/></td>
         </tr>
         <tr>
-            <td>Enter Password</td>
-            <td><input type="password"/></td>
+            <td>Enter Password(*)</td>
+            <td><input type="password" name="password" minlength="6" maxlength="15" required/></td>
         </tr>
 
         <tr>
-            <td>Enter Address</td>
-            <td><textarea rows="3"></textarea></td>
+            <td>Enter Address(*)</td>
+            <td><textarea rows="3" name="address" minlength="6" maxlength="60" required></textarea></td>
         </tr>
 
         <tr>
             <td>Select Game</td>
             <td>
-                <input type="checkbox"/>Hockey <br/>
-                <input type="checkbox"/>Football<br/>
-                <input type="checkbox"/>Badminton<br/>
-                <input type="checkbox"/>Cricket<br/>
-                <input type="checkbox"/>volleyball
+                <input type="checkbox" name="sports" value="hockey"/>Hockey <br/>
+                <input type="checkbox" name="sports" value="football"/>Football<br/>
+                <input type="checkbox" name="sports" value="badminton"/>Badminton<br/>
+                <input type="checkbox" name="sports" value="cricket"/>Cricket<br/>
+                <input type="checkbox" name="sports" value="volleyball"/>volleyball
             </td>
         </tr>
 
@@ -60,23 +61,35 @@
         <tr>
             <td>Select ur age</td>
             <td>
-                <select class="">
-                    <option>Select</option>
-                    <option>15</option>
-                    <option>16</option>
-                    <option>17</option>
-                    <option>18</option>
-                    <option>19</option>
-                    <option>20</option>
-                    <option>21</option>
-                    <option>More than 22</option>
+                <select class="" name="age">
+                    <option value="15">15</option>
+                    <option value="16">16</option>
+                    <option value="17">17</option>
                 </select>
             </td>
         </tr>
 
         <tr>
             <td>Select Photo</td>
-            <td><input type="file"/>
+            <td><input type="file" name="file"/>
+            </td>
+        </tr>
+
+        <tr>
+            <td>Other</td>
+            <td>
+                <fieldset>
+                    <legend>Status</legend>
+                    <input checked="true" name="single" type="radio"/> Single
+                    <input name="fa" type="radio"/> FA
+                </fieldset>
+                <fieldset>
+                    <legend>Favorite animal</legend>
+                    <select class="" name="likeanimal">
+                        <option value="dog">Dog</option>
+                        <option value="cat">Cat</option>
+                    </select>
+                </fieldset>
             </td>
         </tr>
 
@@ -88,7 +101,6 @@
             </td>
         </tr>
     </table>
-
 </form>
 </body>
 </html>
