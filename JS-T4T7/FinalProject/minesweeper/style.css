@@ -63,3 +63,14 @@ body {
 .x8 {
     color: crimson;
 }
+
+@keyframes colors {
+    0%   {background-color: red;}
+    25%  {background-color: yellow;}
+    50%  {background-color: blue;}
+    100% {background-color: green;}
+}
+.animation {
+    animation-name: colors;
+    animation-duration: 1s;
+}
