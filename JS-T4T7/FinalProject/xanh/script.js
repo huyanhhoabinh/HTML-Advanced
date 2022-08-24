@@ -74,7 +74,12 @@ const bg = {
 
 // FOREGROUND
 const fg = {
-    sX: 276, sY: 0, w: 224, h: 112, x: 0, y: cvs.height - 122,
+    sX: 276,
+    sY: 0,
+    w: 224,
+    h: 112,
+    x: 0,
+    y: cvs.height - 112,
     dx: 2,
     draw: function () {
         ctx.drawImage(sprite, this.sX, this.sY, this.w, this.h, this.x, this.y, this.w, this.h);
@@ -91,7 +96,7 @@ const fg = {
 
 // BIRD
 const bird = {
-    animation: [{sX: 276, sY: 112}, {sX: 276, sY: 139}, {sX: 276, sY: 164}, {sX: 276, sY: 139},],
+    animation: [{sX: 276, sY: 112}, {sX: 276, sY: 139}, {sX: 276, sY: 164}, {sX: 276, sY: 139}],
     x: 50,
     y: 150,
     w: 34,
@@ -133,17 +138,20 @@ const bird = {
             this.speed += this.gravity;
             this.y += this.speed;
 
-            if (this.y + this.h / 2 >= cvs.height - fg.h) {
-                this.y = cvs.height - fg.h - this.h / 2;
-                if (state.current == state.game) {
+            if(this.y + this.h/2 >= cvs.height - fg.h){
+                this.y = cvs.height - fg.h - this.h/2;
+                if(state.current === state.game){
                     state.current = state.over;
                     DIE.play();
                 }
             }
 
-            if (this.speed >= this.jump) {
-                this.rotation = 90 * DEGREE;
-            } else {
+            if(this.speed >= this.jump){
+                if(state.current === state.game) {
+                    this.rotation = this.rotation + 5 * DEGREE;
+                }
+                this.frame = 1;
+            }else{
                 this.rotation = -25 * DEGREE;
             }
         }
@@ -211,22 +219,23 @@ const pipes = {
 
             let bottomPipeYPos = p.y + this.h + this.gap;
 
-            if (bird.x + bird.radius > p.x && bird.x - bird.radius < p.x + this.h && bird.y + bird.radius > p.y && bird.y - bird.radius < p.y + this.h) {
+
+            if(bird.x + bird.radius > p.x && bird.x - bird.radius < p.x + this.w && bird.y + bird.radius > p.y && bird.y - bird.radius < p.y + this.h){
                 state.current = state.over;
                 HIT.play();
             }
 
-            if (bird.x + bird.radius > p.x && bird.x - bird.radius < p.x + this.h && bird.y + bird.radius > bottomPipeYPos && bird.y - bird.radius < bottomPipeYPos + this.h) {
+            if(bird.x + bird.radius > p.x && bird.x - bird.radius < p.x + this.w && bird.y + bird.radius > bottomPipeYPos && bird.y - bird.radius < bottomPipeYPos + this.h){
                 state.current = state.over;
                 HIT.play();
             }
+
 
             p.x -= this.dx;
-
-            if (p.x + this.w <= 0) {
+            if(p.x + this.w <= 0){
                 this.position.shift();
                 score.value += 1;
-                SCORE_S.play();
+                SCORE_S.play()
                 score.best = Math.max(score.value, score.best);
                 localStorage.setItem("best", score.best);
             }
@@ -240,6 +249,29 @@ const pipes = {
 
 }
 
+const medal = {
+    whiteMedal: {sX: 624, sY: 224},
+    silverMedal: {sX: 718, sY:224},
+    goldMedal: {sX: 624, sY: 316},
+    bronzeMedal: {sX: 718, sY: 316},
+    w:88,
+    h:88,
+    x: 322,
+    y: 798,
+    draw: function () {
+        if(state.current === state.getReady && state.current === state.game) return;
+        if (score.value >= 5)  {
+            ctx.drawImage(sprite, this.whiteMedal.sX, this.whiteMedal.sY, this.w, this.h, this.x, this.x, this.y)
+        } else if (score.value >= 8)  {
+            ctx.drawImage(sprite, this.silverMedal.sX, this.silverMedal.sY, this.w, this.h, this.x, this.x, this.y)
+        } else if (score.value >= 10) {
+            ctx.drawImage(sprite, this.goldMedal.sX, this.goldMedal.sY, this.w, this.h, this.x, this.x, this.y)
+        } else if (score.value >= 15) {
+            ctx.drawImage(sprite, this.bronzeMedal.sX, this.bronzeMedal.sY, this.w, this.h, this.x, this.x, this.y)
+        }
+    }
+
+}
 // SCORE
 const score = {
     best: parseInt(localStorage.getItem("best")) || 0, value: 0,
