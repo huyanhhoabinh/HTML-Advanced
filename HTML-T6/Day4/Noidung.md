@@ -10,4 +10,5 @@ Giới thiệu về CSS và vai trò của CSS.
   1. Selecting multiple elements
   2. Selecting nested elements (tree-like)
 - The box model
-  1. 
+  1. width, height, border, border-radius, margin, padding
+  2. Color: 
