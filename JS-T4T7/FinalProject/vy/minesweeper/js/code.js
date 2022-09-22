@@ -11,10 +11,10 @@ let min = 0;
 let sec = 0;
 var totalSeconds = 0;
 var timerVar;
-var audio = new Audio("./mixkit-high-tech-bleep-confirmation-2520.wav");
-var resetgame = new Audio("./mixkit-tech-break-fail-2947.wav")
-var gameOvermus = new Audio("./GHS4XWR-game-over-cartoon-4.mp3")
-var winnerMusic = new Audio ("./JKL83NH-video-game-win.mp3")
+var audio = new Audio("./sound/mixkit-high-tech-bleep-confirmation-2520.wav");
+var resetgame = new Audio("./sound/mixkit-tech-break-fail-2947.wav")
+var gameOvermus = new Audio("./sound/GHS4XWR-game-over-cartoon-4.mp3")
+var winnerMusic = new Audio ("./sound/JKL83NH-video-game-win.mp3")
 
 
 
