@@ -94,7 +94,7 @@ const pipes = {
     maxYPos : -150,
     dx : 2,
 
-    draw : function(){
+    draw : function() {
         for(let i  = 0; i < this.position.length; i++) {
             let p = this.position[i];
 

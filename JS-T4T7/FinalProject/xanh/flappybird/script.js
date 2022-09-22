@@ -1,6 +1,5 @@
 const cvs = document.getElementById("bird");
 const ctx = cvs.getContext("2d");
-
 // GAME VARS AND CONSTS
 let frames = 0;
 const DEGREE = Math.PI / 180;
@@ -32,7 +31,7 @@ const state = {
 
 // START BUTTON COORD
 const startBtn = {
-    x: 120, y: 263, w: 83, h: 29,
+    x: 180, y: 394.5, w: 124.5, h: 43.5,
 }
 
 // CONTROL THE GAME
@@ -61,9 +60,26 @@ cvs.addEventListener("click", function (evt) {
     }
 });
 
+document.addEventListener('keydown', (e) => {
+    if (e.code === "Space") {
+
+        switch (state.current) {
+            case state.getReady:
+                state.current = state.game;
+                SWOOSHING.play();
+                break;
+            case state.game:
+                bird.flap();
+                FLAP.play();
+                break;
+        }
+
+    }
+});
+
 // BACKGROUND
 const bg = {
-    sX: 0, sY: 0, w: 275, h: 226, x: 0, y: cvs.height - 226,
+    sX: 0, sY: 0, w: 412.5, h: 339, x: 0, y: cvs.height - 339,
 
     draw: function () {
         ctx.drawImage(sprite, this.sX, this.sY, this.w, this.h, this.x, this.y, this.w, this.h);
@@ -74,15 +90,13 @@ const bg = {
 
 // FOREGROUND
 const fg = {
-    sX: 276,
-    sY: 0,
-    w: 224,
-    h: 112,
-    x: 0,
-    y: cvs.height - 112,
+    sX: 414, sY: 0, w: 336, h: 168, x: 0, y: cvs.height - 168,
+
     dx: 2,
+
     draw: function () {
         ctx.drawImage(sprite, this.sX, this.sY, this.w, this.h, this.x, this.y, this.w, this.h);
+
         ctx.drawImage(sprite, this.sX, this.sY, this.w, this.h, this.x + this.w, this.y, this.w, this.h);
     },
 
@@ -96,13 +110,13 @@ const fg = {
 
 // BIRD
 const bird = {
-    animation: [{sX: 276, sY: 112}, {sX: 276, sY: 139}, {sX: 276, sY: 164}, {sX: 276, sY: 139}],
-    x: 50,
-    y: 150,
-    w: 34,
-    h: 26,
+    animation: [{sX: 414, sY: 168}, {sX: 414, sY: 208.5}, {sX: 414, sY: 246}, {sX: 414, sY: 208.5},],
+    x: 75,
+    y: 225,
+    w: 51,
+    h: 39,
 
-    radius: 12,
+    radius: 18,
 
     frame: 0,
 
@@ -138,20 +152,17 @@ const bird = {
             this.speed += this.gravity;
             this.y += this.speed;
 
-            if(this.y + this.h/2 >= cvs.height - fg.h){
-                this.y = cvs.height - fg.h - this.h/2;
-                if(state.current === state.game){
+            if (this.y + this.h / 2 >= cvs.height - fg.h) {
+                this.y = cvs.height - fg.h - this.h / 2;
+                if (state.current == state.game) {
                     state.current = state.over;
                     DIE.play();
                 }
             }
 
-            if(this.speed >= this.jump){
-                if(state.current === state.game) {
-                    this.rotation = this.rotation + 5 * DEGREE;
-                }
-                this.frame = 1;
-            }else{
+            if (this.speed >= this.jump) {
+                this.rotation = 90 * DEGREE;
+            } else {
                 this.rotation = -25 * DEGREE;
             }
         }
@@ -163,7 +174,7 @@ const bird = {
 
 // GET READY MESSAGE
 const getReady = {
-    sX: 0, sY: 228, w: 173, h: 152, x: cvs.width / 2 - 173 / 2, y: 80,
+    sX: 0, sY: 342, w: 259.5, h: 228, x: cvs.width / 2 - 259.5 / 2, y: 120,
 
     draw: function () {
         if (state.current == state.getReady) {
@@ -174,7 +185,7 @@ const getReady = {
 
 // GAME OVER MESSAGE
 const gameOver = {
-    sX: 175, sY: 228, w: 225, h: 202, x: cvs.width / 2 - 225 / 2, y: 90,
+    sX: 262.5, sY: 342, w: 337.5, h: 303, x: cvs.width / 2 - 337.5 / 2, y: 135,
 
     draw: function () {
         if (state.current == state.over) {
@@ -182,26 +193,53 @@ const gameOver = {
         }
     }
 }
+// const medal = {
+//     whiteMedal: {sX: 468, sY: 168},
+//     silverMedal: {sX: 538.5, sY:168},
+//     goldMedal: {sX: 468, sY: 237},
+//     bronzeMedal: {sX: 538.5, sY: 237},
+//     w:66,
+//     h:66,
+//     x: 241.5,
+//     y: 598.5,
+//     draw: function () {
+//         if(state.current === state.getReady && state.current === state.game) return;
+//         if (score.value >= 2)  {
+//             ctx.drawImage(sprite, this.whiteMedal.sX, this.whiteMedal.sY, this.w, this.h, this.x, this.x, this.y)
+//         } else if (score.value >= 5)  {
+//             ctx.drawImage(sprite, this.silverMedal.sX, this.silverMedal.sY, this.w, this.h, this.x, this.x, this.y)
+//         } else if (score.value >= 8) {
+//             ctx.drawImage(sprite, this.goldMedal.sX, this.goldMedal.sY, this.w, this.h, this.x, this.x, this.y)
+//         } else if (score.value >= 10) {
+//             ctx.drawImage(sprite, this.bronzeMedal.sX, this.bronzeMedal.sY, this.w, this.h, this.x, this.x, this.y)
+//         }
+//     }
+//
+// }
 
 // PIPES
 const pipes = {
     position: [],
 
     top: {
-        sX: 553, sY: 0
+        sX: 829.5, sY: 0
     }, bottom: {
-        sX: 502, sY: 0
+        sX: 753, sY: 0
 
     },
 
-    w: 53, h: 400, gap: 100, maxYPos: -150, dx: 2,
+    w: 79.5, h: 600, gap: 150, maxYPos: -225, dx: 2,
 
     draw: function () {
         for (let i = 0; i < this.position.length; i++) {
             let p = this.position[i];
+
             let topYPos = p.y;
             let bottomYPos = p.y + this.h + this.gap;
+
+
             ctx.drawImage(sprite, this.top.sX, this.top.sY, this.w, this.h, p.x, topYPos, this.w, this.h);
+
             ctx.drawImage(sprite, this.bottom.sX, this.bottom.sY, this.w, this.h, p.x, bottomYPos, this.w, this.h);
         }
     },
@@ -209,7 +247,7 @@ const pipes = {
     update: function () {
         if (state.current !== state.game) return;
 
-        if (frames % 100 == 0) {
+        if (frames % 160 == 0) {
             this.position.push({
                 x: cvs.width, y: this.maxYPos * (Math.random() + 1)
             });
@@ -219,23 +257,23 @@ const pipes = {
 
             let bottomPipeYPos = p.y + this.h + this.gap;
 
-
-            if(bird.x + bird.radius > p.x && bird.x - bird.radius < p.x + this.w && bird.y + bird.radius > p.y && bird.y - bird.radius < p.y + this.h){
+            if (bird.x + bird.radius > p.x && bird.x - bird.radius < p.x + this.w && bird.y + bird.radius > p.y && bird.y - bird.radius < p.y + this.h) {
                 state.current = state.over;
                 HIT.play();
             }
 
-            if(bird.x + bird.radius > p.x && bird.x - bird.radius < p.x + this.w && bird.y + bird.radius > bottomPipeYPos && bird.y - bird.radius < bottomPipeYPos + this.h){
+            if (bird.x + bird.radius > p.x && bird.x - bird.radius < p.x + this.w && bird.y + bird.radius > bottomPipeYPos && bird.y - bird.radius < bottomPipeYPos + this.h) {
                 state.current = state.over;
                 HIT.play();
             }
 
 
             p.x -= this.dx;
-            if(p.x + this.w <= 0){
+
+            if (p.x + this.w <= 0) {
                 this.position.shift();
                 score.value += 1;
-                SCORE_S.play()
+                SCORE_S.play();
                 score.best = Math.max(score.value, score.best);
                 localStorage.setItem("best", score.best);
             }
@@ -249,29 +287,6 @@ const pipes = {
 
 }
 
-const medal = {
-    whiteMedal: {sX: 624, sY: 224},
-    silverMedal: {sX: 718, sY:224},
-    goldMedal: {sX: 624, sY: 316},
-    bronzeMedal: {sX: 718, sY: 316},
-    w:88,
-    h:88,
-    x: 322,
-    y: 798,
-    draw: function () {
-        if(state.current === state.getReady && state.current === state.game) return;
-        if (score.value >= 5)  {
-            ctx.drawImage(sprite, this.whiteMedal.sX, this.whiteMedal.sY, this.w, this.h, this.x, this.x, this.y)
-        } else if (score.value >= 8)  {
-            ctx.drawImage(sprite, this.silverMedal.sX, this.silverMedal.sY, this.w, this.h, this.x, this.x, this.y)
-        } else if (score.value >= 10) {
-            ctx.drawImage(sprite, this.goldMedal.sX, this.goldMedal.sY, this.w, this.h, this.x, this.x, this.y)
-        } else if (score.value >= 15) {
-            ctx.drawImage(sprite, this.bronzeMedal.sX, this.bronzeMedal.sY, this.w, this.h, this.x, this.x, this.y)
-        }
-    }
-
-}
 // SCORE
 const score = {
     best: parseInt(localStorage.getItem("best")) || 0, value: 0,
@@ -282,17 +297,17 @@ const score = {
 
         if (state.current == state.game) {
             ctx.lineWidth = 2;
-            ctx.font = "35px Teko";
-            ctx.fillText(this.value, cvs.width / 2, 50);
-            ctx.strokeText(this.value, cvs.width / 2, 50);
+            ctx.font = "52.5px Teko";
+            ctx.fillText(this.value, cvs.width / 2, 75);
+            ctx.strokeText(this.value, cvs.width / 2, 75);
 
         } else if (state.current == state.over) {
-            ctx.font = "25px Teko";
-            ctx.fillText(this.value, 225, 186);
-            ctx.strokeText(this.value, 225, 186);
+            ctx.font = "37.5px Teko";
+            ctx.fillText(this.value, 337.5, 279);
+            ctx.strokeText(this.value, 337.5, 279);
 
-            ctx.fillText(this.best, 225, 228);
-            ctx.strokeText(this.best, 225, 228);
+            ctx.fillText(this.best, 337.5, 342);
+            ctx.strokeText(this.best, 337.5, 342);
         }
     },
 
@@ -306,7 +321,6 @@ const score = {
 function draw() {
     ctx.fillStyle = "#70c5ce";
     ctx.fillRect(0, 0, cvs.width, cvs.height);
-
     bg.draw();
     pipes.draw();
     fg.draw();
@@ -314,6 +328,7 @@ function draw() {
     getReady.draw();
     gameOver.draw();
     score.draw();
+    // medal.draw()
 }
 
 // UPDATE
