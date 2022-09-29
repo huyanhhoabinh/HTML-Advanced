@@ -193,29 +193,29 @@ const gameOver = {
         }
     }
 }
-// const medal = {
-//     whiteMedal: {sX: 468, sY: 168},
-//     silverMedal: {sX: 538.5, sY:168},
-//     goldMedal: {sX: 468, sY: 237},
-//     bronzeMedal: {sX: 538.5, sY: 237},
-//     w:66,
-//     h:66,
-//     x: 241.5,
-//     y: 598.5,
-//     draw: function () {
-//         if(state.current === state.getReady && state.current === state.game) return;
-//         if (score.value >= 2)  {
-//             ctx.drawImage(sprite, this.whiteMedal.sX, this.whiteMedal.sY, this.w, this.h, this.x, this.x, this.y)
-//         } else if (score.value >= 5)  {
-//             ctx.drawImage(sprite, this.silverMedal.sX, this.silverMedal.sY, this.w, this.h, this.x, this.x, this.y)
-//         } else if (score.value >= 8) {
-//             ctx.drawImage(sprite, this.goldMedal.sX, this.goldMedal.sY, this.w, this.h, this.x, this.x, this.y)
-//         } else if (score.value >= 10) {
-//             ctx.drawImage(sprite, this.bronzeMedal.sX, this.bronzeMedal.sY, this.w, this.h, this.x, this.x, this.y)
-//         }
-//     }
-//
-// }
+const medal = {
+    whiteMedal: {sX: 468, sY: 168},
+    silverMedal: {sX: 538.5, sY:168},
+    goldMedal: {sX: 468, sY: 237},
+    bronzeMedal: {sX: 538.5, sY: 237},
+    w:66,
+    h:66,
+    x: 110,
+    y: 266,
+    draw: function () {
+        if(state.current === state.getReady || state.current === state.game) return;
+        if (score.value >= 1)  {
+            ctx.drawImage(sprite, this.whiteMedal.sX, this.whiteMedal.sY, this.w, this.h,this.x, this.y, this.w, this.h);
+        } else if (score.value >= 2)  {
+            ctx.drawImage(sprite, this.silverMedal.sX, this.silverMedal.sY, this.w, this.h,this.x, this.y, this.w, this.h);
+        } else if (score.value >= 4) {
+            ctx.drawImage(sprite, this.goldMedal.sX, this.goldMedal.sY, this.w, this.h,this.x, this.y, this.w, this.h);
+        } else if (score.value >= 6) {
+            ctx.drawImage(sprite, this.bronzeMedal.sX, this.bronzeMedal.sY, this.w,this.x, this.y, this.w, this.h);
+        }
+    }
+
+}
 
 // PIPES
 const pipes = {
@@ -328,7 +328,7 @@ function draw() {
     getReady.draw();
     gameOver.draw();
     score.draw();
-    // medal.draw()
+    medal.draw();
 }
 
 // UPDATE
