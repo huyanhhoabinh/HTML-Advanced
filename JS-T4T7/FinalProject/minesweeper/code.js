@@ -102,7 +102,8 @@ function checkMines(r, c) {
 
     if(mineFound > 0) {
         board[r][c].innerText = mineFound;
-        board[r][c].classList.add("x" + mineFound.toString());
+        board[r][c].classList.add("x" + mineFound.toString(), "animation");
+
     } else {
         checkMines(r-1, c-1); // top left
         checkMines(r-1, c); // top
@@ -134,6 +135,7 @@ function revealMines() {
             if(minesLocation.includes(tile.id)) {
                 tile.innerText = "💣";
                 tile.style.backgroundColor = "red";
+                tile.classList.add("animation");
             }
         }
     }

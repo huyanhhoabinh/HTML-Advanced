@@ -1,0 +1,106 @@
+<!doctype html>
+<html>
+<head>
+    <title>Exercise 1 - HTML Form</title>
+    <style>
+        th {
+            font-size: 30px;
+            background-color: #FFA;
+            color: red;
+        }
+
+        td {
+            padding: 2px 15px;
+            background-color: #0CF;
+        }
+
+        * {
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+<form>
+    <table border="3" cellspacing="5px">
+        <tr>
+            <th colspan="2"> Registration Form</th>
+        </tr>
+        <tr>
+            <td>Enter Name(*)</td>
+            <td><input class="" type="text" name="name" minlength="5" maxlength="15" required/></td>
+        </tr>
+        <tr>
+            <td>Enter Password(*)</td>
+            <td><input type="password" name="password" minlength="6" maxlength="15" required/></td>
+        </tr>
+
+        <tr>
+            <td>Enter Address(*)</td>
+            <td><textarea rows="3" name="address" minlength="6" maxlength="60" required></textarea></td>
+        </tr>
+
+        <tr>
+            <td>Select Game</td>
+            <td>
+                <input type="checkbox" name="sports" value="hockey"/>Hockey <br/>
+                <input type="checkbox" name="sports" value="football"/>Football<br/>
+                <input type="checkbox" name="sports" value="badminton"/>Badminton<br/>
+                <input type="checkbox" name="sports" value="cricket"/>Cricket<br/>
+                <input type="checkbox" name="sports" value="volleyball"/>volleyball
+            </td>
+        </tr>
+
+        <tr>
+            <td>Gender</td>
+            <td>
+                <input checked="true" name="s1" type="radio"/> Male
+                <input name="s1" type="radio"/> Female
+            </td>
+        </tr>
+
+        <tr>
+            <td>Select ur age</td>
+            <td>
+                <select class="" name="age">
+                    <option value="15">15</option>
+                    <option value="16">16</option>
+                    <option value="17">17</option>
+                </select>
+            </td>
+        </tr>
+
+        <tr>
+            <td>Select Photo</td>
+            <td><input type="file" name="file"/>
+            </td>
+        </tr>
+
+        <tr>
+            <td>Other</td>
+            <td>
+                <fieldset>
+                    <legend>Status</legend>
+                    <input checked="true" name="single" type="radio"/> Single
+                    <input name="fa" type="radio"/> FA
+                </fieldset>
+                <fieldset>
+                    <legend>Favorite animal</legend>
+                    <select class="" name="likeanimal">
+                        <option value="dog">Dog</option>
+                        <option value="cat">Cat</option>
+                    </select>
+                </fieldset>
+            </td>
+        </tr>
+
+        <tr>
+            <td colspan="2">
+                <input style="width:33%; height:40px;" type="button" value="Click Me"/>
+                <input style="width:32%; height:40px;" type="reset"/>
+                <input style="width:33%; height:40px;" type="submit" value="Submit Form"/>
+            </td>
+        </tr>
+    </table>
+</form>
+</body>
+</html>

@@ -23,7 +23,7 @@ const DIE = new Audio();
 DIE.src = "audio/sfx_die.wav";
 
 
-
+// state
 const state = {
     current: 0,
     getReady: 0,
@@ -59,6 +59,7 @@ cvs.addEventListener("click", function (evt) {
            break;
     }
 });
+// background
 const bg = {
     sX: 0,
     sY:0,
@@ -74,6 +75,7 @@ const bg = {
 
     }
 }
+// pipes
 const pipes = {
     position : [],
 
@@ -92,7 +94,7 @@ const pipes = {
     maxYPos : -150,
     dx : 2,
 
-    draw : function(){
+    draw : function() {
         for(let i  = 0; i < this.position.length; i++) {
             let p = this.position[i];
 
